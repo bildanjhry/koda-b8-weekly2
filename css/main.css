@@ -1,0 +1,164 @@
+.flash-deals {
+    width: 100%;
+    margin-top: 3rem;
+    height: 475px;
+    background-color: bisque;
+}
+
+
+.flash-deals > div:first-child {
+   overflow: hidden;
+}
+
+.flash-deals-info {
+    background-color: #DC2626;
+    width: 110px;
+    padding: 0 5px 0 15px;
+    height: 35px;
+    border-radius: 8px;
+    line-height: 35px;
+    color: var(--light-font);
+}
+
+.flash-deals-info > img,
+.flash-deals-info > span
+{
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.flash-deals > div:first-child > a {
+    width: 105px;
+    float: right;
+    color: var(--main-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.flash-deals > div > a > span {
+    text-decoration: none;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.flash-deals > div > a > img {
+    position: relative;
+    vertical-align: middle;
+} 
+
+.flash-deals-cards-wrapper {
+    box-sizing: border-box;
+    height: 88%;
+    font-size: 0;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+.flash-deals-card {
+    width: 300px;
+    border-radius: 12px;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: yellow;
+}
+
+.flash-deals-card > div:first-child {
+    height: 295px;
+    overflow: hidden;
+    background-color: #DC2626;
+}
+
+.flash-deals-card > div:first-child > img {
+    display: block;
+}
+
+.flash-deals-card-desc {
+    font-size: var(--default-font-size);
+    padding-left: 1rem;
+    vertical-align: top;
+    margin: 0;
+    line-height: 10px;
+    width: 100%;
+}
+
+.flash-deals-card > div:first-child p, h4, span {
+    color: var(--gray-font);
+    margin: 0;
+}
+
+.flash-deals-card:not(:last-child) {
+    margin-right: 15.5px;
+}
+
+.info {
+    width: 100%;
+    margin-top: 3rem;
+    height: 176px;
+    font-size: 0;
+}
+
+.info-first {
+    display: inline-block;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),  url('../assets/fashion-sale.svg');
+}
+
+.info-second {
+    float: right;
+    background-image:linear-gradient(to right, rgba(28, 57, 142, 0.8), rgba(28, 57, 142, 0)),  url('../assets/electronic-sale.svg');
+}
+
+.info-first, .info-second{
+    width: 616px;
+    height: 176px;
+    vertical-align: middle;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-first-action {
+    font-size: var(--default-font-size);
+    color: var(--light-font);
+    height: 86px;
+    line-height: 0px;
+    position: relative;
+    top: 20%;
+    margin-left: 2rem;
+    width: 30%;
+}
+
+.info-first-action > p {
+    font-size: var(--default-font-size);
+}
+
+.info-first-action > h4 {
+    font-size: 20px;
+}
+
+.info-first-action-btn > div, 
+.info-first-action-btn-second > div {
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--light-font);
+    width: 141px;
+    height: 30px;
+}
+
+.info-first-action-btn-second > div {
+    width: 110px;
+} 
+
+.info-first-action-btn > div > a {
+    text-decoration: none;
+}
+
+.info-first-action-btn > div > p{
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1px;
+}

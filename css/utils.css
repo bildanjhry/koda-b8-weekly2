@@ -1,3 +1,24 @@
 .border {
     border: 1px solid salmon;
 }
+
+.inblock-display {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bg-blue {
+    background-color: #1A73E8;
+}
+
+.button-submit{
+    height: 2.5rem;
+    width: 3.3rem;
+    position: relative;
+    left: -12px;
+    top: 2px;
+    border-style: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--main-color);
+}
