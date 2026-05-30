@@ -8,6 +8,7 @@ body {
     position: relative;
     background-color: var(--bg-color);
     color: var(--default-color);
+    overflow-x: hidden;
 }
 
 header {
