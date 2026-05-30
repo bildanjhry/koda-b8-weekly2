@@ -1,0 +1,307 @@
+.flash-deals {
+    width: 100%;
+    margin-top: 3rem;
+    height: 490px;
+}
+
+.new-products {
+    width: 100%;
+    margin-top: 3rem;
+    height: 933px;
+    background-color: rgb(165, 28, 136);
+}
+
+.flash-deals > div:first-child,
+.new-products > div:first-child {
+   overflow: hidden;
+   height: 4rem;
+}
+
+.flash-deals-info {
+    background-color: #DC2626;
+    width: 110px;
+    vertical-align: bottom;
+    padding: 0 5px 0 15px;
+    height: 35px;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 32px;
+    color: var(--light-font);
+}
+
+.new-products-info {
+    width: fit-content;
+    vertical-align: bottom;
+    padding: 0 5px 0 15px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: var(--default-font-size);
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 35px;
+    color: var(--light-font);
+}
+
+.flash-deals-info > img,
+.flash-deals-info > span,
+.new-products-info > img
+{
+    vertical-align: middle;
+    color: var(--light-font);
+    font-size: 14px;
+}
+
+.flash-deals-info > span,
+.new-products-info > span {
+    position: relative;
+    left: 3px;
+}
+
+.flash-deals > div:first-child > a,
+.new-products > div:first-child > a  {
+    width: 105px;
+    float: right;
+    position: relative;
+    top: 7px;
+    color: var(--main-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.flash-deals > div:first-child > a > span,
+.new-products > div:first-child > a > span {
+    color: var(--main-color);
+}
+
+.flash-deals > div > a > span,
+.new-products > div > a > span {
+    text-decoration: none;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.flash-deals > div > a > img,
+.new-products > div > a > img {
+    position: relative;
+    vertical-align: middle;
+} 
+
+.flash-deals-cards-wrapper,
+.new-products-cards-wrapper {
+    box-sizing: border-box;
+    height: 434px;
+    margin: 0;
+    font-size: 0;
+    width: 100%;
+}
+
+.flash-deals-card,
+.new-products-card {
+    width: 298px;
+    border-radius: 12px;
+    height: 424px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.flash-deals-card-cut, 
+.new-products-card-cut {
+    position: absolute;
+    font-size: var(--small-font-size);
+    overflow: visible;
+    background-color:var(--red-color);
+    margin: 5px 0 0 5px;
+    border-radius: 15px;
+    width: fit-content;
+    z-index: 5;
+    height: 24px;
+}
+
+.new-products-card-new {
+    position: absolute;
+    font-size: var(--small-font-size);
+    overflow: visible;
+    background-color: var(--main-color);
+    margin: 5px 0 0 5px;
+    border-radius: 15px;
+    width: fit-content;
+    color: var(--light-font);
+    z-index: 5;
+    height: 24px;
+}
+
+.flash-deals-card-cut > span,
+.new-products-card-cut > span,
+.new-products-card-new > span {
+    color: white;
+    position: relative;
+    font-weight: 300;
+    top: 4px;
+    padding: 4px 9px 4px 9px;
+    margin: 0 auto;
+}
+
+.flash-deals-card > div:first-child,
+.new-products-card > div:first-child {
+    height: 295px;
+    overflow: hidden;
+}
+
+.flash-deals-card > div:first-child > img,
+.new-products-card > div:first-child > img {
+    display: block;
+}
+
+.flash-deals-card-desc,
+.new-products-card-desc {
+    font-size: var(--default-font-size);
+    padding-left: 1rem;
+    height: 120px;
+    vertical-align: top;
+    margin: 0;
+    padding-top: 22px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.flash-deals-card-desc > h4,
+.new-products-card-desc > h4 {
+    color: var(--dark-font);
+    font-weight: 600;
+    position: relative;
+    bottom: 7px;
+} 
+
+.fa-star {
+    color: rgb(199, 199, 199);
+}
+.checked {
+    color: var(--star-color);
+}
+
+.flash-deals-card-price,
+.new-products-card-price {
+    color: var(--main-color);
+    position: relative;
+    line-height: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    top: 2px;
+}
+
+.flash-deals-card-price > span,
+.new-products-card-price > span {
+    font-size: var(--small-font-size);
+    position: relative;
+    left: 10px;
+}
+
+.flash-deals-card-desc p:first-child,
+.new-products-card-desc p:first-child {
+    font-size: var(--small-font-size);
+    position: relative;
+    bottom: 12px;
+}
+
+.flash-deals-card-desc p , h4, span,
+.new-products-card-desc p , h4, span {
+    font-weight: 400;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+.flash-deals-cards-wrapper > a:not(:last-child) {
+    margin-right: 16px;
+}
+
+.new-products-card:not(:nth-child(4)) {
+    margin-right: 16px;
+}
+
+.new-products-card:nth-child(5),
+.new-products-card:nth-child(6) {
+    margin-right: 16px;
+}
+
+.new-products-card:nth-child(5),
+.new-products-card:nth-child(6),
+.new-products-card:last-child {
+    position: relative;
+    top: 16px;
+} 
+
+.info {
+    width: 100%;
+    margin-top: 3rem;
+    height: 176px;
+    font-size: 0;
+}
+
+.info-first {
+    display: inline-block;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),  url('../../assets/fashion-sale.svg');
+}
+
+.info-second {
+    float: right;
+    background-image:linear-gradient(to right, rgba(28, 57, 142, 0.8), rgba(28, 57, 142, 0)),  url('../../assets/electronic-sale.svg');
+}
+
+.info-first, .info-second{
+    width: 616px;
+    height: 176px;
+    vertical-align: middle;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-first-action {
+    font-size: var(--default-font-size);
+    color: var(--light-font);
+    height: 86px;
+    line-height: 15px;
+    position: relative;
+    top: 20%;
+    margin-left: 2rem;
+    width: 30%;
+}
+
+.info-first-action > p {
+    font-size: var(--default-font-size);
+}
+
+.info-first-action > h4 {
+    font-size: 20px;
+}
+
+.info-first-action-btn > div, 
+.info-first-action-btn-second > div {
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--light-font);
+    width: 141px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.info-first-action-btn-second > div {
+    width: 110px;
+} 
+
+.info-first-action-btn > div > a {
+    text-decoration: none;
+}
+
+.info-first-action-btn > div > p{
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1px;
+}

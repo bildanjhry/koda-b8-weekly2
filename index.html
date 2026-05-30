@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/parent.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/utils.css">
+    <link rel="stylesheet" href="src/css/parent.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,70 +211,130 @@
                 </div>
             </div>
         </div>
-        <div class="flash-deals">
+        <div class="flash-deals border">
             <div class="border">
                 <div class="flash-deals-info">
                     <img src="./assets/flash-icon.svg" alt="Lihat Semua">
                     <span>Flash Deals</span>
                 </div>
-                <a href="">
+                <a href="" class="border">
                     <span>Lihat Semua</span>
                     <img src="./assets/arrow-left.svg" alt="Lihat Semua">
                 </a>
             </div>
             <div class="flash-deals-cards-wrapper">
-                <div class="flash-deals-card">
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
+                <a 
+                id="soundWave-1"
+                href="./pages/products-details/soundWave-1.html">
+                    <div class="flash-deals-card">
+                        <span class="flash-deals-card-cut">
+                            <span>-31%</span>
+                        </span>
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/headphone-prod.svg" alt="">
+                        </div>
+                        <div class="flash-deals-card-desc border">
+                            <p>SoundWave</p>
+                            <h4>Headphone Wireless Premium</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.8</span>
+                                (512)
+                            </p>
+                            <h3 class="flash-deals-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                        </div>
                     </div>
-                    <div class="flash-deals-card-desc">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p><span></span>(512)</p>
-                        <p>Rp 450.000<span>Rp 640.000</span></p>
+                </a>
+                <a 
+                id="phoneX"
+                href="./pages/products-details/phoneX-1.html">
+                    <div class="flash-deals-card">
+                        <span class="flash-deals-card-cut">
+                            <span>-16%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/smartphone-prod.svg" alt="">
+                        </div>
+                        <div class="flash-deals-card-desc border">
+                            <p>PhoneX</p>
+                            <h4>Smartphone 5G Ultra</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.6</span>
+                                (890)
+                            </p>
+                            <h3 class="flash-deals-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                        </div>
+                    </div>            
+                </a>
+                <a 
+                id="wirstTech-1"
+                href="./pages/products-details/wirstTech-1.html">
+                    <div class="flash-deals-card">
+                        <span class="flash-deals-card-cut">
+                            <span>-20%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/smartwatch-prod.svg" alt="">
+                        </div>
+                        <div class="flash-deals-card-desc border">
+                            <p>WirstTech</p>
+                            <h4>Smartwatch Series 5</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>4.4</span>
+                                (324)
+                            </p>
+                            <h3 class="flash-deals-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
+                        </div>
+                    </div>             
+                </a>
+                <a  
+                id="sportPro-1"
+                href="./pages/products-details/sportPro-1.html">
+                    <div class="flash-deals-card">
+                        <span class="flash-deals-card-cut">
+                            <span>-27%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/sneaker-prod.svg" alt="">
+                        </div>
+                        <div class="flash-deals-card-desc border">
+                            <p>SportPro</p>
+                            <h4>Sneakers Sport Run Fast</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.6</span>
+                                (445)
+                            </p>
+                            <h3 class="flash-deals-card-price">Rp 550.000<span><s>Rp 750.000</s></span></h3>
+                        </div>
                     </div>
-                </div>
-                <div class="flash-deals-card">
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
-                    </div>
-                    <div class="flash-deals-card-desc">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p><span></span>(512)</p>
-                        <p>Rp 450.000<span>Rp 640.000</span></p>
-                    </div>
-                </div>            
-                <div class="flash-deals-card">
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
-                    </div>
-                    <div class="flash-deals-card-desc">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p><span></span>(512)</p>
-                        <p>Rp 450.000<span>Rp 640.000</span></p>
-                    </div>
-                </div>             
-                <div class="flash-deals-card">
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
-                    </div>
-                    <div class="flash-deals-card-desc">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p><span></span>(512)</p>
-                        <p>Rp 450.000<span>Rp 640.000</span></p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="info">
@@ -305,10 +366,367 @@
             </div>
         </div>
         <div class="new-products">
-
+            <div class="border">
+                <div class="new-products-info">
+                    <img src="./assets/upscale-icon.svg" alt="Lihat Semua">
+                    <span>Produk Terbaru</span>
+                </div>
+                <a href="" class="border">
+                    <span>Lihat Semua</span>
+                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                </a>
+            </div>
+            <div class="new-products-cards-wrapper">
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-31%</span>
+                    </span>
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/headphone-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>SoundWave</p>
+                        <h4>Headphone Wireless Premium</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.8</span>
+                            (512)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-16%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/smartphone-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>PhoeX</p>
+                        <h4>Smartphone 5G Ultra</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.6</span>
+                            (890)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                    </div>
+                </div>            
+                <div class="new-products-card">
+                    <span class="new-products-card-new">
+                        <span>Baru</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/bag-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>UrbanBag</p>
+                        <h4>Tas Ransel Laptop Waterproof</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.5</span>
+                            (234)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 350.000</h3>
+                    </div>
+                </div>             
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-27%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/blender-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>BlendPro</p>
+                        <h4>Blender Portable Mini</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.2</span>
+                            (567)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 189.000</h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-20%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/tablet-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>TabTech</p>
+                        <h4>Tablet 10.5" WiFi + 4G</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.5</span>
+                            (345)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 3.200.000<span><s>Rp 4.000.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-25%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/dress-floral-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>FashionID</p>
+                        <h4>Dress Floral Midi</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.5</span>
+                            (312)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-new">
+                        <span>Baru</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/essence-oil-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>AromaWell</p>
+                        <h4>Minyak Esensial Lavender Set</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.8</span>
+                            (456)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 145.000</h3>
+                    </div>
+                </div>                
+            </div>
         </div>
         <div class="new-products">
-
+            <div class="border">
+                <div class="new-products-info">
+                    <span>Produk Unggulan</span>
+                </div>
+                <a href="" class="border">
+                    <span>Lihat Semua</span>
+                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                </a>
+            </div>
+            <div class="new-products-cards-wrapper">
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-31%</span>
+                    </span>
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/headphone-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>SoundWave</p>
+                        <h4>Headphone Wireless Premium</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.8</span>
+                            (512)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-16%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/smartphone-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>PhoeX</p>
+                        <h4>Smartphone 5G Ultra</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.6</span>
+                            (890)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                    </div>
+                </div>            
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-20%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/smartwatch-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>WirstTech</p>
+                        <h4>Smartwatch Series 5</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.4</span>
+                            (324)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
+                    </div> 
+                 </div>               
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-27%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/blender-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>BlendPro</p>
+                        <h4>Blender Portable Mini</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.2</span>
+                            (567)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 189.000</h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-20%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/tablet-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>TabTech</p>
+                        <h4>Tablet 10.5" WiFi + 4G</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.5</span>
+                            (345)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 3.200.000<span><s>Rp 4.000.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-cut">
+                        <span>-25%</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/dress-floral-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>FashionID</p>
+                        <h4>Dress Floral Midi</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.5</span>
+                            (312)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
+                    </div>
+                </div>
+                <div class="new-products-card">
+                    <span class="new-products-card-new">
+                        <span>Baru</span>
+                    </span>                    
+                    <div>
+                        <img
+                        width="100%" 
+                        src="./assets/essence-oil-prod.svg" alt="">
+                    </div>
+                    <div class="new-products-card-desc border">
+                        <p>AromaWell</p>
+                        <h4>Minyak Esensial Lavender Set</h4>
+                        <p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>4.8</span>
+                            (456)
+                        </p>
+                        <h3 class="new-products-card-price">Rp 145.000</h3>
+                    </div>
+                </div>                
+            </div>
         </div>
 
     </main>

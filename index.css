@@ -5,10 +5,12 @@
     --default-font-size:14px;
     --small-font-size:12px;
     --main-color:#1A73E8;
+    --red-color:#DC2626;
     --gray-color:#6B7280;
     --container-wrapper:1248px;
     --cat-title:20px;
     --cat-weight:500;
+    --star-color:#FFBA00
 }
 
 .nav-info-wrapper {
@@ -355,10 +357,5 @@
     color: var(--gray-color);
 }
 
-.new-products {
-    width: 100%;
-    margin-top: 3rem;
-    height: 909px;
-    background-color: rgb(165, 28, 136);
-}
+
 
