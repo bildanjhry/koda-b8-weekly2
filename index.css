@@ -23,7 +23,7 @@
 
 .nav-info {
     height: 2rem;
-    justify-self: center;
+    margin: 0 auto;
     padding: 0px 2rem 0px 2rem;
     color: var(--light-font);
     width: var(--container-wrapper);
@@ -33,29 +33,35 @@
     display: inline-block;
     align-self: center;
     width: 45%;
+    margin: 0;
+    top: 5px;
     font-size: var(--small-font-size);
     position: relative;
-    top: -3px;
 }
 
 .nav-info-contacs {
     position: relative;
     float: inline-end;
     vertical-align: top;
+    margin: 0;
+    bottom: 5px;
     width: 30%;
-    top: -6px;
     font-size: var(--small-font-size);
 }
 
 .nav-info-contacs-promo {
     position: relative;
     float: inline-end;
+    top: 12px;
+    margin: 0;
 }
 
 .nav-actions-wrapper {
     border-bottom: 1px solid rgb(192, 192, 192);
     height: 64px;
     background-color: white;
+    display: block;
+    width: 100%;
 }
 
 .nav-actions {
@@ -64,14 +70,14 @@
     margin: 0 auto;
     line-height: 2rem;
     font-size: 0;
+    white-space: nowrap;
 }
 
 .nav-actions-info {
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box;
     width: 8rem;
-    font-size: 14px;
+    font-size: var(--default-font-size);
     height: 100%;
 }
 
@@ -80,32 +86,37 @@
     border-radius: 10px;
     display: inline-block;
     position: relative;
-    top: 15px;
+    vertical-align: top;
+    top: 16px;
     height: 32px;
     background-color: var(--main-color);
 }
 
 .logo-icon-text {
     text-align: center;
-    line-height: 3px;
+    line-height: 4px;
     color:var(--light-font);
 }
 
 .logo {
     text-align: center;
     display: inline-block;
+    top: 2px;
     position: relative;
     color:var(--dark-font);
 }
 
 .nav-actions-search {
     display: inline-block;
+    position: relative;
     height: 100%;
     width: 36rem;
 }
 
 .nav-actions-search-column {
     height: 4rem;
+    position: relative;
+    top:2px;
     line-height: 4rem;
 }
 
@@ -118,57 +129,81 @@
     border: 1px solid #c3c3c3;
 }
 
-.nav-actions-menu {
+.nav-actions > section:nth-child(3) {
     height: 100%;
-    width: 10rem;
     display: inline-block;
-    box-sizing: border-box;
-    line-height: 4.6rem;
     vertical-align: top;
+    width: 15rem;
+    font-size: 0;
+    white-space: nowrap;
 }
 
-.nav-actions-menu-notif {
-    height: 4rem;
-    width: 40px;
+.nav-actions > section:nth-child(3) > div:not(:last-child){
+    margin-right: 10px;
 }
 
-.nav-actions-menu-notif > a {
-    width: 4rem;
+.nav-actions-menu-notif,
+.nav-actions-menu-fav,
+.nav-actions-menu-cart {
     height: 100%;
-    justify-self: center;
-    position: relative;
-    left: 7px;
-}
-
-.notif-actions-menu-profile {
-    width: 3rem;
-    height: 4rem;
-}
-
-.nav-actions-menu-profile-person {
-    width: 78px;
+    width: 40px;
+    display: inline-block;
     vertical-align: top;
-    height: 4rem;
-    line-height: 4rem;
+}
+
+.nav-actions-menu-notif > a,
+.nav-actions-menu-fav > a,
+.nav-actions-menu-cart > a 
+{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    top: 10px;
+}
+
+.nav-actions-menu-notif > a > img,
+.nav-actions-menu-fav > a > img {
+    margin: 10px 10px;
+}
+
+.nav-actions-menu-cart > a > img {
+    margin:0 auto;
+}
+
+.nav-actions-menu-profile {
+    width: fit-content;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-actions-menu-profile > a {
+    width: 100%;
+    vertical-align: top;
+    height: 40px;
+    position: relative;
+    top: 10px;
     display: inline-block;
     text-decoration: none;
     color: var(--dark-font);
+    font-size: var(--default-font-size);
 }
 
-.nav-actions-menu-profile-person > img {
+.nav-actions-menu-profile > a > img {
+    margin: 10px 5px;
     position: relative;
-    top: 1.3rem;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.nav-actions-menu-fav {
-    width: 40px;
-}
-
-.nav-actions-menu-cart {
-    width: 40px;
-    height: 40px;
+.nav-actions-menu-profile > a > span {
     position: relative;
-    top : 9px
+    display: inline-block;
+    vertical-align: middle;
+    top: 1px;
+    margin-right: 5px;
 }
 
 .nav-category-wrapper {
