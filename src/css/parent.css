@@ -6,6 +6,7 @@ body {
     justify-self: center;
     height: 100%;
     position: relative;
+    background-color: var(--bg-color);
     color: var(--default-color);
 }
 
@@ -23,4 +24,10 @@ main {
 nav {
     display: block;
     height: 134px;
+}
+
+footer {
+    background-color: var(--dark-blue-color);
+    height: 492px;
+    width: 100%;
 }

@@ -8,7 +8,6 @@
     width: 100%;
     margin-top: 3rem;
     height: 933px;
-    background-color: rgb(165, 28, 136);
 }
 
 .flash-deals > div:first-child,
@@ -51,9 +50,14 @@
     font-size: 14px;
 }
 
-.flash-deals-info > span,
+.flash-deals-info > span {
+    position: relative;
+    left: 3px;
+}
 .new-products-info > span {
     position: relative;
+    color: black;
+    font-weight: 500;
     left: 3px;
 }
 
@@ -304,4 +308,271 @@
     text-decoration: none;
     font-weight: 400;
     line-height: 1px;
+}
+
+.reason-section {
+    height: 243px;
+    margin-top: 3rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+}
+
+.reason-section h3 {
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    top: 10px;
+}
+
+.reason-section-cards-wrapper {
+    font-size: 0;
+    margin: 0 auto;
+    width: 93%;
+    height: 180px;
+}
+
+.reason-section-card {
+    width: 277px;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.reason-section-card > div {
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--gray-color);
+}
+
+.reason-section-card > div > h5 {
+    margin: 10px 0px 10px 0px;
+}
+
+.reason-section-card > div > h5 {
+    font-size: var(--default-font-size);
+    color: rgb(29, 29, 29);
+    font-weight: 400;
+}
+
+.reason-section-card:not(:last-child) {
+    margin-right: 14.8px;
+}
+
+footer > section:first-child {
+    height: 106px;
+    border-bottom: 1px solid #99A1AF;
+}
+
+footer > section:nth-child(2) {
+    height: 338px;
+    width: 100%;
+    border-bottom: 1px solid #99A1AF;
+}
+
+footer > section:nth-child(3) {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #99A1AF;
+}
+
+.footer-nav {
+    width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 0;
+}
+
+.footer-nav > div {
+    width: 295px;
+    height: fit-content;
+    position: relative;
+    top: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-list {
+    width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 0;
+}
+
+.footer-list > div {
+    font-size: var(--small-font-size);
+    width: 295px;
+    height: 275px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-nav > div:not(:last-child),
+.footer-list > div:not(:last-child)
+{
+    margin-right: 21px;
+}
+
+.footer-nav > div > div:first-child {
+    display: inline-block;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 15px;
+    background-color: #1A73E833;
+}
+
+.footer-nav > div > div:first-child > img {
+    margin: 10px 10px;
+}
+
+.footer-nav > div > div:last-child {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    margin: 0;
+    color: #99A1AF;
+    font-size: var(--small-font-size);
+}
+
+.footer-nav > div > div:last-child > h5 {
+    margin: 0;
+    position: relative;
+    top: 2px;
+    color: var(--light-font);
+    font-size: var(--default-font-size);
+    font-weight: var(--default-title-font-weight);
+}
+
+.footer-nav > div > div:last-child > p {
+    position: relative;
+    top: 4px;
+    margin: 0;
+}
+
+.layanan-title, .bantuan-title, .kontak-title {
+    position: relative;
+    top: 2.5rem;
+    font-size: 16px;
+    font-weight: var(--cat-weight);
+    color: white;
+    margin: 0;
+}
+
+.layanan-list, .bantuan-list {
+    list-style: none;
+    padding: 0;
+}
+
+.layanan-list, .bantuan-list, .kontak-list {
+    top: 3.5rem;
+    margin: 0;
+    position: relative;
+    font-size: var(--default-font-size);
+    color: var(--gray-font-color);
+}
+
+.layanan-list > li:not(:last-child),
+.bantuan-list > li:not(:last-child),
+.kontak-list > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.kontak-list {
+    padding-left: 20px;
+}
+
+.newsletter {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    top: 4.5rem;
+    height: 90px;
+    background-color: #1E2939;
+    font-size: var(--small-font-size);
+    color: var(--light-font);
+}
+
+.newsletter > h5 {
+    margin: 0;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    font-weight: var(--default-title-font-weight);
+}
+
+.kontak-list > li:first-child {
+    list-style-image: url("../../assets/location-line-icon.svg");
+}
+.kontak-list > li:nth-child(2) {
+    list-style-image: url("../../assets/phone-line-icon.svg");
+}
+.kontak-list > li:nth-child(3) {
+    list-style-image: url("../../assets/email-line-icon.svg");
+}
+
+.newsletter-subscribe {
+    font-size: 0;
+    top: 1rem;
+    position: relative;
+    padding-left: 10px;
+}
+
+.newsletter-subscribe > input {
+    border-radius: 8px;
+    height: 34px;
+    background-color: #364153;
+    width: 168px;
+    border: 1px solid #6a7486;
+    color: var(--light-font);
+    padding-left: 10px;
+    font-size: var(--small-font-size);
+}
+
+.newsletter-subscribe > button {
+    background-color: var(--main-color);
+    color: var(--light-font);
+    height: 36px;
+    width: 88px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    position: relative;
+    left: 5px;
+}
+
+.newsletter-subscribe > button:hover {
+    background-color: #1a73e8d5;
+}
+
+.footer-note {
+    width: 1250px;
+    height: 43px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: var(--small-font-size);
+    color: var(--gray-font-color);
+}
+
+.footer-note > ul {
+    list-style: none;
+    width: fit-content;
+    float: right;
+}
+
+.footer-note > p {
+    display: inline-block;
+}
+
+.footer-note > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-note > ul > li:not(:last-child) {
+    margin-right: 10px;
 }
