@@ -174,14 +174,14 @@ body{
     float: right;
 }
 
-.login-google p, 
-.login-facebook p {
+.login-google > p, 
+.login-facebook > p {
     color: var(--gray-color);
     text-align: center;
     position: relative;
-    text-decoration: none;
     bottom: 3px;
 }
+
 
 .login-google:hover,
 .login-facebook:hover {
@@ -299,7 +299,8 @@ body{
     right: 2px;
 }
 
-.submit-btn > img, p {
+.submit-btn > img,
+.submit-btn > p {
     display: inline-block;
 }
 
