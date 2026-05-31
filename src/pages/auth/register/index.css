@@ -1,0 +1,342 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.border {
+    border: 1px solid rgb(232, 46, 25);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-size: 0;
+}
+
+.container > section:first-child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(20, 73, 230, 0.726), rgba(49, 44, 133, 0.704)), url("../../../../assets/register-bg.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container > section:last-child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.container > section:first-child > div {
+    width: 80%;
+    height: 90%;
+    margin: 2.8rem 3.3rem;
+    font-size: var(--default-font-size);
+    color: var(--light-font);
+}
+
+.logo-wrapper {
+    width: 10rem;
+    height: 3rem;
+    display: block;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.logo-icon-auth {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF33;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.logo-icon-auth > p:first-child {
+    position: relative;
+    text-align: center;
+    bottom: 4px;
+}
+
+.description-auth {
+    width: 50%;
+    position: relative;
+    top: 7rem;
+    display: block;
+    height: 20rem;
+}
+
+.description-auth > h1 {
+    width: 100%;
+    word-break: break-word;
+    font-size: 32px;
+}
+
+.description-auth > p {
+    color: #FFFFFFB2;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.description-auth > div {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.description-auth > div > section {
+    display: inline-block;
+    vertical-align: top;
+    width: 5rem;
+    font-size: var(--small-font-size);
+    color:#FFFFFFB2;
+}
+
+.description-auth > div > section:not(:last-child) {
+    margin-right: 10px;
+}
+
+.description-auth > div > section > h3 {
+    font-size: 20px;
+    color: var(--light-font);
+    margin: 0;
+}
+
+.description-auth > div > section > p {
+    margin: 0;
+    position: relative;
+    top: 4px;
+}
+
+.footer {
+    display: block;
+    margin-top: 40%;
+    font-size: var(--small-font-size);
+    color:#FFFFFFB2;
+}
+
+.container > section:last-child > div {
+    width: 60%;
+    height: 41rem;
+    margin: 3rem auto;
+}
+
+.form-header {
+    font-size: 16px;
+    height: 10rem;
+}
+
+.form-header > h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-header > p {
+    margin: 0;
+    position: relative;
+    top: 10px;
+    color: var(--gray-color);
+}
+
+.form-header > p > a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.button-wrapper {
+    height: 3rem;
+    position: relative;
+    top: 2rem;
+}
+
+.login-google,
+.login-facebook {
+    border: 1px solid rgb(192, 192, 192);
+    width: 219px;
+    height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 12px;
+}
+
+.login-facebook {
+    float: right;
+}
+
+.login-google > p, 
+.login-facebook > p {
+    color: var(--gray-color);
+    text-align: center;
+    position: relative;
+    font-size: var(--default-font-size);
+}
+
+.login-google:hover,
+.login-facebook:hover {
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.foot-end {
+    font-size: var(--small-font-size);
+    height: 1rem;
+    position: relative;
+    top: 40px;
+    width: 100%;
+}
+
+.foot-end span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30.9%;
+    border-top:1px solid rgb(201, 200, 200);
+}
+
+.foot-end p {
+    padding: 0 10px 0 10px;
+    color: var(--gray-color);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-actions {
+    font-size: var(--default-font-size);
+    width: 100%;
+    height: 31rem;
+}
+
+.login-form {
+    margin-top: 1.5rem;
+}
+
+.login-form > div:not(:last-child) {
+    margin-bottom: 1.3rem;
+}
+
+.login-form > div > section > input {
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    top: 5px;
+    height: 46px;
+    padding-left: 40px;
+    background-color: #e7e7e7;
+    border:1px solid rgb(201, 200, 200);
+}
+
+.login-form > div:last-child > section > input {
+    padding-right: 42px;
+}
+
+.login-form > div > section {
+    position: relative;
+}
+
+.email-auth-icon {
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    left: 12px;
+}
+
+.pass-watch-auth-icon {
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    left: 91.2%;
+}
+
+.privacy-policy {
+    color: var(--gray-color);
+    font: var(--small-font-size);
+    position: relative;
+    top: 3px;
+}
+
+.privacy-policy > input {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    top: 1.5px;
+}
+
+.privacy-policy > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 25rem;
+}
+
+.privacy-policy > div > label > a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.submit-btn {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--orange-color);
+    height: 52px;
+    color: var(--light-font);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn > img {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.submit-btn > img,
+.submit-btn > p {
+    display: inline-block;
+}
+
+.submit-btn:hover {
+    background-color: #1a73e8e5;
+}
+
+.submit-btn::after {
+    background-color: #1a73e8ad;
+}
+
+.form-footer {
+    margin-top: 1rem;
+    height: 1rem;
+}
+
+.form-footer > p {
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--gray-color);
+}
+
+.form-footer > p:nth-child(2) {
+    margin-top: 1.5rem;
+    width: 99%;
+}
+
+.form-footer > p:nth-child(2) > a {
+    text-decoration: none;
+    color: var(--main-color);
+}
