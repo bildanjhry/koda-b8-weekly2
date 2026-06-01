@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/structure.css">
-    <link rel="stylesheet" href="../../../index.css">
+ <link rel="stylesheet" href="../../css/structure.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+    <title>BeliMudah</title>
     <title>BeliMudah</title>
 </head>
 <body>
@@ -167,8 +169,125 @@
             </div>
             <div class="checkout-action-form">
                 <section>
-                    <form action="">
-
+                    <form action="" class="checkout-action-form-implement">
+                        <h2>
+                            <span>
+                                <img 
+                                height="21"
+                                width="21"
+                                src="../../../assets/export-line-icon.svg" alt="">
+                            </span>
+                            Alamat Pengiriman
+                        </h2>
+                        <div class="checkout-action-form-implement-double">
+                            <div>
+                                <label for="name">Nama Penerima *</label>
+                                <section>
+                                    <input class="input-box-sizing"
+                                    placeholder="Nama Penerima"
+                                     type="text" id="name" name="name">
+                                </section>
+                            </div>
+                            <div>
+                                <label for="phone">Nomor Telpon *</label>
+                                <section>
+                                    <input
+                                    placeholder="Nomor Telpon Penerima" 
+                                    class="input-box-sizing" type="number" id="phone" name="phone">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="checkout-action-form-implement-single">
+                            <div>
+                                <label for="email">Email *</label>
+                                <section>
+                                    <input 
+                                    placeholder="Email Penerima"
+                                    class="input-box-sizing-long" type="email" id="email" name="email">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="checkout-action-form-implement-single">
+                            <div>
+                                <label for="address">Alamat Lengkap *</label>
+                                <section>
+                                    <input 
+                                    placeholder="Alamat Penerima"
+                                    class="input-box-sizing-long" type="text" id="address" name="address">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="checkout-action-form-implement-double">
+                            <div>
+                                <label for="city">Kota *</label>
+                                <section>
+                                    <input class="input-box-sizing"
+                                    placeholder="Jakarta"
+                                     type="text" id="city" name="city">
+                                </section>
+                            </div>
+                            <div>
+                                <label for="province">Provinsi *</label>
+                                <section>
+                                    <input
+                                    placeholder="DKI Jakarta" 
+                                    class="input-box-sizing" type="text" id="province" name="province">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="checkout-action-form-implement-double">
+                            <div>
+                                <label for="post-code">Kode Pos *</label>
+                                <section>
+                                    <input class="input-box-sizing"
+                                    placeholder="Masukan Kode Pos Penerima"
+                                     type="number" id="post-code" name="post-code">
+                                </section>
+                            </div>
+                            <div>
+                                <label for="province">Catatan (Opsional) *</label>
+                                <section>
+                                    <input
+                                    placeholder="Warna pagar, dll" 
+                                    class="input-box-sizing" type="text" id="province" name="province">
+                                </section>
+                            </div>
+                        </div>
+                        <div class="checkout-action-form-delivery">
+                            <h2>Metode Pengiriman</h2>
+                            <div class="checkout-action-form-delivery-option">
+                                <label for="jne-reg" class="">
+                                    <div>
+                                        <input type="radio" id="jne-reg" name="delivery-method">
+                                        <div>
+                                            <h3>JNE Reguler</h3>
+                                            <p>3-5 Hari kerja</p>
+                                        </div>
+                                        <h3>GRATIS</h3>
+                                    </div>
+                                </label>
+                                <label for="jne-exp" class="">
+                                    <div>
+                                        <input type="radio" id="jne-exp" name="delivery-method">
+                                        <div>
+                                            <h3>JNE Expres</h3>
+                                            <p>1-2 Hari kerja</p>
+                                        </div>
+                                        <h3>GRATIS</h3>
+                                    </div>
+                                </label>
+                                <label for="same-day" class="">
+                                    <div class="input-wrapper">
+                                        <input type="radio" id="same-day" name="delivery-method">
+                                        <div>
+                                            <h3>Same Day Delivery</h3>
+                                            <p>Hari ini (sebelum 16:00)</p>
+                                        </div>
+                                        <h3>GRATIS</h3>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>                           
                     </form>
                 </section>
                 <section class="container-cart-action-total">
@@ -213,7 +332,7 @@
             <div class="footer-nav">
                 <div class="">
                     <div>
-                        <img src="./assets/export-line-icon.svg" alt="">
+                        <img src="../../../assets/export-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Gratis Ongkir</h5>
@@ -222,7 +341,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/safe-line-icon.svg" alt="">
+                        <img src="../../../assets/safe-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pembayaran Aman</h5>
@@ -231,7 +350,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/return-line-icon.svg" alt="">
+                        <img src="../../../assets/return-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pengembailian Mudah</h5>
@@ -240,7 +359,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/chat-line-icon.svg" alt="">
+                        <img src="../../../assets/chat-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Dukungan 24/7</h5>
@@ -267,25 +386,25 @@
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/facebook-line-icon.svg" alt="">
+                                <img src="../../../assets/facebook-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/instagram-line-icon.svg" alt="">
+                                <img src="../../../assets/instagram-line-icon.svg"alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/x-line-icon.svg" alt="">
+                                <img src="../../../assets/x-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/youtube-line-icon.svg" alt="">
+                                <img src="../../../assets/youtube-line-icon.svg" alt="">
                             </div>
                         </a>
                     </div>
@@ -350,6 +469,6 @@
                 </ul>
             </div>
         </section>
-    </footer>
+    </footer> 
 </body>
 </html>
