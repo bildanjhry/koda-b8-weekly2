@@ -99,6 +99,10 @@
     width: 100%;
 }
 
+.flash-deals-cards-wrapper > a {
+    color: var(--dark-font);
+}
+
 .flash-deals-card,
 .new-products-card {
     width: 298px;

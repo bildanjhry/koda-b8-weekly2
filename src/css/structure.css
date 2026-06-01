@@ -30,7 +30,9 @@ main {
 footer {
     background-color: var(--dark-blue-color);
     height: 492px;
+    color: #99A1AF;
     width: 100%;
+    font-size: var(--small-font-size);
 }
 
 /* ----------------------- content ------------------------*/
@@ -110,12 +112,6 @@ footer {
     background-color: var(--main-color);
 }
 
-.logo-icon-text {
-    text-align: center;
-    line-height: 4px;
-    color:var(--light-font);
-}
-
 .logo {
     text-align: center;
     display: inline-block;
@@ -141,7 +137,7 @@ footer {
 .nav-actions-search-column > input {
     height: 2.5rem; 
     border-radius: 10px;
-    padding-left: 15px;
+    padding: 0 15px;
     width: 32.3rem;
     background-color: #ececec;
     border: 1px solid #c3c3c3;
@@ -242,10 +238,17 @@ footer {
     height: 41px;
 }
 
-.nav-category-menu > img, .nav-category-menu > select {
+.nav-category-menu > img, 
+.nav-category-menu > select {
     position: relative;
     color:var(--default-font);
-    top: 10px;
+    top: 12px;
+}
+
+.nav-category-menu > select {
+    border: none;
+    box-sizing: border-box;
+    padding-right: 2px;
 }
 
 .nav-category-menu > img {
@@ -271,7 +274,6 @@ footer > section:first-child {
 footer > section:nth-child(2) {
     height: 338px;
     width: 100%;
-    border-bottom: 1px solid #99A1AF;
 }
 
 footer > section:nth-child(3) {
@@ -309,7 +311,16 @@ footer > section:nth-child(3) {
     height: 275px;
     display: inline-block;
     vertical-align: top;
+    color: #99A1AF;
 }
+
+.footer-list > div:first-child > p{
+    position: relative;
+    top: 2rem;
+    font-size: var(--default-font-size);
+    line-height: 22px;
+    width: 97%;
+}   
 
 .footer-nav > div:not(:last-child),
 .footer-list > div:not(:last-child)
@@ -355,9 +366,90 @@ footer > section:nth-child(3) {
     margin: 0;
 }
 
-.layanan-title, .bantuan-title, .kontak-title {
+.footer-list-logo {
+    width: 100%;
+    font-size: var(--default-font-size);
+    vertical-align: top;
+}
+
+.footer-logo-icon,
+.logo-icon {
+    width: 32px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 32px;
+    background-color: var(--main-color);
+}
+
+.logo-icon {
+    top: 15px;
+}
+
+.logo-icon-text {
+    text-align: center;
+    line-height: 5px;
+    color:var(--light-font);
+}
+
+.footer-logo-icon-text {
+    text-align: center;
+    line-height: 1px;
+    color:var(--light-font);
+}
+
+.footer-list-logo-text {
+    text-align: center;
+    display: inline-block;
+    top: 0px;
+    left: 3px;
+    line-height: 4px;
+    position: relative;
+    color:var(--dark-font);
+}
+
+.footer-social {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.social-wrapper > div {
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #364153;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.social-wrapper > div > img {
+    margin: 8px 9px;
+}
+
+.social-wrapper {
+    text-decoration: none;
+    width: 100%;
+}
+
+.footer-social > a:not(:last-child) {
+    margin-right: 7px;
+}
+
+.layanan-title, 
+.bantuan-title, 
+.kontak-title {
     position: relative;
     top: 2.5rem;
+    font-size: 16px;
+    font-weight: var(--cat-weight);
+    color: white;
+    margin: 0;
+}
+
+ .footer-list-logo {
+    position: relative;
+    top: 2rem;
     font-size: 16px;
     font-weight: var(--cat-weight);
     color: white;
@@ -478,4 +570,8 @@ footer > section:nth-child(3) {
 
 .footer-note > ul > li:not(:last-child) {
     margin-right: 10px;
+}
+
+.footer-note-copyright > span {
+    font-size: 12px;
 }

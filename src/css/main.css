@@ -101,6 +101,7 @@
     text-decoration: none;
     margin-right: 3px;
     vertical-align: middle;
+    color: var(--main-color);
 }
 
 .suggest-category > div > a > img {
@@ -154,6 +155,7 @@
     margin-top: 3rem;
     height: 176px;
     font-size: 0;
+    color: var(--light-font);
 }
 
 .info-first {
@@ -229,11 +231,11 @@
     border-radius: 16px;
 }
 
-.reason-section h3 {
+.reason-section > h3 {
     text-align: center;
     position: relative;
     font-weight: 500;
-    top: 10px;
+    top: 25px;
 }
 
 .reason-section-cards-wrapper {
@@ -256,6 +258,7 @@
     font-size: var(--small-font-size);
     color: var(--gray-color);
 }
+
 
 .reason-section-card > div > h5 {
     margin: 10px 0px 10px 0px;

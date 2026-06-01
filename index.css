@@ -53,3 +53,11 @@
     background-color: #1a73e8e0;
 }
 
+.white-color {
+    color: white;
+}
+
+.top-10px {
+    position: relative;
+    top: 10px;
+}
