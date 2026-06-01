@@ -1,6 +1,13 @@
 .container-cart {
-    height: 40rem;
+    height: fit-content;
     width: var(--container-wrapper);
+}
+
+.container-related-prod {
+    width: var(--container-wrapper);
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
 }
 
 .container-cart > h1 {
@@ -32,8 +39,63 @@
 
 .container-cart-action-items > section:last-child {
     height: 145px;
-    background-color: yellowgreen;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border-color);
     width: 821px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.container-cart-action-items > section:last-child > h4 {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container-cart-action-items > section:last-child > h4 > span > img {
+     position: relative;
+     margin-right: 5px;
+}
+
+.promo-code-input-action {
+    margin-top: 1rem;
+}
+
+.promo-code-input-action > input {
+    width: 615px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--gray-border-color);
+    padding: 1px 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.promo-code-input-action > button {
+    background-color: var(--main-color);
+    color: var(--light-font);
+    text-align: center;
+    width: 103px;
+    height: 42px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.promo-code-input-action > button:hover {
+    background-color: var(--main-color-dim);
+}
+
+.promo-code-input-action > p {
+    color: var(--gray-color);
+    margin: 0;
+    position: relative;
+    top: 5px;
+    font-size: var(--small-font-size);
 }
 
 .container-cart-action-struct {
@@ -106,12 +168,12 @@
     margin-top: 20px;
     border: none;
     text-align: center;
-    color: var(--light-font);
     line-height: 0px;
     cursor: pointer;
 }
 
 .container-cart-action-struct-btn > span {
+    color: var(--light-font);
     position: relative;
     bottom: 2px;
     left: 3px;
@@ -200,6 +262,7 @@
     height: 100%;
     width: 26%;
     vertical-align: top;
+    
     background-color: transparent;
     border: none;
     font-size: 20px;
@@ -275,4 +338,220 @@
     color: var(--main-color);
     font-weight: 400;
     font-size: 16px;
+}
+
+.flash-deals {
+    width: 100%;
+    margin-top: 3rem;
+    height: 490px;
+}
+
+.related-products {
+    width: 100%;
+    margin-top: 3rem;
+    height: fit-content;
+}
+
+.related-products > div:first-child {
+   overflow: hidden;
+   height: 4rem;
+}
+
+.flash-deals-info {
+    background-color: #DC2626;
+    width: 110px;
+    vertical-align: bottom;
+    padding: 0 5px 0 15px;
+    height: 35px;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 32px;
+    color: var(--light-font);
+}
+
+.related-products-info {
+    width: fit-content;
+    vertical-align: bottom;
+    height: 35px;
+    font-size: 20px;
+    font-weight: var(--default-font-size);
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 35px;
+    color: var(--light-font);
+}
+
+.related-products-info > img
+{
+    vertical-align: middle;
+    color: var(--light-font);
+    font-size: 14px;
+}
+
+.flash-deals-info > span {
+    position: relative;
+    left: 3px;
+}
+.related-products-info > span {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    left: 3px;
+}
+
+.related-products > div:first-child > a  {
+    width: 105px;
+    float: right;
+    position: relative;
+    top: 7px;
+    color: var(--main-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.related-products > div:first-child > a > span {
+    color: var(--main-color);
+}
+
+.related-products > div > a > span {
+    text-decoration: none;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.related-products > div > a > img {
+    position: relative;
+    vertical-align: middle;
+} 
+
+.related-products-cards-wrapper {
+    box-sizing: border-box;
+    height: 434px;
+    margin: 0;
+    font-size: 0;
+    width: 100%;
+}
+
+.related-products-card {
+    width: 298px;
+    border-radius: 12px;
+    height: 424px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid var(--gray-border-color);
+}
+
+.related-products-card-cut {
+    position: absolute;
+    font-size: var(--small-font-size);
+    overflow: visible;
+    background-color:var(--red-color);
+    margin: 5px 0 0 5px;
+    border-radius: 15px;
+    width: fit-content;
+    z-index: 5;
+    height: 24px;
+}
+
+.related-products-card-new {
+    position: absolute;
+    font-size: var(--small-font-size);
+    overflow: visible;
+    background-color: var(--main-color);
+    margin: 5px 0 0 5px;
+    border-radius: 15px;
+    width: fit-content;
+    color: var(--light-font);
+    z-index: 5;
+    height: 24px;
+}
+
+.related-products-card-cut > span,
+.related-products-card-new > span {
+    color: white;
+    position: relative;
+    font-weight: 300;
+    top: 4px;
+    padding: 4px 9px 4px 9px;
+    margin: 0 auto;
+}
+
+.related-products-card > div:first-child {
+    height: 295px;
+    overflow: hidden;
+}
+
+.related-products-card > div:first-child > img {
+    display: block;
+}
+
+.related-products-card-desc {
+    font-size: var(--default-font-size);
+    padding-left: 1rem;
+    height: 120px;
+    vertical-align: top;
+    margin: 0;
+    padding-top: 22px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.related-products-card-desc > h4 {
+    color: var(--dark-font);
+    font-weight: 600;
+    position: relative;
+    bottom: 7px;
+} 
+
+.fa-star {
+    color: rgb(199, 199, 199);
+}
+.checked {
+    color: var(--star-color);
+}
+.gap:not(:first-child) {
+    margin-left: -2px;
+}
+.star-rating {
+    margin-left: 3px;
+}
+
+.related-products-card-price {
+    color: var(--main-color);
+    position: relative;
+    line-height: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    top: 2px;
+}
+
+.related-products-card-price > span {
+    font-size: var(--small-font-size);
+    position: relative;
+    bottom: 1.5px;
+    left: 10px;
+}
+
+.related-products-card-desc p:first-child {
+    font-size: var(--small-font-size);
+    position: relative;
+    bottom: 12px;
+}
+
+.related-products-card-desc p , h4, span {
+    font-weight: 400;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+.related-products-card:not(:nth-child(4)) {
+    margin-right: 16px;
+}
+
+.related-products-card:nth-child(5),
+.related-products-card:nth-child(6) {
+    margin-right: 16px;
 }

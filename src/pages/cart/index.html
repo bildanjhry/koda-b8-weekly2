@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/structure.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../css/product-cards.css">
     <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -143,8 +145,8 @@
     </header>
     <main>
         <div class="container-cart">
-            <h1>Keranjang Belanja (<span>1</span> item)</h1>
-            <div class="container-cart-action border">
+            <h1>Keranjang Belanja (1 item)</h1>
+            <div class="container-cart-action">
                 <div class="container-cart-action-items">
                     <section>
                         <div class="container-cart-action-items-img">
@@ -189,7 +191,19 @@
                         </div>
                     </section>
                     <section>
-
+                        <h4>
+                            <span>
+                                <img src="../../../assets/promo-code-line-icon.svg" alt="">
+                            </span>
+                            Kode Promo
+                        </h4>
+                        <div class="promo-code-input-action">
+                            <input 
+                            placeholder="Masukan kode promo"
+                            type="text" name="promo-code" id="promo-code">
+                            <button>Terapkan</button>
+                            <p>Coba: HEMAT10, BELIMUDAH, atau NEWUSER</p>
+                        </div>
                     </section>
                 </div>
                 <div class="container-cart-action-total">
@@ -226,13 +240,117 @@
                 </div>
             </div>
         </div>
+        <div class="container-related-prod">
+                <div class="related-products ">
+                    <div class="">
+                        <div class="related-products-info">
+                            <span>Mungkin Kamu Suka Ini</span>
+                        </div>
+                    </div>
+                    <div class="related-products-cards-wrapper">
+                        <div class="related-products-card">
+                            <span class="related-products-card-cut">
+                                <span>-16%</span>
+                            </span>
+                            <div>
+                                <img
+                                width="100%" 
+                                src="../../../assets/smartphone-prod.svg" alt="">
+                            </div>
+                            <div class="related-products-card-desc ">
+                                <p>PhoneX</p>
+                                <h4>Smartphone 5G Ultra</h4>
+                                <p>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="star-rating">4.6 (890)</span>
+                                </p>
+                                <h3 class="related-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                            </div>
+                        </div>
+                        <div class="related-products-card">
+                            <span class="related-products-card-cut">
+                                <span>-20%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="../../../assets/smartwatch-prod.svg" alt="">
+                            </div>
+                            <div class="related-products-card-desc ">
+                                <p>WirstTech</p>
+                                <h4>Smartwatch Series 5</h4>
+                                <p>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="star-rating">4.4 (324)</span>
+                                </p>
+                                <h3 class="related-products-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
+                            </div>
+                        </div>            
+                        <div class="related-products-card">
+                            <span class="related-products-card-cut">
+                                <span>-20%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="../../../assets/tablet-prod.svg" alt="">
+                            </div>
+                            <div class="related-products-card-desc ">
+                                <p>TabTech</p>
+                                <h4>Tablet 10.5" WiFI + 4G</h4>
+                                <p>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>                                                                        
+                                    <span class="star-rating">4.3 (345)</span>
+                                </p>
+                                   <h3 class="related-products-card-price">Rp 3.200.000<span><s>Rp 4.000.000</s></span></h3>
+                            </div>
+                        </div>              
+                        <div class="related-products-card">
+                            <span class="related-products-card-cut">
+                                <span>-29%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="../../../assets/speaker-prod.svg" alt="">
+                            </div>
+                            <div class="related-products-card-desc ">
+                                <p>SoundWave</p>
+                                <h4>Speaker Bluetooth Portable</h4>
+                                <p>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span>
+                                    <span class="fa fa-star gap checked"></span> 
+                                    <span>4.4</span>
+                                    (389)
+                                </p>
+                                  <h3 class="related-products-card-price">Rp 320.000<span><s>Rp 450.000</s></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+        </div>
     </main>
     <footer>
         <section class="">
             <div class="footer-nav">
                 <div class="">
                     <div>
-                        <img src="./assets/export-line-icon.svg" alt="">
+                        <img src="../../../assets/export-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Gratis Ongkir</h5>
@@ -241,7 +359,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/safe-line-icon.svg" alt="">
+                        <img src="../../../assets/safe-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pembayaran Aman</h5>
@@ -250,7 +368,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/return-line-icon.svg" alt="">
+                        <img src="../../../assets/return-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pengembailian Mudah</h5>
@@ -259,7 +377,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="./assets/chat-line-icon.svg" alt="">
+                        <img src="../../../assets/chat-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Dukungan 24/7</h5>
@@ -286,25 +404,25 @@
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/facebook-line-icon.svg" alt="">
+                                <img src="../../../assets/facebook-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/instagram-line-icon.svg" alt="">
+                                <img src="../../../assets/instagram-line-icon.svg"alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/x-line-icon.svg" alt="">
+                                <img src="../../../assets/x-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="./assets/youtube-line-icon.svg" alt="">
+                                <img src="../../../assets/youtube-line-icon.svg" alt="">
                             </div>
                         </a>
                     </div>

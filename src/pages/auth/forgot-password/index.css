@@ -1,0 +1,276 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.border {
+    border: 1px solid rgb(232, 46, 25);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-size: 0;
+}
+
+.container > section:first-child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(26, 115, 232, 0.615), rgba(25, 60, 184, 0.648)), url("../../../../assets/forgot-pass-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container > section:last-child {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+.container > section:first-child > div {
+    width: 80%;
+    height: 90%;
+    margin: 2.8rem 3.3rem;
+    font-size: var(--default-font-size);
+    color: var(--light-font);
+}
+
+.logo-wrapper {
+    width: 10rem;
+    height: 3rem;
+    display: block;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.logo-icon-auth {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF33;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.logo-icon-auth > p:first-child {
+    position: relative;
+    text-align: center;
+    bottom: 4px;
+}
+
+.description-auth {
+    width: 50%;
+    position: relative;
+    top: 7rem;
+    display: block;
+    height: 20rem;
+}
+
+.description-auth > h1 {
+    width: 100%;
+    word-break: break-word;
+    font-size: 32px;
+}
+
+.description-auth > p {
+    color: #FFFFFFB2;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.description-auth > div {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.description-auth > div > section {
+    display: inline-block;
+    vertical-align: top;
+    width: 5rem;
+    font-size: var(--small-font-size);
+    color:#FFFFFFB2;
+}
+
+.description-auth > div > section:not(:last-child) {
+    margin-right: 10px;
+}
+
+.description-auth > div > section > h3 {
+    font-size: 20px;
+    color: var(--light-font);
+    margin: 0;
+}
+
+.description-auth > div > section > p {
+    margin: 0;
+    position: relative;
+    top: 4px;
+}
+
+.footer {
+    display: block;
+    margin-top: 45%;
+    font-size: var(--small-font-size);
+    color:#FFFFFFB2;
+}
+
+.container > section:last-child > div {
+    width: 448px;
+    height: 36rem;
+    margin: 6rem auto;
+}
+
+.form-header {
+    font-size: 16px;
+    height: fit-content;
+}
+
+.form-header > h1 {
+    margin-top: 2rem;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.form-header > p {
+    margin-top: 0;
+    position: relative;
+    top: 10px;
+    color: var(--gray-color);
+    margin-bottom: 3rem;
+}
+
+.go-back-btn {
+    text-decoration: none;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    height: 3rem;
+    font-size: var(--default-font-size);
+}
+
+.go-back-btn > span > img {
+    position: relative;
+    top: 3px;
+    right: 2px;
+}
+
+.button-wrapper {
+    height: 4rem;
+    position: relative;
+    top: 2.5rem;
+}
+
+.form-actions {
+    font-size: var(--default-font-size);
+    width: 448px;
+    margin-top: 1rem;
+}
+
+.login-form > div > section > input {
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    top: 5px;
+    height: 46px;
+    padding-left: 40px;
+    background-color: #E5E7EB80;
+    border:1px solid rgb(201, 200, 200);
+}
+
+.login-form > div {
+    margin-bottom: 2rem;
+}
+
+.login-form > div > section {
+    position: relative;
+}
+
+.email-auth-icon {
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    left: 12px;
+}
+
+.pass-header {
+    margin-top: 1.6rem;
+}
+
+.pass-header > label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.submit-btn {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--main-color);
+    height: 52px;
+    color: var(--light-font);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn > img {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.submit-btn > img,
+.submit-btn > p {
+    display: inline-block;
+}
+
+.submit-btn:hover {
+    background-color: #1a73e8e5;
+}
+
+.submit-btn::after {
+    background-color: #1a73e8ad;
+}
+
+.form-footer {
+    margin-top: 2rem;
+    height: 9rem;
+    border-radius: 12px;
+    background-color: #E5E7EB80;
+    padding: 5px 15px;
+}
+
+.form-footer > ul {
+    color: var(--gray-color);
+    padding-left: 20px;
+}
+
+.form-footer > ul > li {
+    margin-bottom: 5px;
+}
+
+.remember-password {
+    text-align: center;
+    font-size: var(--default-font-size);
+    color: var(--gray-color);
+    margin-top: 2.2rem;
+}
+
+.remember-password > a {
+    color: var(--main-color);
+    text-decoration: none;
+}
