@@ -24,6 +24,7 @@ nav {
 
 main {
     width: var(--container-wrapper);
+    background-color: var(--bg-color);
     justify-self: center;
 }
 
