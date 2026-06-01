@@ -1,0 +1,189 @@
+.container-checkout {
+    margin: 0 auto;
+    width: var(--container-wrapper);
+    background-color: yellowgreen;
+    height: 60rem;
+}
+
+.checkout-journey {
+    height: 4rem;
+    width: fit-content;
+    margin: 2rem auto;
+    font-size: 0;
+}
+
+.checkout-journey-delivery,
+.checkout-journey-pay,
+.checkout-journey-confirm {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    width: 5rem;
+    height: 70px;
+    color: var(--gray-color);
+    box-sizing: border-box;
+}
+
+.checkout-journey-delivery > div,
+.checkout-journey-pay > div,
+.checkout-journey-confirm > div {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #E5E7EB;
+    text-align: center;
+    font-size: var(--default-font-size);
+    color: var(--dark-font);
+    box-sizing: border-box;
+    padding-top: 12px;
+}
+
+.checkout-journey-delivery > div {
+    background-color: var(--main-color);
+    color: var(--light-font);
+}
+
+.checkout-journey-delivery > p,
+.checkout-journey-pay > p,
+.checkout-journey-confirm > p {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 7px;
+}
+
+.checkout-journey-line {
+    border-top: 3px solid var(--gray-border-color) ;
+    width: 160px;
+    height: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 10px;
+}
+
+.checkout-action-form {
+    width: 1140px;
+    height: 40rem;
+    background-color: slateblue;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.checkout-action-form > section:first-child {
+    width: 716px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border-color);
+}
+
+.checkout-action-form > section:last-child {
+    height: 251px;
+    width: 352px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--gray-border-color);
+    padding: 30px 25px;
+    float: right;
+    vertical-align: top;
+} 
+
+.container-cart-action-struct {
+    padding-top: 15px;
+    border-top: 1px solid var(--gray-border-color);
+}
+
+.container-cart-action-prod {
+    margin-top: 1.2rem;
+    height: fit-content;
+    margin-bottom: 1.2rem;
+}
+
+.container-cart-action-prod > img {
+    border-radius: 12px;
+}
+
+.container-cart-action-prod > div {
+    height: 45px;
+    font-size: var(--small-font-size);
+    width: 305px;
+    float: right;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.container-cart-action-prod > div > p:first-child {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: var(--gray-color);
+    top: 4px;
+}
+
+.container-cart-action-prod > div  > p:last-child {
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    top: 4px;
+}
+
+.container-cart-action-total > h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container-cart-action-struct > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--gray-color);
+    font-size: var(--default-font-size);
+}
+
+.container-cart-action-struct > ul:nth-child(2) {
+    border-bottom: 1px solid #0000001A;
+    box-sizing: border-box;
+    padding-bottom: 15px;   
+}
+
+.container-cart-action-struct > ul:nth-child(2) > li > span:first-child {
+    color: var(--green-color);
+}
+
+.container-cart-action-struct > ul:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.container-cart-action-struct > ul:last-child > li > span:first-child {
+    color: var(--default-color);
+}
+
+.container-cart-action-struct > ul:last-child > li:last-child > span:last-child {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.container-cart-action-struct > ul > li:first-child {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.container-cart-action-struct > ul > li:last-child {
+    margin-top: 5px;
+    float: right;
+    vertical-align: bottom;
+}
+
+.container-cart-action-total > p  {
+    font-size: var(--small-font-size);
+    text-align: center;
+    position: relative;
+    color: var(--gray-color);
+    top: 15px;
+}
