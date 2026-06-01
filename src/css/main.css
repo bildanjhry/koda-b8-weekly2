@@ -2,7 +2,7 @@
     height: 420px;
     margin-top: 10px;
     width: 100%;
-    background-color: aliceblue;
+    margin-top: 138px;
 }
 
 .herro-slider {
@@ -26,19 +26,21 @@
 }
 
 .herro-slider-first-desc > div {
-    width: 412px;
+    width: 450px;
     position: relative;
-    top: 20%;
+    top: 15%;
     color: var(--light-font);
 }
 
 .herro-slider-first-desc > div > h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .herro-slider-first-desc > div > p {
     font-weight: 300;
     font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.844);
 }
 
 .herro-slider-first-desc > div > button {
@@ -190,9 +192,12 @@
 
 .info-first-action > p {
     font-size: var(--default-font-size);
+    color: rgba(255, 255, 255, 0.868);
 }
 
 .info-first-action > h4 {
+    color: var(--light-font);
+    font-weight: 700;
     font-size: 20px;
 }
 
@@ -204,7 +209,7 @@
     color: var(--light-font);
     width: 141px;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .info-first-action-btn-second > div {

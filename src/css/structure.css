@@ -20,12 +20,16 @@ header {
 nav {
     display: block;
     height: 134px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
 main {
     width: var(--container-wrapper);
     background-color: var(--bg-color);
-    justify-self: center;
+    margin: 0 auto;
 }
 
 footer {
@@ -239,8 +243,13 @@ footer {
     height: 41px;
 }
 
-.nav-category-menu > img, 
 .nav-category-menu > select {
+    position: relative;
+    color:var(--default-font);
+    top: 10px;
+}
+
+.nav-category-menu > img {
     position: relative;
     color:var(--default-font);
     top: 12px;
@@ -249,11 +258,12 @@ footer {
 .nav-category-menu > select {
     border: none;
     box-sizing: border-box;
-    padding-right: 2px;
+    padding-right: 3px;
+    font-size: var(--default-font-size);
 }
 
 .nav-category-menu > img {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .nav-category-menu-box {

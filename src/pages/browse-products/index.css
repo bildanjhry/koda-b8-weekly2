@@ -7,7 +7,7 @@ main {
 }
 
 .content-wrapper {
-    margin: 0;
+    margin-top: 139px;
     height: fit-content;
 }
 
@@ -50,7 +50,7 @@ main {
     height: 50rem;
 }
 .content-products-filter {
-    width: 256px;
+    width: 251px;
     color: var(--gray-color);
     font-size: var(--small-font-size);
     position: sticky;
@@ -115,9 +115,12 @@ main {
 } */
 
 .content-products-browse {
-    width: 967px;
+    width: 976px;
     margin-left: 20px;
+    height: 100%;
+    background-color: yellowgreen;
     box-sizing: border-box;
+    margin-bottom: 13rem;
 }
 
 .checked {
@@ -175,14 +178,12 @@ select {
 
 .new-products {
     width: 100%;
-    height: 20rem;
-    background-color: rgb(235, 236, 232);
+    height: fit-content;
 }
 
 .new-products-cards-wrapper {
     box-sizing: border-box;
-    height: 350px;
-    background-color: antiquewhite;
+    height: fit-content;
     margin: 0;
     font-size: 0;
     /* white-space: nowrap; */
@@ -197,7 +198,7 @@ select {
 }
 
 .new-products-card {
-    width: 229px;
+    width: 231px;
     border-radius: 12px;
     height: 350px;
     display: inline-block;
@@ -305,7 +306,7 @@ select {
 
 .new-products-cards-wrapper > a:not(:nth-child(4)) {
     box-sizing: border-box;
-    padding-right: 14.3px;
+    margin-right: 15px;
 }
 
 .rating-desc > span:last-child {
@@ -313,18 +314,38 @@ select {
     left: 3px;
 }
 
+
 .new-products-cards-wrapper > a:nth-child(5),
 .new-products-cards-wrapper > a:nth-child(6),
 .new-products-cards-wrapper > a:nth-child(7) {
     box-sizing: border-box;
-    padding-right: 14.3px;
+    font-size: 0;
+    margin-right: 10px;
+}
+
+.new-products-cards-wrapper > a:nth-child(8),
+.new-products-cards-wrapper > a:nth-child(9),
+.new-products-cards-wrapper > a:nth-child(10) {
+    box-sizing: border-box;
+    font-size: 0;
+    margin-right: 10px;
 }
 
 .new-products-cards-wrapper > a:nth-child(5),
 .new-products-cards-wrapper > a:nth-child(6),
 .new-products-cards-wrapper > a:nth-child(7),
+.new-products-cards-wrapper > a:nth-child(8),
+.new-products-cards-wrapper > a:nth-child(9),
+.new-products-cards-wrapper > a:nth-child(10),
 .new-products-cards-wrapper > a:last-child {
     box-sizing: border-box;
     position: relative;
-    top: 14.3px;
+    top: 14px;
+}
+
+.content-products-browse-more-btn {
+    margin-top: 20rem;
+    width: 100%;
+    background-color: violet;
+    height: 15rem;
 }
