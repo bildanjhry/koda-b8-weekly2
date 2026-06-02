@@ -3,8 +3,9 @@
 .container-checkout {
     margin: 0 auto;
     width: var(--container-wrapper);
-    height: 68rem;
+    height: fit-content;
     margin-top: 11rem;
+    margin-bottom: 3rem;
 }
 
 .checkout-journey {
@@ -42,8 +43,17 @@
 }
 
 .checkout-journey-delivery > div {
-    background-color: var(--main-color);
     color: var(--light-font);
+    background-color: var(--green-success-color);
+}
+
+.checkout-journey-pay > div {
+    color: var(--light-font);
+    background-color: var(--main-color);
+}
+
+.checkout-journey-pay > p {
+    color: var(--main-color);
 }
 
 .checkout-journey-delivery > p,
@@ -65,9 +75,13 @@
     bottom: 10px;
 }
 
+.checkout-journey-line:first-of-type {
+     border-top: 3px solid var(--green-success-color) ;
+}
+
 .checkout-action-form {
     width: 1140px;
-    height: 57rem;
+    height: fit-content;
     margin: 0 auto;
     font-size: 0;
 }
@@ -85,6 +99,134 @@
     border: 1px solid var(--gray-border-color);
 }
 
+.checkout-action-form-implement-payment {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 56px);
+    row-gap: 12px;
+}
+
+.checkout-action-form-implement > h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 15.2rem;
+    font-weight: var(--cat-weight);
+    margin-bottom: 2rem;
+}
+
+.checkout-action-form-implement-payment > label {
+    height: fit-content;
+    width: 220px;
+    height: 56px;
+    height: 72px;
+}
+    
+.checkout-action-form-implement-payment > label > div > input {
+    z-index: 2;
+    position: absolute;
+    left: 2.5%;
+    top: 32%;
+}
+
+/* .checkout-action-form-implement-payment > label > div {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    }    */
+    
+.checkout-action-form-implement-payment > label > div {
+    border-radius: 12px;
+    position: relative;
+    border: 3px solid var(--gray-border-color);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    width: 220px;
+    padding-left: 1.9rem;
+    align-items: center;
+    height: fit-content;
+    height: 56px;
+    color: var(--gray-color);
+    font-weight: var(--cat-weight);
+    font-size: var(--small-font-size);
+}
+
+.checkout-action-form-implement-payment > label > div > div > h3 {
+    font-weight: 500;
+}
+
+.checkout-action-form-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: var(--small-font-size);
+    color: var(--gray-color);
+    gap: 6px;
+    padding-left: 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid #c5d7f0;
+    background-color: #e2efff;
+    height: 42px;
+}
+
+.checkout-action-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-action-form-buttons > a > button {
+    width: 96px;
+    height: 48px;
+    border-radius: 12px;
+    color: var(--gray-color);
+    font-weight: var(--cat-weight);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--gray-border-color);
+}
+
+.checkout-action-form-buttons > button {
+    height: 46px;
+    width: 570px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 12px;
+    font-size: 16px;
+    color: var(--light-font);
+    cursor: pointer;
+}
+
+.checkout-action-form-buttons > button:hover {
+    background-color: var(--main-color-dim);
+}
+
+.checkout-action-form-buttons > button > img {
+    position: relative;
+    top: 3px;
+}
+
+.checkout-action-form-buttons > a > button:hover {
+    background-color: rgba(241, 241, 241, 0.397);
+}
+
+/* ----------------- total payment ---------------------*/
+
 .checkout-action-form > section:last-child {
     height: 225px;
     top: 9rem;
@@ -100,16 +242,6 @@
 
 .checkout-action-form-implement > div {
     margin-bottom: 15px;
-}
-
-.checkout-action-form-implement-double {
-    font-size: 0;
-    width: 100%;
-    color: var(--gray-color);
-}
-
-.checkout-action-form-implement-single {
-    color: var(--gray-color);
 }
 
 .input-box-sizing {
@@ -134,33 +266,6 @@
     font-weight: var(--cat-weight);
     padding: 0px 10px 0px 20px;
     border: 1px solid #0000001A;
-}
-
-.checkout-action-form-implement-double > div,
-.checkout-action-form-implement-single > div {
-    font-size: var(--default-font-size);
-    font-weight: var(--cat-weight);
-}
-
-.checkout-action-form-implement-double > div:first-child {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.checkout-action-form-implement-double > div:last-child {
-    float: right;
-    vertical-align: top;
-}
-
-.checkout-action-form-implement > h2 {
-    font-size: var(--cat-title);
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-.checkout-action-form-implement > h2 > span > img {
-    position: relative;
-    top: 2px;
 }
 
 .container-cart-action-struct {
@@ -264,78 +369,6 @@
 .checkout-action-form-delivery > h2 {
     font-size: 18px;
     font-weight: var(--cat-weight);
-}
-
-
-.checkout-action-form-delivery-option {
-    height: fit-content;
-    width: 100%;
-    font-size: 0;
-}
-
-.checkout-action-form-delivery-option > label:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.checkout-action-form-delivery-option > label > div > input {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 25px 0px;
-    z-index: 4;
-}
-
-.checkout-action-form-delivery-option > label > div {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    cursor: pointer;
-}
-
-.checkout-action-form-delivery-option > label > div > h3 {
-    font-size: 14px;
-    font-weight: var(--cat-weight);
-    float: right;
-    margin: 4% 3% 0px 0px;
-    color: var(--green-color);
-}
-
-.checkout-action-form-delivery-option > label > div {
-    position: relative;
-    font-size: var(--default-font-size);
-    margin-bottom: 10px;
-}
-
-.checkout-action-form-delivery-option > label > div > input {
-    position: absolute;
-    top: 4%;
-    left: 2.5%;
-}
-
-.checkout-action-form-delivery-option > label > div {
-    box-sizing: border-box;
-    padding-left: 6%;
-    width: 100%;
-    height: 72px;
-    border: 3px solid var(--gray-border-color);
-    border-radius: 12px;
-}   
-
-.checkout-action-form-delivery-option > label > div > div > h3 {
-    font-weight: var(--cat-weight);
-    color: var(--default-color);
-}
-
-
-.checkout-action-form-delivery-option > label > div > div {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    color: var(--gray-color);
-    height: 100%;
-    font-weight: var(--cat-weight);
-    padding-top: 8px;
-    font-size: var(--small-font-size);
-    line-height: 6px;
 }
 
 input[type="radio"]:checked + .input-wrapper {

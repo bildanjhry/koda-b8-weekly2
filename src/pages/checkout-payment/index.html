@@ -149,14 +149,16 @@
         <div class="container-checkout">
             <div class="checkout-journey">
                 <div class="checkout-journey-delivery">
-                    <div class="bg-blue">
-                        <span class="">1</span>
+                    <div class="bg-success">
+                        <span class="">
+                            <img src="../../../assets/check-line-icon.svg" alt="">
+                        </span>
                     </div>
-                    <p class="blue-color">Pengiriman</p>
+                    <p class="">Pengiriman</p>
                 </div>
                 <span class="checkout-journey-line"></span>
                 <div class="checkout-journey-pay">
-                    <div>
+                    <div class="bg-blue">
                         <span>2</span>
                     </div>
                     <p class="">Pembayaran</p>
@@ -177,126 +179,95 @@
                                 <img 
                                 height="21"
                                 width="21"
-                                src="../../../assets/export-line-icon.svg" alt="">
+                                src="../../../assets/payment-method-icon-line.svg" alt="">
                             </span>
-                            Alamat Pengiriman
+                            Methode Pembayaran
                         </h2>
-                        <div class="checkout-action-form-implement-double">
-                            <div>
-                                <label for="name">Nama Penerima *</label>
-                                <section>
-                                    <input class="input-box-sizing"
-                                    placeholder="Nama Penerima"
-                                     type="text" id="name" name="name">
-                                </section>
-                            </div>
-                            <div>
-                                <label for="phone">Nomor Telpon *</label>
-                                <section>
-                                    <input
-                                    placeholder="Nomor Telpon Penerima" 
-                                    class="input-box-sizing" type="number" id="phone" name="phone">
-                                </section>
-                            </div>
-                        </div>
-                        <div class="checkout-action-form-implement-single">
-                            <div>
-                                <label for="email">Email *</label>
-                                <section>
-                                    <input 
-                                    placeholder="Email Penerima"
-                                    class="input-box-sizing-long" type="email" id="email" name="email">
-                                </section>
-                            </div>
-                        </div>
-                        <div class="checkout-action-form-implement-single">
-                            <div>
-                                <label for="address">Alamat Lengkap *</label>
-                                <section>
-                                    <input 
-                                    placeholder="Alamat Penerima"
-                                    class="input-box-sizing-long" type="text" id="address" name="address">
-                                </section>
-                            </div>
-                        </div>
-                        <div class="checkout-action-form-implement-double">
-                            <div>
-                                <label for="city">Kota *</label>
-                                <section>
-                                    <input class="input-box-sizing"
-                                    placeholder="Jakarta"
-                                     type="text" id="city" name="city">
-                                </section>
-                            </div>
-                            <div>
-                                <label for="province">Provinsi *</label>
-                                <section>
-                                    <input
-                                    placeholder="DKI Jakarta" 
-                                    class="input-box-sizing" type="text" id="province" name="province">
-                                </section>
-                            </div>
-                        </div>
-                        <div class="checkout-action-form-implement-double">
-                            <div>
-                                <label for="post-code">Kode Pos *</label>
-                                <section>
-                                    <input class="input-box-sizing"
-                                    placeholder="Masukan Kode Pos Penerima"
-                                     type="number" id="post-code" name="post-code">
-                                </section>
-                            </div>
-                            <div>
-                                <label for="province">Catatan (Opsional) *</label>
-                                <section>
-                                    <input
-                                    placeholder="Warna pagar, dll" 
-                                    class="input-box-sizing" type="text" id="province" name="province">
-                                </section>
-                            </div>
-                        </div>
-                        <div class="checkout-action-form-delivery">
-                            <h2>Metode Pengiriman</h2>
-                            <div class="checkout-action-form-delivery-option">
-                                <label for="jne-reg" class="">
+                        <div class="checkout-action-form-implement-payment">
+                            <label for="virtual-account-bca" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="virtual-account-bca" name="payment-method">
                                     <div>
-                                        <input type="radio" id="jne-reg" name="delivery-method">
-                                        <div>
-                                            <h3>JNE Reguler</h3>
-                                            <p>3-5 Hari kerja</p>
-                                        </div>
-                                        <h3>GRATIS</h3>
+                                        <h3>
+                                            <span>🏦</span>
+                                            Virtual Account BCA
+                                        </h3>
                                     </div>
-                                </label>
-                                <label for="jne-exp" class="">
+                                </div>
+                            </label>
+                            <label for="virtual-account-bni" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="virtual-account-bni" name="payment-method">
                                     <div>
-                                        <input type="radio" id="jne-exp" name="delivery-method">
-                                        <div>
-                                            <h3>JNE Expres</h3>
-                                            <p>1-2 Hari kerja</p>
-                                        </div>
-                                        <h3>GRATIS</h3>
+                                        <h3>
+                                            <span>🏦</span>
+                                            Virtual Account BNI
+                                        </h3>
                                     </div>
-                                </label>
-                                <label for="same-day" class="">
-                                    <div class="input-wrapper">
-                                        <input class="input-same-day" type="radio" id="same-day" name="delivery-method">
-                                        <div>
-                                            <h3>Same Day Delivery</h3>
-                                            <p>Hari ini (sebelum 16:00)</p>
-                                        </div>
-                                        <h3>GRATIS</h3>
+                                </div>
+                            </label>    
+                            <label for="kredit-debit" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="kredit-debit" name="payment-method">
+                                    <div>
+                                        <h3>
+                                            <span>💳</span>
+                                            Kartu Kredit / Debit
+                                        </h3>
                                     </div>
-                                </label>
-                            </div>
+                                </div>
+                            </label>                                
+                            <label for="gopay" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="gopay" name="payment-method">
+                                    <div>
+                                        <h3>
+                                            <span>📱</span>
+                                            GoPay
+                                        </h3>
+                                    </div>
+                                </div>
+                            </label> 
+                            <label for="ovo" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="ovo" name="payment-method">
+                                    <div>
+                                        <h3>
+                                            <span>📱</span>
+                                            Ovo
+                                        </h3>
+                                    </div>
+                                </div>
+                            </label>  
+                            <label for="dana" class="">
+                                <div class="input-wrapper">
+                                    <input class="" type="radio" id="dana" name="payment-method">
+                                    <div>
+                                        <h3>
+                                            <span>📱</span>
+                                            Dana
+                                        </h3>
+                                    </div>
+                                </div>
+                            </label>                                                              
                         </div>
-                        <button class="checkout-action-form-btn">
-                            Lanjut ke Pembayaran
-                            <span>
-                                <img src="../../../assets/arrow-right-line-icon.svg" alt="">
-                            </span>
-                        </button>                           
                     </form>
+                    <div class="checkout-action-form-info">
+                        <img src="../../../assets/lock-line-icon.svg" alt="">
+                        <p>Informasi pembayaranmu dienkripsi dengan SSL 256-bit. Kami tidak menyimpan data kartu kreditmu.</p>
+                    </div>
+                    <div class="checkout-action-form-buttons">
+                        <a href="../checkout/index.html">
+                            <button type="button">Kembali</button>
+                        </a>
+                        <button type="submit">
+                            Lanjut ke Konfirmasi
+                            <img 
+                            width="16"
+                            height="16"
+                            src="../../../assets/arrow-right-line-icon.svg" alt="">
+                        </button>
+                    </div>
                 </section>
                 <section class="container-cart-action-total">
                     <h3>Ringkasan Pesanan</h3>

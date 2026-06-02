@@ -13,6 +13,7 @@
     --orange-color-dim:#f38639;
     --gray-auth-color:#f9f9f9;
     --green-color:#00A63E;
+    --green-success-color:#00C950;
     --default-title-font-weight:400;
     --gray-color:#6B7280;
     --dark-blue-color:#111827;
@@ -38,6 +39,10 @@
 
 .bg-blue {
     background-color: var(--main-color);
+}
+
+.bg-success {
+    background-color: var(--green-success-color);
 }
 
 .button-submit {
