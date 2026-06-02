@@ -28,14 +28,14 @@
                     </p>
                     <div class="nav-info-contacs">
                         <p class="nav-info-contacs-phone inblock-display">
-                            <span >
+                            <span>
                                 📞
                             </span>
                             0800-2231-2202 (Gratis)
                         </p>
                         <p class="nav-info-contacs-promo inblock-display">
                             <span>
-                             &#128640
+                             &#128640;
                             </span>
                             Gratis ongkir diatas Rp 100.000
                         </p>
@@ -43,14 +43,16 @@
                 </div>
             </div>
             <div class="nav-actions-wrapper ">
-                <div class="nav-actions  ">
-                    <section class="nav-actions-info  ">
-                        <div class=" logo-icon">
-                            <p class="logo-icon-text">B</p>
-                        </div>
-                        <p class="logo">BeliMudah</p>
+                <div class="nav-actions ">
+                    <section class="nav-actions-info ">
+                        <a href="../../../index.html">
+                            <div class=" logo-icon">
+                                <p class="logo-icon-text">B</p>
+                            </div>
+                            <p class="logo">BeliMudah</p>
+                        </a>
                     </section>
-                    <section class="nav-actions-search  ">
+                    <section class="nav-actions-search ">
                         <form action="" class="nav-actions-search-column">
                             <input 
                              type="search" 
@@ -65,25 +67,25 @@
                              </button>
                         </form>
                     </section>
-                    <section class=" ">
-                        <div class="nav-actions-menu-notif   ">
-                            <a href="" class=" ">
+                    <section class="">
+                        <div class="nav-actions-menu-notif">
+                            <a href="" class="">
                                 <img width="20px" src="../../../assets/notif-icon.svg" alt="Notification">
                             </a>
                         </div>
-                        <div class="nav-actions-menu-profile  ">
-                            <a href="" class=" ">
+                        <div class="nav-actions-menu-profile">
+                            <a href="/src/pages/auth/login/index.html" class="">
                                 <img width="20px" src="../../../assets/person-icon.svg" alt="My Profile">
                                 <span>Budi</span>
                             </a>
                         </div>
-                        <div class="nav-actions-menu-fav  ">
-                            <a href="" class=" ">
+                        <div class="nav-actions-menu-fav ">
+                            <a href="" class="">
                                 <img src="../../../assets/fav-icon.svg" alt="">
                             </a>
                         </div>
-                        <div class="nav-actions-menu-cart  ">
-                            <a href="" class=" ">
+                        <div class="nav-actions-menu-cart ">
+                            <a href="/src/pages/cart/index.html" class="">
                                 <img src="../../../assets/cart-icon.svg" alt="">
                             </a>
                         </div>
@@ -91,8 +93,8 @@
                 </div>
             </div>
             <div class="nav-category-wrapper">
-                <div class="nav-category  ">
-                    <div class="nav-category-menu   inblock-display">
+                <div class="nav-category ">
+                    <div class="nav-category-menu inblock-display">
                         <img 
                         class="inblock-display"
                         src="../../../assets/burger-menu-icon.svg" 
@@ -100,42 +102,42 @@
                         <select
                         class="inblock-display" 
                         name="category" id="category" >
-                            <option value="">Semua Kategory</option>
+                            <option value="">Semua Kategori</option>
                             <option value="">Fashion</option>
                         </select>
                     </div>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#128187</span>
                         <span class="inblock-display">Elektronik</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#128087</span>
                         <span class="inblock-display">Fashion</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#127968</span>
                         <span class="inblock-display">Rumah dan dapur</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#128132</span>
                         <span class="inblock-display">Kecantikan</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#9917;</span>
                         <span class="inblock-display">Olahraga</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#128218;</span>
                         <span class="inblock-display">Buku & Alat tulis</span>
                     </a>
                     <a href="" 
-                    class="nav-category-menu-box   inblock-display">
+                    class="nav-category-menu-box  inblock-display">
                         <span class="inblock-display">&#128293;</span>
                         <span class="inblock-display">Promo</span>
                     </a>
@@ -278,7 +280,7 @@
                                 </label>
                                 <label for="same-day" class="">
                                     <div class="input-wrapper">
-                                        <input type="radio" id="same-day" name="delivery-method">
+                                        <input class="input-same-day" type="radio" id="same-day" name="delivery-method">
                                         <div>
                                             <h3>Same Day Delivery</h3>
                                             <p>Hari ini (sebelum 16:00)</p>
@@ -287,7 +289,13 @@
                                     </div>
                                 </label>
                             </div>
-                        </div>                           
+                        </div>
+                        <button class="checkout-action-form-btn">
+                            Lanjut ke Pembayaran
+                            <span>
+                                <img src="../../../assets/arrow-right-line-icon.svg" alt="">
+                            </span>
+                        </button>                           
                     </form>
                 </section>
                 <section class="container-cart-action-total">
@@ -329,10 +337,10 @@
     </main>
     <footer>
         <section class="">
-            <div class="footer-nav">
+            <div class="footer-nav ">
                 <div class="">
                     <div>
-                        <img src="../../../assets/export-line-icon.svg" alt="">
+                        <img src="./assets/export-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Gratis Ongkir</h5>
@@ -341,7 +349,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="../../../assets/safe-line-icon.svg" alt="">
+                        <img src="./assets/safe-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pembayaran Aman</h5>
@@ -350,7 +358,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="../../../assets/return-line-icon.svg" alt="">
+                        <img src="./assets/return-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Pengembailian Mudah</h5>
@@ -359,7 +367,7 @@
                  </div>
                 <div class="">
                     <div>
-                        <img src="../../../assets/chat-line-icon.svg" alt="">
+                        <img src="./assets/chat-line-icon.svg" alt="">
                     </div>
                     <div>
                         <h5>Dukungan 24/7</h5>
@@ -386,25 +394,25 @@
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="../../../assets/facebook-line-icon.svg" alt="">
+                                <img src="./assets/facebook-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="../../../assets/instagram-line-icon.svg"alt="">
+                                <img src="./assets/instagram-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="../../../assets/x-line-icon.svg" alt="">
+                                <img src="./assets/x-line-icon.svg" alt="">
                             </div>
                         </a>
                         <a href="" 
                         class="social-wrapper">
                             <div>
-                                <img src="../../../assets/youtube-line-icon.svg" alt="">
+                                <img src="./assets/youtube-line-icon.svg" alt="">
                             </div>
                         </a>
                     </div>
@@ -457,7 +465,7 @@
             </div>
         </section>
         <section>
-            <div class="footer-note ">
+            <div class="footer-note">
                 <p class="footer-note-copyright">
                     <span>&#169</span>
                     2026 BeliMudah. Seluruh hak cipta dilindungi
@@ -469,6 +477,6 @@
                 </ul>
             </div>
         </section>
-    </footer> 
+    </footer>
 </body>
 </html>

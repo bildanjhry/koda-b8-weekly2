@@ -16,32 +16,36 @@ body{
     width: 100%;
     height: 100vh;
     font-size: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .container > section:first-child {
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
     height: 100%;
     background-image: linear-gradient(to right, rgba(26, 115, 232, 0.615), rgba(25, 60, 184, 0.648)), url("../../../../assets/forgot-pass-bg.png");
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container > section:last-child {
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
     height: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--gray-auth-color);
 }
 
 .container > section:first-child > div {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    margin: 2.8rem 3.3rem;
     font-size: var(--default-font-size);
     color: var(--light-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-wrapper {
@@ -73,16 +77,12 @@ body{
 }
 
 .description-auth {
-    width: 50%;
-    position: relative;
-    top: 7rem;
-    display: block;
+    width: 43%;
     height: 20rem;
 }
 
 .description-auth > h1 {
     width: 100%;
-    word-break: break-word;
     font-size: 32px;
 }
 
@@ -125,13 +125,12 @@ body{
 
 .footer {
     display: block;
-    margin-top: 45%;
     font-size: var(--small-font-size);
     color:#FFFFFFB2;
 }
 
 .container > section:last-child > div {
-    width: 448px;
+    width: 60%;
     height: 36rem;
     margin: 6rem auto;
 }

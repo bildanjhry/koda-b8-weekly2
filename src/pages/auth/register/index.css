@@ -16,33 +16,37 @@ body{
     width: 100%;
     height: 100vh;
     font-size: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .container > section:first-child {
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(20, 73, 230, 0.726), rgba(49, 44, 133, 0.704)), url("../../../../assets/register-bg.svg");
+    background-image:  url("../../../../assets/auth-register-bg.png");
+    background: linear-gradient(to right, #1449e6, #312C85);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container > section:last-child {
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
     height: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--gray-auth-color);
 }
 
-
 .container > section:first-child > div {
-    width: 80%;
+    width: 90%;
     height: 90%;
-    margin: 2.8rem 3.3rem;
     font-size: var(--default-font-size);
     color: var(--light-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-wrapper {
@@ -74,16 +78,12 @@ body{
 }
 
 .description-auth {
-    width: 50%;
-    position: relative;
-    top: 7rem;
-    display: block;
+    width: 60%;
     height: 20rem;
 }
 
 .description-auth > h1 {
     width: 100%;
-    word-break: break-word;
     font-size: 32px;
 }
 
@@ -94,10 +94,31 @@ body{
     line-height: 22px;
 }
 
-.description-auth > div {
+.description-auth-list {
+    display: flex;
     width: 100%;
-    position: relative;
-    top: 10px;
+    flex-direction: column;
+    gap: 13px;
+    font-weight: 400;
+    font-size: var(--default-font-size);
+}
+
+.description-auth-list > p {
+    display: flex;
+    margin: 0;
+}
+
+.description-auth-list > p > span {
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 3px;
+    margin-right: 10px;
+    background-color: #FFFFFF33;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description-auth > div > section {
@@ -126,7 +147,6 @@ body{
 
 .footer {
     display: block;
-    margin-top: 40%;
     font-size: var(--small-font-size);
     color:#FFFFFFB2;
 }

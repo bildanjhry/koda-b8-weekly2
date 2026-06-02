@@ -3,7 +3,8 @@
 .container-checkout {
     margin: 0 auto;
     width: var(--container-wrapper);
-    height: 65rem;
+    height: 68rem;
+    margin-top: 11rem;
 }
 
 .checkout-journey {
@@ -66,7 +67,7 @@
 
 .checkout-action-form {
     width: 1140px;
-    height: 56rem;
+    height: 57rem;
     margin: 0 auto;
     font-size: 0;
 }
@@ -86,7 +87,7 @@
 
 .checkout-action-form > section:last-child {
     height: 225px;
-    top: 0;
+    top: 9rem;
     width: 320px;
     position: sticky;
     background-color: white;
@@ -340,4 +341,28 @@
 input[type="radio"]:checked + .input-wrapper {
      border: 3px solid var(--main-color);
      background-color: yellow;
+}
+
+.checkout-action-form-btn {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-font);
+    background-color: var(--main-color);
+    border-radius: 12px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-action-form-btn > span > img {
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+.checkout-action-form-btn:hover {
+    background-color: var(--main-color-dim);
 }

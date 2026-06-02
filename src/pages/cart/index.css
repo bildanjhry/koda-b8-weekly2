@@ -1,6 +1,7 @@
 .container-cart {
     height: fit-content;
     width: var(--container-wrapper);
+    margin-top: 11rem;
 }
 
 .container-related-prod {

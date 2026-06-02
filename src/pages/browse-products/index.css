@@ -23,9 +23,6 @@ main {
     text-decoration: none;
 }
 
-.breadcrum > a:not(:last-child), span {
-    margin-right: 10px;
-}
 
 .breadcrum > a:last-child {
     color: var(--default-color);
@@ -118,9 +115,8 @@ main {
     width: 976px;
     margin-left: 20px;
     height: 100%;
-    background-color: yellowgreen;
     box-sizing: border-box;
-    margin-bottom: 13rem;
+    margin-bottom: 3rem;
 }
 
 .checked {
@@ -183,9 +179,12 @@ select {
 
 .new-products-cards-wrapper {
     box-sizing: border-box;
-    height: fit-content;
+    min-height: 70rem;
     margin: 0;
+    display: flex;
+    gap: 14.5px;
     font-size: 0;
+    flex-wrap: wrap;
     /* white-space: nowrap; */
     width: 100%;
 }
@@ -304,10 +303,10 @@ select {
     margin: 0;
 }
 
-.new-products-cards-wrapper > a:not(:nth-child(4)) {
+/* .new-products-cards-wrapper > a:not(:nth-child(4)) {
     box-sizing: border-box;
     margin-right: 15px;
-}
+} */
 
 .rating-desc > span:last-child {
     position: relative;
@@ -315,7 +314,7 @@ select {
 }
 
 
-.new-products-cards-wrapper > a:nth-child(5),
+/* .new-products-cards-wrapper > a:nth-child(5),
 .new-products-cards-wrapper > a:nth-child(6),
 .new-products-cards-wrapper > a:nth-child(7) {
     box-sizing: border-box;
@@ -323,29 +322,42 @@ select {
     margin-right: 10px;
 }
 
-.new-products-cards-wrapper > a:nth-child(8),
 .new-products-cards-wrapper > a:nth-child(9),
-.new-products-cards-wrapper > a:nth-child(10) {
+.new-products-cards-wrapper > a:nth-child(10),
+.new-products-cards-wrapper > a:nth-child(11) {
     box-sizing: border-box;
     font-size: 0;
     margin-right: 10px;
 }
 
-.new-products-cards-wrapper > a:nth-child(5),
-.new-products-cards-wrapper > a:nth-child(6),
-.new-products-cards-wrapper > a:nth-child(7),
-.new-products-cards-wrapper > a:nth-child(8),
-.new-products-cards-wrapper > a:nth-child(9),
-.new-products-cards-wrapper > a:nth-child(10),
-.new-products-cards-wrapper > a:last-child {
+
+.new-products-cards-wrapper > a:nth-child(n + 5) {
     box-sizing: border-box;
     position: relative;
     top: 14px;
 }
 
+.new-products-cards-wrapper > a:nth-child(n + 9) {
+    box-sizing: border-box;
+    position: relative;
+    top: 28px;
+} */
+
 .content-products-browse-more-btn {
-    margin-top: 20rem;
+    margin-top: 70rem;
     width: 100%;
-    background-color: violet;
-    height: 15rem;
+    height: 4rem;
+}
+
+.content-products-browse-more-btn > button   {
+    width: 328px;
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    height: 50px;
+    position: relative;
+    color: var(--main-color);
+    cursor: pointer;
+    margin: 0 30%;
+    background-color: white;
+    font-weight: var(--cat-weight);
 }
