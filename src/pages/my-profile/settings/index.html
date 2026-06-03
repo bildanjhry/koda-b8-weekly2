@@ -185,14 +185,14 @@
                                 <img src="../../../../assets/arrow-bc-icon.svg" alt="">
                             </button>
                         </a>
-                        <a href="" class="bg-light-blue">
+                        <a href="../address/index.html" class="">
                             <img 
                              width="18"
                             height="18"
-                            src="../../../../assets/location-blue-line-icon.svg" alt="">
+                            src="../../../../assets/location-gray-line-icon.svg" alt="">
                             <button>
                                 <p class="blue-color">Alamat Saya</p>
-                                <img src="../../../../assets/arrow-right-blue-line-icon.svg" alt="">
+                                <img src="../../../../assets/arrow-bc-icon.svg" alt="">
                             </button>
                         </a>
                         <a href="">
@@ -202,11 +202,11 @@
                                 <img src="../../../../assets/arrow-bc-icon.svg" alt="">
                             </button>
                         </a>
-                        <a href="../settings/index.html">
-                            <img src="../../../../assets/setting-gray-line-icon.svg" alt="">
+                        <a href="" class="bg-light-blue">
+                            <img src="../../../../assets/settings-blue-line-icon.svg" alt="">
                             <button>
-                                <p>Pengaturan Profil</p>
-                                <img src="../../../../assets/arrow-bc-icon.svg" alt="">
+                                <p class="blue-color">Pengaturan Profil</p>
+                                <img src="../../../../assets/arrow-right-blue-line-icon.svg" alt="">
                             </button>
                         </a>                                                                                                
                     </section>
@@ -220,69 +220,63 @@
                     </section>
                 </div>
             </section>
-            <section class="orders-side">
+            <section class="settings-side">
                 <div>
-                    <h1>Alamat Saya</h1>
+                    <h1>Pengaturan Profil</h1>
                     <button>
-                        <img src="../../../../assets/plus-white-icon.svg" alt="">
-                        Tambah Alamat
+                        <img src="../../../../assets/edited-blue-line-icon.svg" alt="">
+                        Simpan
                     </button>
                 </div>
-                <div class="address-container">
-                    <div class="address-side">
-                        <div class="address-side-head">
-                            <section>
-                                <h5>Rumah (Utama)</h5>
-                                <div>Utama</div>
-                            </section>
-                            <section>
-                                <button>
-                                    <img
-                                    width="17"
-                                    height="17" 
-                                    src=".././../../../assets/edited-line-icon.svg" alt="">
-                                </button>
-                                <button>
-                                    <img
-                                    width="20"
-                                    height="20" 
-                                    src=".././../../../assets/delete-line-icon.svg" alt="">
-                                </button>                                
-                            </section>
+                <div class="settings-container">
+                    <div class="settings-picture">
+                        <div>
+                            B
                         </div>
-                        <div class="address-side-main">
-                         <p class="name">Budi Santoso · <span class="phone">0812-3456-7890</spans></p>
-                         <p class="address">Jl. Kebon Jeruk No. 15, RT.003/RW.002</p>
-                         <p class="address-outer">Jakarta Barat, DKI Jakarta 11530</p>
-                        </div>
+                        <button>
+                            Ganti Foto Profil
+                        </button>
                     </div>
-                    <div class="address-side">
-                        <div class="address-side-head">
-                            <section>
-                                <h5>Kantor</h5>
-                            </section>
-                            <section>
-                                <button>
-                                    <img
-                                    width="17"
-                                    height="17" 
-                                    src=".././../../../assets/edited-line-icon.svg" alt="">
-                                </button>
-                                <button>
-                                    <img
-                                    width="20"
-                                    height="20" 
-                                    src=".././../../../assets/delete-line-icon.svg" alt="">
-                                </button>                                
-                            </section>
+                    <form 
+                    class="form-change-profile"
+                    action="">
+                        <div>
+                            <label for="fullname">Nama Lengkap</label>
+                            <input 
+                             placeholder="Budi Santoso.."
+                            type="text" name="fullname" id="fullname">
                         </div>
-                        <div class="address-side-main">
-                         <p class="name">Budi Santoso · <span class="phone">0812-3456-7890</spans></p>
-                         <p class="address">Jl. Sudirman Kav. 52-53</p>
-                         <p class="address-outer">Jakarta Selatan, DKI Jakarta 12190</p>
-                         <button class="address-side-main-btn-action">Jadikan Alamat Utama</button>
+                        <div>
+                            <label for="email">Email</label>
+                            <input 
+                             placeholder="budi@mail.com"
+                            type="text" name="email" id="email">
                         </div>
-                    </div>
+                        <div>
+                            <label for="phone">Nomor Telepon</label>
+                            <input 
+                             placeholder="08XXXX"
+                            type="number" name="phone" id="phone">
+                        </div>
+                        <div>
+                            <label for="birth">Tanggal Lahir</label>
+                            <input 
+                             placeholder="15/03/2000"
+                            type="date" name="fullname" id="birth">
+                        </div>
+                        <div>
+                            <label for="gender">Jenis Kelamin</label>
+                            <select name="gender" id="">
+                                <option value="male" name="gender">Laki-laki</option>
+                                <option value="female" name="gender">Perempuan</option>
+                            </select>
+                        </div>                                                                                                
+                    </form>
+                </div>
+                <div class="security-account">
+                    <h2>Keamanan Akun</h2>
+                    <button>Ubah Kata Sandi</button>
+                    <button>Aktifkan Verifikasi 2 Langkah</button>
                 </div>
             </section>
         </div>

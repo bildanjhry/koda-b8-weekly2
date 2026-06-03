@@ -1,0 +1,299 @@
+.profile-container {
+    width: 1120px;
+    height: fit-content;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.profile-side {
+    width: 256px;
+    height: 100%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 211px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    align-items: center;
+    border-radius: var(--medium-border-radius);
+    border: 1px solid var(--gray-border-color);
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-card > div:first-child {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-border-color);
+}
+
+.profile-card > div:first-child > h4, p {
+    margin: 0;
+}
+
+.profile-card > div:first-child > p {
+    color: var(--gray-color);
+    font-size: var(--small-font-size);
+}
+
+.profile-card > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    color: var(--gray-color);
+    font-size: var(--small-font-size);
+}
+
+.profile-card > div:last-child > div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card > div:first-child > div {
+    border-radius: 50%;
+    width: 64px;
+    box-sizing: border-box;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--blue-bg-color);
+    margin-bottom: 1rem;
+}
+
+.profile-card > div:last-child > div > h5 {
+    font-size: var(--default-font-size);
+    margin: 0;
+    color: var(--default-color);
+    font-weight: 700;
+}
+
+.sidebar-card {
+    margin-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: var(--medium-border-radius);
+    border: 1px solid var(--gray-border-color);
+    display: flex;
+     overflow: hidden;
+    flex-direction: column;
+}
+
+.sidebar-card > section:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.sidebar-card > section:last-child {
+    width: 100%;
+    height: fit-content;
+}
+
+.sidebar-card > section:first-child  a,
+.sidebar-card > section:last-child  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    height: 48px;
+    align-items: center;
+    padding: 0px 15px;
+    color: var(--gray-color);
+    cursor: pointer;
+    font-size: var(--default-font-size);
+}
+
+
+.sidebar-card > section:first-child > a > button,
+.sidebar-card > section:last-child > a > button {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    cursor: pointer;
+    font-weight: var(--cat-weight);
+    color: var(--gray-color);
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-card > section:last-child > a > button > p {
+    color: var(--red-color);
+}
+
+.sidebar-card-menu {
+   
+    border-bottom: 1px solid var(--gray-border-color);
+}
+
+.sidebar-card > section:first-child > a:hover,
+.sidebar-card > section:last-child > a:hover {
+    background-color: var(--blue-bg-color);
+}
+
+/* ------------------------- Order side cards ----------------------------*/
+
+.settings-side {
+    height: fit-content;
+    width: 832px;
+    display: flex;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.settings-side > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+
+.settings-side > div > button {
+    background-color: transparent;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 106px;
+    height: 38px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    font-size: var(--default-font-size);
+}
+
+.settings-side > div:first-child > button:hover {
+    border: 1px solid var(--main-color-dim);
+}
+
+.settings-side > div > h1 {
+    font-size: 20px;
+    font-weight: var(--cat-weight);
+}
+
+.settings-container {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--gray-border-color);
+    border-radius: var(--medium-border-radius);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+
+.settings-picture {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.settings-picture > div {
+    background-color: var(--blue-bg-color);
+    display: flex;
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight:700;
+    border-radius: 50%;
+}
+
+.settings-picture > button {
+    width: fit-content;
+    height: fit-content;
+    color: var(--main-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: var(--default-font-size);
+}
+
+.form-change-profile {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.form-change-profile > div {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    box-sizing: border-box;
+    color: var(--gray-color);
+    font-size: var(--default-font-size);
+}
+
+.form-change-profile > div > input,
+.form-change-profile > div > select {
+    border-radius: 12px;
+    border: 1px solid var(--gray-border-color);
+    height: 46px;
+    background-color: #F3F4F6;
+    padding-left: 20px;
+}
+
+.security-account {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-border-color);
+    border-radius: var(--medium-border-radius);
+    background-color: white;
+    margin-top: 2rem;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.security-account > h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: var(--cat-weight);
+}
+
+.settings-side > .security-account > button {
+    background-color: transparent;
+    width: fit-content;
+    font-weight: var(--cat-weight);
+    padding: 0;
+    height: fit-content;
+    color: var(--main-color);
+    border: none;
+}
