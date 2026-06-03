@@ -147,162 +147,118 @@
     </header>
     <main>
         <div class="container-checkout">
-            <div class="checkout-journey">
-                <div class="checkout-journey-delivery">
-                    <div class="bg-success">
-                        <span class="">
-                            <img src="../../../assets/check-line-icon.svg" alt="">
-                        </span>
-                    </div>
-                    <p class="">Pengiriman</p>
-                </div>
-                <span class="checkout-journey-line"></span>
-                <div class="checkout-journey-pay">
-                    <div class="bg-blue">
-                        <span>2</span>
-                    </div>
-                    <p class="">Pembayaran</p>
-                </div>
-                <span class="checkout-journey-line"></span>
-                <div class="checkout-journey-confirm">
-                    <div>
-                        <span>3</span>
-                    </div>
-                    <p class="">Konfirmasi</p>
-                </div>                               
+            <div class="success-logo">
+                <img
+                 width="46"
+                 height="46"
+                 src="../../../assets/success-green-line-icon.svg" alt="">
             </div>
-            <div class="checkout-action-form">
-                <section>
-                    <form action="../checkout-confirm/index.html" class="checkout-action-form-implement">
-                        <h2>
-                            <span>
-                                <img 
-                                height="21"
-                                width="21"
-                                src="../../../assets/payment-method-icon-line.svg" alt="">
-                            </span>
-                            Methode Pembayaran
-                        </h2>
-                        <div class="checkout-action-form-implement-payment">
-                            <label for="virtual-account-bca" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="virtual-account-bca" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>🏦</span>
-                                            Virtual Account BCA
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>
-                            <label for="virtual-account-bni" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="virtual-account-bni" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>🏦</span>
-                                            Virtual Account BNI
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>    
-                            <label for="kredit-debit" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="kredit-debit" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>💳</span>
-                                            Kartu Kredit / Debit
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>                                
-                            <label for="gopay" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="gopay" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            GoPay
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label> 
-                            <label for="ovo" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="ovo" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            Ovo
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>  
-                            <label for="dana" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="dana" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            Dana
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>                                                              
-                        </div>
-                        <div class="checkout-action-form-info">
-                            <img src="../../../assets/lock-line-icon.svg" alt="">
-                            <p>Informasi pembayaranmu dienkripsi dengan SSL 256-bit. Kami tidak menyimpan data kartu kreditmu.</p>
-                        </div>
-                        <div class="checkout-action-form-buttons">
-                            <a href="../checkout/index.html">
-                                <button type="button">Kembali</button>
-                            </a>
-                            <button type="submit">
-                                Lanjut ke Konfirmasi
-                                <img 
-                                width="16"
-                                height="16"
-                                src="../../../assets/arrow-right-line-icon.svg" alt="">
-                            </button>
-                        </div>
-                    </form>
-                </section>
-                <section class="container-cart-action-total">
-                    <h3>Ringkasan Pesanan</h3>
-                    <div class="container-cart-action-prod">
-                        <img 
-                        width="45"
-                        height="45"
-                        src="../../../assets/headphone-prod.svg" alt="">
+            <div>
+                <h2>Pesanan Berhasil! 🎉</h2>
+                <p>Terima kasih telah berbelanja di BeliMudah. Pesananmu sedang diproses.</p>
+            </div>
+            <div class="success-card">
+                <div class="success-card-head">
+                     <section>
+                        <p>Nomor Pesanan</p>
+                        <h4>#<span>BM28371132</span></h4>
+                     </section>
+                    <section>
+                        <p>Total Pembayaran</p>
+                        <h4>Rp<span>450.000</span></h4>
+                     </section>
+                </div>
+                <div class="success-card-desc">
+                    <section>
+                        <img src="../../../assets/export-line-icon.svg" alt="">
                         <div>
-                            <p>Headphone Wireless Premium</p>
-                            <p>x1</p>
+                            <p>JNE Reguler</p>
+                            <p>Estimasi tiba: 2-3 Juni 2026</p>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="../../../assets/location-blue-line-icon.svg" alt="">
+                        <div>
+                            <p>Alamat Pengiriman</p>
+                            <p>Jl. Kebon Jeruk No. 15, Jakarta Barat, DKI Jakarta 11530 </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="order-status-card">
+                <h3>Status Pesanan</h3>
+                <div class="order-status-card-prosess">
+                    <div>
+                        <div>
+                            <img src="../../../assets/success-green-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <section>
+                                <p>Pesanan diterima</p>
+                                <p>Baru saja</p>
+                            </section>
+                            <section>
+                                <span>✓</span>
+                            </section>
                         </div>
                     </div>
-                    <div class="container-cart-action-struct">
-                        <ul>
-                            <li>Subtotal</li>
-                            <li>Rp 450.000</li>
-                        </ul>
-                        <ul>
-                            <li>Ongkir</li>
-                            <li><span>Gratis</span></li>
-                        </ul>
-                        <ul>
-                            <li><span>Total</span></li>
-                            <li><span>Rp 450.000</span></li>
-                        </ul>
+                    <div>
+                        <div>
+                            <img src="../../../assets/box-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <section>
+                                <p>Sedang Dikemas</p>
+                                <p>Estimasi: 1-2 Jam</p>
+                            </section>
+                            <section>
+                                <!-- <span>✓</span> -->
+                            </section>
+                        </div>
                     </div>
-                    <p>
-                        <img
-                        height="12"
-                        width="12"
-                        src="../../../assets/safe-icon.png" alt="">
-                        <span>Pembayaran aman dan terenkripsi</span>
-                    </p>                    
-                </section>
+                    <div>
+                        <div>
+                            <img src="../../../assets/export-gray-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <section>
+                                <p>Dalam Pengiriman</p>
+                                <p>3-5 hari kerja</p>
+                            </section>
+                            <section>
+                                <!-- <span>✓</span> -->
+                            </section>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="../../../assets/location-gray-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <section>
+                                <p>Terkirim</p>
+                                <p>2-3 Juni 2026</p>
+                            </section>
+                            <section>
+                                <!-- <span>✓</span> -->
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="success-button-actions">
+                    <button>
+                        <img src="../../../assets/box-white-line-icon.svg" alt="">
+                        Lacak Pesanan
+                    </button>
+                    <button>
+                        Lihat Riwayat Pesanan
+                    </button>
+                    <a href="../../pages/browse-products/index.html">
+                        <p>Lanjut Belanja <span>
+                            <img src="../../../assets/arrow-left.svg" alt="">
+                        </span></p>
+                    </a>
             </div>
         </div>
     </main>
