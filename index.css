@@ -8,11 +8,17 @@
     --main-color-dim:#3684e9;
     --gray-font-color:#99A1AF;
     --blue-bg-color:#1A73E81A;
+    --blue-dim-color:#99A1AF;
+    --deep-blue-color:#111827;
     --gray-border-color:#0000001A;
     --red-color:#DC2626;
     --orange-color:#F97316;
     --orange-color-dim:#f38639;
+    --orange-bg-color:#FFF7ED;
+    --green-bg-color:#F0FDF4;
+    --purple-bg-color:#FAF5FF;
     --gray-auth-color:#f9f9f9;
+    --blue-dim-border-color:#364153;
     --green-color:#00A63E;
     --green-success-color:#00C950;
     --green-success-bg-color:#DCFCE7;
@@ -82,4 +88,20 @@
 .top-10px {
     position: relative;
     top: 10px;
+}
+
+.green-color {
+    color: var(--green-color);
+}
+
+.orange-bg-color {
+    background-color: var(--orange-bg-color);
+}
+
+.green-bg-color {
+    background-color: var(--green-bg-color);
+}
+
+.purple-bg-color {
+    background-color: var(--purple-bg-color);
 }
