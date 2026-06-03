@@ -7,6 +7,7 @@
     --main-color:#1A73E8;
     --main-color-dim:#3684e9;
     --gray-font-color:#99A1AF;
+    --blue-bg-color:#1A73E81A;
     --gray-border-color:#0000001A;
     --red-color:#DC2626;
     --orange-color:#F97316;
@@ -19,6 +20,7 @@
     --gray-color:#6B7280;
     --dark-blue-color:#111827;
     --medium-border-radius:16px;
+    --small-border-radius:8px;
     --container-wrapper:1248px;
     --cat-title:20px;
     --bg-color:#F8F9FA;
