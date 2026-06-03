@@ -1,0 +1,300 @@
+.profile-container {
+    width: 1120px;
+    height: fit-content;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.profile-side {
+    width: 256px;
+    height: 100%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 211px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    align-items: center;
+    border-radius: var(--medium-border-radius);
+    border: 1px solid var(--gray-border-color);
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-card > div:first-child {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-border-color);
+}
+
+.profile-card > div:first-child > h4, p {
+    margin: 0;
+}
+
+.profile-card > div:first-child > p {
+    color: var(--gray-color);
+    font-size: var(--small-font-size);
+}
+
+.profile-card > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    color: var(--gray-color);
+    font-size: var(--small-font-size);
+}
+
+.profile-card > div:last-child > div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card > div:first-child > div {
+    border-radius: 50%;
+    width: 64px;
+    box-sizing: border-box;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--blue-bg-color);
+    margin-bottom: 1rem;
+}
+
+.profile-card > div:last-child > div > h5 {
+    font-size: var(--default-font-size);
+    margin: 0;
+    color: var(--default-color);
+    font-weight: 700;
+}
+
+.sidebar-card {
+    margin-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: var(--medium-border-radius);
+    border: 1px solid var(--gray-border-color);
+    display: flex;
+     overflow: hidden;
+    flex-direction: column;
+}
+
+.sidebar-card > section:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.sidebar-card > section:last-child {
+    width: 100%;
+    height: fit-content;
+}
+
+.sidebar-card > section:first-child  a,
+.sidebar-card > section:last-child  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    height: 48px;
+    align-items: center;
+    padding: 0px 15px;
+    color: var(--gray-color);
+    cursor: pointer;
+    font-size: var(--default-font-size);
+}
+
+
+.sidebar-card > section:first-child > a > button,
+.sidebar-card > section:last-child > a > button {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    cursor: pointer;
+    font-weight: var(--cat-weight);
+    color: var(--gray-color);
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-card > section:last-child > a > button > p {
+    color: var(--red-color);
+}
+
+.sidebar-card-menu {
+   
+    border-bottom: 1px solid var(--gray-border-color);
+}
+
+.sidebar-card > section:first-child > a:hover,
+.sidebar-card > section:last-child > a:hover {
+    background-color: var(--blue-bg-color);
+}
+
+/* ------------------------- Order side cards ----------------------------*/
+
+.orders-side {
+    height: 40rem;
+    width: 832px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.orders-side > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+
+.orders-side > div > button {
+    background-color: var(--main-color);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 159px;
+    height: 36px;
+    color: var(--light-font);
+    border: none;
+    cursor: pointer;
+    font-size: var(--default-font-size);
+}
+
+.orders-side > div > button:hover {
+    background-color: var(--main-color-dim);
+}
+
+.orders-side > div > h1 {
+    font-size: 20px;
+    font-weight: var(--cat-weight);
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.address-side {
+    background-color: white;
+    border-radius: var(--medium-border-radius);
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid var(--gray-border-color);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.address-side > .address-side-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.address-side-head > section:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-color);
+    width: fit-content;
+    height: 100%;
+    font-size: var(--small-font-size);
+}
+
+.address-side-head > section:first-child > h5 {
+    font-size: var(--default-font-size);
+    font-weight: 600;
+    margin-right: 10px;
+    color: var(--default-color);
+}
+
+.address-side-head > section:first-child > div {
+    background-color: var(--main-color);
+    color: var(--light-font);
+    height: 100%;
+    width: 54px;
+    border-radius: var(--medium-border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.address-side-head > section:last-child {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: fit-content;
+    height: 30px;
+    font-size: var(--small-font-size);
+    color: var(--green-color);
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    height: 100%;
+} 
+
+.address-side-head > section:last-child > button {
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+}
+
+.address-side-main {
+    height: fit-content;
+    display: grid;
+    padding-top: 10px;
+    line-height: 23px;
+    font-size: var(--default-font-size);
+}
+
+.address-side-main > .address, .address-outer {
+    color: var(--gray-color);
+}
+
+.address-side-main-btn-action {
+    background-color: transparent;
+    height: 20px;
+    margin: 15px 0 4px 0;
+    padding: 0;
+    text-align: left;
+    width: fit-content;
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+

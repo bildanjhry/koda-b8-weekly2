@@ -71,6 +71,10 @@
     background-color: #1a73e8e0;
 }
 
+.bg-light-blue {
+    background-color: var(--blue-bg-color);
+}
+
 .white-color {
     color: white;
 }
