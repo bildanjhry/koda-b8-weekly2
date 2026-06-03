@@ -158,8 +158,8 @@
                 </div>
                 <span class="checkout-journey-line"></span>
                 <div class="checkout-journey-pay">
-                    <div class="bg-blue">
-                        <span>2</span>
+                    <div class="">
+                       <img src="../../../assets/check-line-icon.svg" alt="">
                     </div>
                     <p class="">Pembayaran</p>
                 </div>
@@ -173,98 +173,51 @@
             </div>
             <div class="checkout-action-form">
                 <section>
-                    <form action="../checkout-confirm/index.html" class="checkout-action-form-implement">
+                    <form action="../chekcout-success/index.html" class="checkout-action-form-implement">
                         <h2>
-                            <span>
-                                <img 
-                                height="21"
-                                width="21"
-                                src="../../../assets/payment-method-icon-line.svg" alt="">
-                            </span>
-                            Methode Pembayaran
+                            Konfirmasi Pesanan
                         </h2>
-                        <div class="checkout-action-form-implement-payment">
-                            <label for="virtual-account-bca" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="virtual-account-bca" name="payment-method">
+                        <div class="checkout-action-form-confirm">
+                            <div class="checkout-action-form-confirm-address">
+                                <p>Alamat Pengiriman</p>
+                                <p class="name">Budi Santoso · <span class="phone">0812-3456-7890</span></p>
+                                <p>Jl. Kebon Jeruk No. 15, Jakarta Barat, DKI Jakarta 11530</p>
+                            </div>
+                            <div class="checkout-action-form-confirm-delivery">
+                                <p>Metode Pengiriman</p>
+                                <p class="delivery-method">JNE Reguler · <span class="desc">3-5 Hari Kerja</span></p>
+                            </div>
+                            <div class="checkout-action-form-confirm-products">
+                                <p>Produk yang Dipesan</p>
+                                <div class="checkout-action-form-confirm-products-prod">
+                                    <img
+                                    width="48"
+                                    height="48" 
+                                    src="../../../assets/headphone-prod.svg" alt="">
                                     <div>
-                                        <h3>
-                                            <span>🏦</span>
-                                            Virtual Account BCA
-                                        </h3>
+                                        <div>
+                                            <P>Headphone Wireless Premium</P>
+                                            <p>x1</p>
+                                        </div>
+                                        <p>Rp 450.000</p>
                                     </div>
                                 </div>
-                            </label>
-                            <label for="virtual-account-bni" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="virtual-account-bni" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>🏦</span>
-                                            Virtual Account BNI
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>    
-                            <label for="kredit-debit" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="kredit-debit" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>💳</span>
-                                            Kartu Kredit / Debit
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>                                
-                            <label for="gopay" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="gopay" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            GoPay
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label> 
-                            <label for="ovo" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="ovo" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            Ovo
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>  
-                            <label for="dana" class="">
-                                <div class="input-wrapper">
-                                    <input class="" type="radio" id="dana" name="payment-method">
-                                    <div>
-                                        <h3>
-                                            <span>📱</span>
-                                            Dana
-                                        </h3>
-                                    </div>
-                                </div>
-                            </label>                                                              
+                            </div>
                         </div>
                         <div class="checkout-action-form-info">
-                            <img src="../../../assets/lock-line-icon.svg" alt="">
-                            <p>Informasi pembayaranmu dienkripsi dengan SSL 256-bit. Kami tidak menyimpan data kartu kreditmu.</p>
+                            <img src="../../../assets/safe-line-icon.svg" alt="">
+                            <p>Dengan menekan "Bayar Sekarang", kamu menyetujui Syarat & Ketentuan kami. Pembayaran baru akan diproses setelah kamu mengkonfirmasi di langkah ini.</p>
                         </div>
                         <div class="checkout-action-form-buttons">
-                            <a href="../checkout/index.html">
+                            <a href="../checkout-payment/index.html">
                                 <button type="button">Kembali</button>
                             </a>
                             <button type="submit">
-                                Lanjut ke Konfirmasi
                                 <img 
                                 width="16"
                                 height="16"
-                                src="../../../assets/arrow-right-line-icon.svg" alt="">
+                                src="../../../assets/lock-white-line-icon.svg" alt="">
+                                Bayar Rp <span>450.000</span> Sekarang
                             </button>
                         </div>
                     </form>
