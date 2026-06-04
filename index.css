@@ -55,19 +55,6 @@
     background-color: var(--green-success-color);
 }
 
-.button-submit {
-    height: 2.5rem;
-    width: 3.3rem;
-    position: relative;
-    top: 2px;
-    right: 10px;
-    border-style: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-    background-color: var(--main-color);
-}
-
 .button-submit > img {
     position: relative;
     top: 2px;
