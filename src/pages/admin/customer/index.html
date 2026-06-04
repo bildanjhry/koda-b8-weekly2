@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+    <title>BeliMudah (Admin Page)</title>
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <div class="logo-container">
+                <div class="bg-blue">
+                    B
+                </div>
+                <p>BeliMudah</p>
+                <p>Admin</p>
+            </div>
+            <div class="sidebar-menu">
+                <a href="../index.html">
+                    <div class="">
+                        <img src="../../../../assets/dashboard-dim-line-icon.svg" alt="">
+                        <p class="">Dashboard</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="">
+                        <img 
+                        width="18px"
+                        height="18px"
+                        src="../../../../assets/box-dim-line-icon.svg" alt="">
+                        <p class="">Produk</p>
+                    </div>
+                </a>
+                <a href="./orders/index.html">
+                    <div class="">
+                        <img src="../../../../assets/cart-dime-line-icon.svg" alt="">
+                        <p class="">Pesanan</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bg-blue">
+                        <img src="../../../../assets/customer-white-line-icon.svg" alt="">
+                        <p class="white-color">Pelanggan</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="">
+                        <img src="../../../../assets/settings-dim-line-icon.svg" alt="">
+                        <p>Pengaturan</p>
+                    </div>
+                </a>
+            </div>
+            <a href="../../../../index.html" class="sidebar-back-btn">
+                <div class="sidebar-footer">
+                    <img src="../../../assets/back-dim-line-icon.png" alt="">
+                    <p>Kembali ke toko</p>
+                </div>
+            </a>
+        </section>
+        <section class="admin-main-content">
+            <nav>
+                <section>
+                    <img src="../../../assets/cross-line-icon.svg" alt="">
+                    <p>Admin</p>
+                </section>
+                <section>
+                    <img src="../../../assets/notif-icon.svg" alt="">
+                    <div class="profile">
+                        <div>
+                            <span>A</span>
+                        </div>
+                        <p>Admin</p>
+                    </div>
+                </section>
+            </nav>
+            <main>
+                <div class="content-header">
+                    <div>
+                        <h1>Manajemen Pelanggan</h1>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class=""">
+                        <div>
+                            <img src="../../../../assets/customer-blue-line-icon.svg" alt="">
+                        </div>
+                        <h1>3.284</h1>
+                        <p>Total Pelanggan</p>
+                    </div>
+                    <div class=""">
+                        <div>
+                            <img src="../../../../assets/customer-blue-line-icon.svg" alt="">
+                        </div>
+                        <h1>3.284</h1>
+                        <p>Total Pelanggan</p>
+                    </div>
+                                        <div class=""">
+                        <div>
+                            <img src="../../../../assets/customer-blue-line-icon.svg" alt="">
+                        </div>
+                        <h1>3.284</h1>
+                        <p>Total Pelanggan</p>
+                    </div>
+                                        <div class=""">
+                        <div>
+                            <img src="../../../../assets/customer-blue-line-icon.svg" alt="">
+                        </div>
+                        <h1>3.284</h1>
+                        <p>Total Pelanggan</p>
+                    </div>
+                </div>
+                <div class="search-content">
+                    <form action="">
+                        <input type="text" placeholder="Cari nomor sesuai pesanan atau nama pelanggan..">
+                        <select name="" id="">
+                            <option value="all-cat">Semua Kategori</option>
+                        </select>
+                        <button>
+                            <img 
+                            src="../../../../assets/filter-line-icon.svg" alt="">
+                            Filter
+                        </button>
+                    </form>
+                </div>
+                <div class="content-preview">
+                    <div class="">
+                        <h2>18</h2>
+                        <p>Total Produk</p>
+                    </div>
+                    <div>
+                        <h2>18</h2>
+                        <p>Total Produk</p>
+                    </div>
+                    <div>
+                        <h2>18</h2>
+                        <p>Total Produk</p>
+                    </div>
+                    <div>
+                        <h2>18</h2>
+                        <p>Total Produk</p>
+                    </div>
+                </div>
+
+                <div class="content-dashboard">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No. Pesanan</td>
+                                <td>Pelanggan</td>
+                                <td>Tanggal</td>
+                                <td>Item</td>
+                                <td>Total</td>
+                                <td>Pembayaran</td>
+                                <td>Status</td>
+                                <td>Aksi</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BM98765432</td>
+                                <td class="customer">
+                                    <p>Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td>2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="action">
+                                    <button>
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>                                                                                                                                                                                                
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>
