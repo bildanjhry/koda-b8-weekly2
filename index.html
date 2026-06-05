@@ -16,8 +16,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-info-wrapper">
+        <nav class="nav-container">
+            <!-- <div class="nav-info-wrapper">
                 <div class="nav-info">
                     <p class="nav-info-maps">
                         <span class="nav-info-map-icon">
@@ -41,9 +41,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="nav-actions-wrapper ">
-                <div class="nav-actions ">
+                <div class="nav-actions">
                     <section class="nav-actions-info ">
                         <div class=" logo-icon">
                             <p class="logo-icon-text">B</p>
@@ -65,7 +65,7 @@
                              </button>
                         </form>
                     </section>
-                    <section class="">
+                    <section class="nav-actions-menu">
                         <div class="nav-actions-menu-notif  ">
                             <a href="" class="">
                                 <img width="20px" src="./assets/notif-icon.svg" alt="Notification">
@@ -90,7 +90,7 @@
                     </section>
                 </div>
             </div>
-            <div class="nav-category-wrapper">
+            <!-- <div class="nav-category-wrapper">
                 <div class="nav-category ">
                     <div class="nav-category-menu inblock-display">
                         <img 
@@ -140,7 +140,7 @@
                         <span class="inblock-display">Promo</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </nav>
         <div class="herro">
             <!-- <div class="herro-slider">
@@ -164,70 +164,222 @@
         </div>
     </header>
     <!-- <main>
-        <div class="suggest-category">
-            <div class="">
-                <p>Belanja berdasakan Kategori</p>
-                <a href="./src/pages/browse-products/index.html">
-                    <span>Lihat Semua</span>
-                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
-                </a>
+        <div>
+            <div class="suggest-category">
+                <div class="">
+                    <p>Belanja berdasakan Kategori</p>
+                    <a href="./src/pages/browse-products/index.html">
+                        <span>Lihat Semua</span>
+                        <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                    </a>
+                </div>
+                <div class="suggest-category-cards-wrapper ">
+                    <div class="suggest-category-card ">
+                        <img src="./assets/elektronik-cat.svg" 
+                        alt="">
+                        <p>Elektronik</p>
+                        <p>7 produk</p>
+                    </div>
+                    <div class="suggest-category-card ">
+                        <img src="./assets/fashion-cat.svg" 
+                        alt="">
+                        <p>Fashion</p>
+                        <p>5 produk</p>
+                    </div>
+                    <div class="suggest-category-card ">
+                        <img src="./assets/rd-cat.svg" 
+                        alt="">
+                        <p>Rumah & Dapur</p>
+                        <p>4 produk</p>
+                    </div>
+                    <div class="suggest-category-card ">
+                        <img src="./assets/beauty-cat.svg" 
+                        alt="">
+                        <p>Kecantikan</p>
+                        <p>2 produk</p>
+                    </div>
+                    <div class="suggest-category-card ">
+                        <img src="./assets/sport-cat.svg" 
+                        alt="">
+                        <p>Olahraga</p>
+                        <p>3 produk</p>
+                    </div>
+                    <div class="suggest-category-card ">
+                        <img src="./assets/atk-cat.svg" 
+                        alt="">
+                        <p>Buku & Alat Tulis</p>
+                        <p>2 produk</p>
+                    </div>
+                </div>
             </div>
-            <div class="suggest-category-cards-wrapper ">
-                <div class="suggest-category-card ">
-                    <img src="./assets/elektronik-cat.svg" 
-                    alt="">
-                    <p>Elektronik</p>
-                    <p>7 produk</p>
+            <div class="flash-deals ">
+                <div class="">
+                    <div class="flash-deals-info">
+                        <img src="./assets/flash-icon.svg" alt="Lihat Semua">
+                        <span>Flash Deals</span>
+                    </div>
+                    <a href="src/pages/browse-products/index.html" class="">
+                        <span>Lihat Semua</span>
+                        <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                    </a>
                 </div>
-                <div class="suggest-category-card ">
-                    <img src="./assets/fashion-cat.svg" 
-                    alt="">
-                    <p>Fashion</p>
-                    <p>5 produk</p>
-                </div>
-                <div class="suggest-category-card ">
-                    <img src="./assets/rd-cat.svg" 
-                    alt="">
-                    <p>Rumah & Dapur</p>
-                    <p>4 produk</p>
-                </div>
-                <div class="suggest-category-card ">
-                    <img src="./assets/beauty-cat.svg" 
-                    alt="">
-                    <p>Kecantikan</p>
-                    <p>2 produk</p>
-                </div>
-                <div class="suggest-category-card ">
-                    <img src="./assets/sport-cat.svg" 
-                    alt="">
-                    <p>Olahraga</p>
-                    <p>3 produk</p>
-                </div>
-                <div class="suggest-category-card ">
-                    <img src="./assets/atk-cat.svg" 
-                    alt="">
-                    <p>Buku & Alat Tulis</p>
-                    <p>2 produk</p>
+                <div class="flash-deals-cards-wrapper">
+                    <a 
+                    id="soundWave-1"
+                    href="./src/pages/products-details/soundWave-1.html">
+                        <div class="flash-deals-card">
+                            <span class="flash-deals-card-cut">
+                                <span>-31%</span>
+                            </span>
+                            <div>
+                                <img
+                                width="100%" 
+                                src="./assets/headphone-prod.svg" alt="">
+                            </div>
+                            <div class="flash-deals-card-desc ">
+                                <p>SoundWave</p>
+                                <h4>Headphone Wireless Premium</h4>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>4.8</span>
+                                    (512)
+                                </p>
+                                <h3 class="flash-deals-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a 
+                    id="phoneX"
+                    href="./pages/products-details/phoneX-1.html">
+                        <div class="flash-deals-card">
+                            <span class="flash-deals-card-cut">
+                                <span>-16%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="./assets/smartphone-prod.svg" alt="">
+                            </div>
+                            <div class="flash-deals-card-desc ">
+                                <p>PhoneX</p>
+                                <h4>Smartphone 5G Ultra</h4>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>4.6</span>
+                                    (890)
+                                </p>
+                                <h3 class="flash-deals-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                            </div>
+                        </div>            
+                    </a>
+                    <a 
+                    id="wirstTech-1"
+                    href="./pages/products-details/wirstTech-1.html">
+                        <div class="flash-deals-card">
+                            <span class="flash-deals-card-cut">
+                                <span>-20%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="./assets/smartwatch-prod.svg" alt="">
+                            </div>
+                            <div class="flash-deals-card-desc ">
+                                <p>WirstTech</p>
+                                <h4>Smartwatch Series 5</h4>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>4.4</span>
+                                    (324)
+                                </p>
+                                <h3 class="flash-deals-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
+                            </div>
+                        </div>             
+                    </a>
+                    <a  
+                    id="sportPro-1"
+                    href="./pages/products-details/sportPro-1.html">
+                        <div class="flash-deals-card">
+                            <span class="flash-deals-card-cut">
+                                <span>-27%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="./assets/sneaker-prod.svg" alt="">
+                            </div>
+                            <div class="flash-deals-card-desc ">
+                                <p>SportPro</p>
+                                <h4>Sneakers Sport Run Fast</h4>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>4.6</span>
+                                    (445)
+                                </p>
+                                <h3 class="flash-deals-card-price">Rp 550.000<span><s>Rp 750.000</s></span></h3>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="flash-deals ">
-            <div class="">
-                <div class="flash-deals-info">
-                    <img src="./assets/flash-icon.svg" alt="Lihat Semua">
-                    <span>Flash Deals</span>
+            <div class="info">
+                <div class="info-first">
+                    <div class="info-first-action">
+                        <p>Fashion Wanita</p>
+                        <h4>Discount s/d 50%</h4>
+                        <a href="" class="info-first-action-btn">
+                            <div>
+                                <p>
+                                    Belanja Sekarang
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <a href="src/pages/browse-products/index.html" class="">
-                    <span>Lihat Semua</span>
-                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
-                </a>
+                <div class="info-second">
+                    <div class="info-first-action">
+                        <p>Elektronik Pilihan</p>
+                        <h4>Harga Terbaik</h4>
+                        <a href="" class="info-first-action-btn">
+                            <div>
+                                <p>
+                                    Lihat Produk
+                                </p>
+                            </div>
+                        </a>
+                    </div>                
+                </div>
             </div>
-            <div class="flash-deals-cards-wrapper">
-                <a 
-                id="soundWave-1"
-                href="./src/pages/products-details/soundWave-1.html">
-                    <div class="flash-deals-card">
-                        <span class="flash-deals-card-cut">
+            <div class="new-products ">
+                <div class="">
+                    <div class="new-products-info">
+                        <img src="./assets/upscale-icon.svg" alt="Lihat Semua">
+                        <span>Produk Terbaru</span>
+                    </div>
+                    <a href="" class="">
+                        <span>Lihat Semua</span>
+                        <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                    </a>
+                </div>
+                <div class="new-products-cards-wrapper">
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
                             <span>-31%</span>
                         </span>
                         <div>
@@ -235,7 +387,7 @@
                             width="100%" 
                             src="./assets/headphone-prod.svg" alt="">
                         </div>
-                        <div class="flash-deals-card-desc ">
+                        <div class="new-products-card-desc ">
                             <p>SoundWave</p>
                             <h4>Headphone Wireless Premium</h4>
                             <p>
@@ -247,15 +399,11 @@
                                 <span>4.8</span>
                                 (512)
                             </p>
-                            <h3 class="flash-deals-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                            <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
                         </div>
                     </div>
-                </a>
-                <a 
-                id="phoneX"
-                href="./pages/products-details/phoneX-1.html">
-                    <div class="flash-deals-card">
-                        <span class="flash-deals-card-cut">
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
                             <span>-16%</span>
                         </span>                    
                         <div>
@@ -263,8 +411,8 @@
                             width="100%" 
                             src="./assets/smartphone-prod.svg" alt="">
                         </div>
-                        <div class="flash-deals-card-desc ">
-                            <p>PhoneX</p>
+                        <div class="new-products-card-desc ">
+                            <p>PhoeX</p>
                             <h4>Smartphone 5G Ultra</h4>
                             <p>
                                 <span class="fa fa-star checked"></span>
@@ -275,15 +423,192 @@
                                 <span>4.6</span>
                                 (890)
                             </p>
-                            <h3 class="flash-deals-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                            <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
                         </div>
                     </div>            
-                </a>
-                <a 
-                id="wirstTech-1"
-                href="./pages/products-details/wirstTech-1.html">
-                    <div class="flash-deals-card">
-                        <span class="flash-deals-card-cut">
+                    <div class="new-products-card">
+                        <span class="new-products-card-new">
+                            <span>Baru</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/bag-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>UrbanBag</p>
+                            <h4>Tas Ransel Laptop Waterproof</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.5</span>
+                                (234)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 350.000</h3>
+                        </div>
+                    </div>             
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-27%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/blender-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>BlendPro</p>
+                            <h4>Blender Portable Mini</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>4.2</span>
+                                (567)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 189.000</h3>
+                        </div>
+                    </div>
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-20%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/tablet-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>TabTech</p>
+                            <h4>Tablet 10.5" WiFi + 4G</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.5</span>
+                                (345)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 3.200.000<span><s>Rp 4.000.000</s></span></h3>
+                        </div>
+                    </div>
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-25%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/dress-floral-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>FashionID</p>
+                            <h4>Dress Floral Midi</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.5</span>
+                                (312)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
+                        </div>
+                    </div>
+                    <div class="new-products-card">
+                        <span class="new-products-card-new">
+                            <span>Baru</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/essence-oil-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>AromaWell</p>
+                            <h4>Minyak Esensial Lavender Set</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.8</span>
+                                (456)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 145.000</h3>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="new-products ">
+                <div class="">
+                    <div class="new-products-info">
+                        <span>Produk Unggulan</span>
+                    </div>
+                    <a href="" class="">
+                        <span>Lihat Semua</span>
+                        <img src="./assets/arrow-left.svg" alt="Lihat Semua">
+                    </a>
+                </div>
+                <div class="new-products-cards-wrapper">
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-31%</span>
+                        </span>
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/headphone-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>SoundWave</p>
+                            <h4>Headphone Wireless Premium</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.8</span>
+                                (512)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
+                        </div>
+                    </div>
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-16%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/smartphone-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>PhoeX</p>
+                            <h4>Smartphone 5G Ultra</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span>4.6</span>
+                                (890)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
+                        </div>
+                    </div>            
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
                             <span>-20%</span>
                         </span>                    
                         <div>
@@ -291,7 +616,7 @@
                             width="100%" 
                             src="./assets/smartwatch-prod.svg" alt="">
                         </div>
-                        <div class="flash-deals-card-desc ">
+                        <div class="new-products-card-desc ">
                             <p>WirstTech</p>
                             <h4>Smartwatch Series 5</h4>
                             <p>
@@ -303,595 +628,286 @@
                                 <span>4.4</span>
                                 (324)
                             </p>
-                            <h3 class="flash-deals-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
-                        </div>
-                    </div>             
-                </a>
-                <a  
-                id="sportPro-1"
-                href="./pages/products-details/sportPro-1.html">
-                    <div class="flash-deals-card">
-                        <span class="flash-deals-card-cut">
-                            <span>-27%</span>
-                        </span>                    
-                        <div>
-                            <img
-                            width="100%" 
-                            src="./assets/sneaker-prod.svg" alt="">
-                        </div>
-                        <div class="flash-deals-card-desc ">
-                            <p>SportPro</p>
-                            <h4>Sneakers Sport Run Fast</h4>
-                            <p>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span>4.6</span>
-                                (445)
-                            </p>
-                            <h3 class="flash-deals-card-price">Rp 550.000<span><s>Rp 750.000</s></span></h3>
-                        </div>
+                            <h3 class="new-products-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
+                        </div> 
+                     </div>               
+                    <div class="new-products-card">
+                            <span class="new-products-card-cut">
+                                <span>-27%</span>
+                            </span>                    
+                            <div>
+                                <img
+                                width="100%" 
+                                src="./assets/sneaker-prod.svg" alt="">
+                            </div>
+                            <div class="new-products-card-desc ">
+                                <p>SportPro</p>
+                                <h4>Sneakers Sport Run Fast</h4>
+                                <p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>4.6</span>
+                                    (445)
+                                </p>
+                                <h3 class="new-products-card-price">Rp 550.000<span><s>Rp 750.000</s></span></h3>
+                            </div>
                     </div>
-                </a>
-            </div>
-        </div>
-        <div class="info">
-            <div class="info-first">
-                <div class="info-first-action">
-                    <p>Fashion Wanita</p>
-                    <h4>Discount s/d 50%</h4>
-                    <a href="" class="info-first-action-btn">
-                        <div>
-                            <p>
-                                Belanja Sekarang
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="info-second">
-                <div class="info-first-action">
-                    <p>Elektronik Pilihan</p>
-                    <h4>Harga Terbaik</h4>
-                    <a href="" class="info-first-action-btn">
-                        <div>
-                            <p>
-                                Lihat Produk
-                            </p>
-                        </div>
-                    </a>
-                </div>                
-            </div>
-        </div>
-        <div class="new-products ">
-            <div class="">
-                <div class="new-products-info">
-                    <img src="./assets/upscale-icon.svg" alt="Lihat Semua">
-                    <span>Produk Terbaru</span>
-                </div>
-                <a href="" class="">
-                    <span>Lihat Semua</span>
-                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
-                </a>
-            </div>
-            <div class="new-products-cards-wrapper">
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-31%</span>
-                    </span>
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.8</span>
-                            (512)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-16%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/smartphone-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>PhoeX</p>
-                        <h4>Smartphone 5G Ultra</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.6</span>
-                            (890)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
-                    </div>
-                </div>            
-                <div class="new-products-card">
-                    <span class="new-products-card-new">
-                        <span>Baru</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/bag-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>UrbanBag</p>
-                        <h4>Tas Ransel Laptop Waterproof</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.5</span>
-                            (234)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 350.000</h3>
-                    </div>
-                </div>             
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-27%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/blender-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>BlendPro</p>
-                        <h4>Blender Portable Mini</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span>4.2</span>
-                            (567)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 189.000</h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-20%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/tablet-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>TabTech</p>
-                        <h4>Tablet 10.5" WiFi + 4G</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.5</span>
-                            (345)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 3.200.000<span><s>Rp 4.000.000</s></span></h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-25%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/dress-floral-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>FashionID</p>
-                        <h4>Dress Floral Midi</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.5</span>
-                            (312)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-new">
-                        <span>Baru</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/essence-oil-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>AromaWell</p>
-                        <h4>Minyak Esensial Lavender Set</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.8</span>
-                            (456)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 145.000</h3>
-                    </div>
-                </div>                
-            </div>
-        </div>
-        <div class="new-products ">
-            <div class="">
-                <div class="new-products-info">
-                    <span>Produk Unggulan</span>
-                </div>
-                <a href="" class="">
-                    <span>Lihat Semua</span>
-                    <img src="./assets/arrow-left.svg" alt="Lihat Semua">
-                </a>
-            </div>
-            <div class="new-products-cards-wrapper">
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-31%</span>
-                    </span>
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/headphone-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>SoundWave</p>
-                        <h4>Headphone Wireless Premium</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.8</span>
-                            (512)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 450.000<span><s>Rp 640.000</s></span></h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-16%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/smartphone-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>PhoeX</p>
-                        <h4>Smartphone 5G Ultra</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.6</span>
-                            (890)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
-                    </div>
-                </div>            
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-20%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/smartwatch-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>WirstTech</p>
-                        <h4>Smartwatch Series 5</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span>4.4</span>
-                            (324)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 2.800.000<span><s>Rp 3.500.000</s></span></h3>
-                    </div> 
-                 </div>               
-                <div class="new-products-card">
+                    <div class="new-products-card">
                         <span class="new-products-card-cut">
-                            <span>-27%</span>
+                            <span>-20%</span>
                         </span>                    
                         <div>
                             <img
                             width="100%" 
-                            src="./assets/sneaker-prod.svg" alt="">
+                            src="./assets/coffee-maker-prod.svg" alt="">
                         </div>
                         <div class="new-products-card-desc ">
-                            <p>SportPro</p>
-                            <h4>Sneakers Sport Run Fast</h4>
+                            <p>BrewMaster</p>
+                            <h4>Coffe Maker Otomatis</h4>
+                            <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span>4.4</span>
+                                (189)
+                            </p>
+                            <h3 class="new-products-card-price">Rp 875.000<span><s>Rp 1.200.000</s></span></h3>
+                        </div>
+                    </div>
+                    <div class="new-products-card">
+                        <span class="new-products-card-cut">
+                            <span>-25%</span>
+                        </span>                    
+                        <div>
+                            <img
+                            width="100%" 
+                            src="./assets/dress-floral-prod.svg" alt="">
+                        </div>
+                        <div class="new-products-card-desc ">
+                            <p>FashionID</p>
+                            <h4>Dress Floral Midi</h4>
                             <p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span>4.6</span>
-                                (445)
+                                <span>4.5</span>
+                                (312)
                             </p>
-                            <h3 class="new-products-card-price">Rp 550.000<span><s>Rp 750.000</s></span></h3>
+                            <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
                         </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-20%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/coffee-maker-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>BrewMaster</p>
-                        <h4>Coffe Maker Otomatis</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span>4.4</span>
-                            (189)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 875.000<span><s>Rp 1.200.000</s></span></h3>
-                    </div>
-                </div>
-                <div class="new-products-card">
-                    <span class="new-products-card-cut">
-                        <span>-25%</span>
-                    </span>                    
-                    <div>
-                        <img
-                        width="100%" 
-                        src="./assets/dress-floral-prod.svg" alt="">
-                    </div>
-                    <div class="new-products-card-desc ">
-                        <p>FashionID</p>
-                        <h4>Dress Floral Midi</h4>
-                        <p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span>4.5</span>
-                            (312)
-                        </p>
-                        <h3 class="new-products-card-price">Rp 295.000<span><s>Rp 395.000</s></span></h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="reason-section ">
-            <h3>Kenapa Belanja di BeliMudah?</h4>
-            <div class="reason-section-cards-wrapper ">
-                <div class="reason-section-card ">
-                    <div>
-                        <img
-                        width="36" 
-                        height="36" 
-                        src="./assets/export-icon.png" alt="">
-                        <h5>Gratis Ongkir</h5>
-                        <p>Pembelian diatas Rp 100.000 gratis pengiriman ke seluruh indonesia</p>
+            <div class="reason-section ">
+                <h3>Kenapa Belanja di BeliMudah?</h4>
+                <div class="reason-section-cards-wrapper ">
+                    <div class="reason-section-card ">
+                        <div>
+                            <img
+                            width="36" 
+                            height="36" 
+                            src="./assets/export-icon.png" alt="">
+                            <h5>Gratis Ongkir</h5>
+                            <p>Pembelian diatas Rp 100.000 gratis pengiriman ke seluruh indonesia</p>
+                        </div>
                     </div>
-                </div>
-                <div class="reason-section-card ">
-                    <div>
-                        <img
-                        width="36" 
-                        height="36" 
-                        src="./assets/safe-icon.png" alt="">
-                        <h5>Pembayaran Aman</h5>
-                        <p>Data kamu terenkripsi dengan standar keamanan tinggi</p>
+                    <div class="reason-section-card ">
+                        <div>
+                            <img
+                            width="36" 
+                            height="36" 
+                            src="./assets/safe-icon.png" alt="">
+                            <h5>Pembayaran Aman</h5>
+                            <p>Data kamu terenkripsi dengan standar keamanan tinggi</p>
+                        </div>
                     </div>
-                </div>
-                <div class="reason-section-card ">
-                    <div>
-                        <img
-                        width="36"
-                        height="36" 
-                        src="./assets/return-icon.png" alt="">
-                        <h5>Retur Mudah</h5>
-                        <p>Produk tidak sesuai? Kemabalikan dalam 30 hari tanpa ribet</p>
+                    <div class="reason-section-card ">
+                        <div>
+                            <img
+                            width="36"
+                            height="36" 
+                            src="./assets/return-icon.png" alt="">
+                            <h5>Retur Mudah</h5>
+                            <p>Produk tidak sesuai? Kemabalikan dalam 30 hari tanpa ribet</p>
+                        </div>
                     </div>
-                </div>
-                <div class="reason-section-card ">
-                    <div>
-                        <img
-                        width="36" 
-                        height="36" 
-                        src="./assets/chat-icon.png" alt="">
-                        <h5>CS 24/7</h5>
-                        <p>Tim kami siap membatu anda kapan saja</p>
+                    <div class="reason-section-card ">
+                        <div>
+                            <img
+                            width="36" 
+                            height="36" 
+                            src="./assets/chat-icon.png" alt="">
+                            <h5>CS 24/7</h5>
+                            <p>Tim kami siap membatu anda kapan saja</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main> -->
-    <!-- <footer>
-        <section class="">
-            <div class="footer-nav ">
-                <div class="">
-                    <div>
-                        <img src="./assets/export-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Gratis Ongkir</h5>
-                        <p>Pembelian diatas Rp 100.000</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="./assets/safe-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Pembayaran Aman</h5>
-                        <p>SSL Terenkripsi 256-Bit</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="./assets/return-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Pengembailian Mudah</h5>
-                        <p>30 Hari pengebalian gratis</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="./assets/chat-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Dukungan 24/7</h5>
-                        <p>Bantuan Kapan saja</p>
-                    </div>
-                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="footer-list">
-                <div class="">
-                   <div class="footer-list-logo">
-                        <div class="footer-logo-icon">
-                            <p class="footer-logo-icon-text">B</p>
-                        </div>
-                        <p class="footer-list-logo-text white-color">BeliMudah</p>
-                    </div>
-                    <p>
-                        Platform belanja online terpercaya dengan
-                        ribuan produk pilihan. Belanja mudah,
-                        aman, dan menyenangkan.            
-                    </p>
-                    <div class="footer-social">
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="./assets/facebook-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="./assets/instagram-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="./assets/x-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="./assets/youtube-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="">
-                    <h5 class="layanan-title">Layanan</h5>
-                    <ul class="layanan-list">
-                        <li>Tentang Kami</li>
-                        <li>Program</li>
-                        <li>Blog</li>
-                        <li>Program Afiliasi</li>
-                        <li>Jual di BeliMudah</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h5 class="bantuan-title">Bantuan</h5>
-                    <ul class="bantuan-list">
-                        <li>Cara Belanja</li>
-                        <li>Kebijakan Pesanan</li>
-                        <li>Lacak Pesanan</li>
-                        <li>FAQ</li>
-                        <li>Hubungi Kami</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h5 class="kontak-title">Kontak</h5>
-                    <ul class="kontak-list ">
-                        <li>
-                            Jl. Sudirman No. 1, Jakarta Selatan, DKI Jakarta 12190
-                        </li>
-                        <li>0800-1234-5678 (Gratis)</li>
-                        <li>bantuan@belimudah.id</li>
-                    </ul>
-                    <div class="newsletter ">
-                        <h5>Newsletter</h5>
+    <footer>
+        <div>
+            <section class="">
+                <div class="footer-nav ">
+                    <div class="">
                         <div>
-                            <form action="" class="newsletter-subscribe ">
-                                <input
-                                class="newsletter-input-email" 
-                                type="email" 
-                                name="email" 
-                                id="email"
-                                placeholder="Email Kamu"
-                                >
-                                <button class="newsletter-btn" type="submit">Langganan</button>
-                            </form>
+                            <img src="./assets/export-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Gratis Ongkir</h5>
+                            <p>Pembelian diatas Rp 100.000</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="./assets/safe-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Pembayaran Aman</h5>
+                            <p>SSL Terenkripsi 256-Bit</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="./assets/return-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Pengembailian Mudah</h5>
+                            <p>30 Hari pengebalian gratis</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="./assets/chat-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Dukungan 24/7</h5>
+                            <p>Bantuan Kapan saja</p>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <section>
+                <div class="footer-list">
+                    <div class="">
+                       <div class="footer-list-logo">
+                            <div class="footer-logo-icon">
+                                <p class="footer-logo-icon-text">B</p>
+                            </div>
+                            <p class="footer-list-logo-text white-color">BeliMudah</p>
+                        </div>
+                        <p>
+                            Platform belanja online terpercaya dengan
+                            ribuan produk pilihan. Belanja mudah,
+                            aman, dan menyenangkan.            
+                        </p>
+                        <div class="footer-social">
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="./assets/facebook-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="./assets/instagram-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="./assets/x-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="./assets/youtube-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5 class="layanan-title">Layanan</h5>
+                        <ul class="layanan-list">
+                            <li>Tentang Kami</li>
+                            <li>Program</li>
+                            <li>Blog</li>
+                            <li>Program Afiliasi</li>
+                            <li>Jual di BeliMudah</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h5 class="bantuan-title">Bantuan</h5>
+                        <ul class="bantuan-list">
+                            <li>Cara Belanja</li>
+                            <li>Kebijakan Pesanan</li>
+                            <li>Lacak Pesanan</li>
+                            <li>FAQ</li>
+                            <li>Hubungi Kami</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h5 class="kontak-title">Kontak</h5>
+                        <ul class="kontak-list ">
+                            <li>
+                                Jl. Sudirman No. 1, Jakarta Selatan, DKI Jakarta 12190
+                            </li>
+                            <li>0800-1234-5678 (Gratis)</li>
+                            <li>bantuan@belimudah.id</li>
+                        </ul>
+                        <div class="newsletter">
+                            <h5>Newsletter</h5>
+                            <div>
+                                <form action="" class="newsletter-subscribe ">
+                                    <input
+                                    class="newsletter-input-email" 
+                                    type="email" 
+                                    name="email" 
+                                    id="email"
+                                    placeholder="Email Kamu"
+                                    >
+                                    <button class="newsletter-btn" type="submit">Langganan</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="footer-note">
-                <p class="footer-note-copyright">
-                    <span>&#169</span>
-                    2026 BeliMudah. Seluruh hak cipta dilindungi
-                </p>
-                <ul class="">
-                    <li>Kebijakan dan Privasi</li>
-                    <li>Syarat dan Ketentuan</li>
-                    <li>Admin</li>
-                </ul>
-            </div>
-        </section>
-    </footer> -->
+            </section>
+            <section>
+                <div class="footer-note">
+                    <p class="footer-note-copyright">
+                        <span>&#169</span>
+                        2026 BeliMudah. Seluruh hak cipta dilindungi
+                    </p>
+                    <ul class="">
+                        <li>Kebijakan dan Privasi</li>
+                        <li>Syarat dan Ketentuan</li>
+                        <li>Admin</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const navigation = document.querySelector("nav")
+
+        if(window.innerWidth <= 590) {
+            navigation.classList.remove("nav-container")
+            navigation.classList.add("nav-container-bottom")
+        } else {
+            navigation.classList.remove("nav-container-bottom")
+            navigation.classList.add("nav-container")            
+        }
+
+    </script>
 </body>
 </html>

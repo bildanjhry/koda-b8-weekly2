@@ -233,6 +233,8 @@
     margin-top: 3rem;
     background-color: white;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
 }
 
@@ -245,9 +247,11 @@
 
 .reason-section-cards-wrapper {
     font-size: 0;
-    margin: 0 auto;
-    width: 93%;
+    width: 100%;
+    background-color: yellowgreen;
     height: 180px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .reason-section-card {
