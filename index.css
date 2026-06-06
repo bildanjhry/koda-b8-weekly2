@@ -47,6 +47,10 @@
     color: var(--main-color);
 }
 
+.black-color {
+    color: var(--default-color);
+}
+
 .bg-blue {
     background-color: var(--main-color);
 }
@@ -55,14 +59,14 @@
     background-color: var(--green-success-color);
 }
 
-/* .button-submit > img {
+.button-submit > img {
     position: relative;
     top: 2px;
 }
 
 .button-submit:hover {
     background-color: #1a73e8e0;
-} */
+}
 
 .bg-light-blue {
     background-color: var(--blue-bg-color);
