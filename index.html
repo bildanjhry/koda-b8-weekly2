@@ -143,7 +143,7 @@
             </div>
         </nav>
         <div class="herro">
-            <!-- <div class="herro-slider">
+            <div class="herro-slider">
                 <div class="herro-slider-first">
                     <div class="herro-slider-first-desc">
                         <div>
@@ -157,13 +157,13 @@
                             </button>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="herro-slider-second">
-                </div> -->
+                </div>
+                <div class="herro-slider-second">
+                </div>
             </div>
         </div>
     </header>
-    <!-- <main>
+    <main>
         <div>
             <div class="suggest-category">
                 <div class="">
@@ -173,7 +173,7 @@
                         <img src="./assets/arrow-left.svg" alt="Lihat Semua">
                     </a>
                 </div>
-                <div class="suggest-category-cards-wrapper ">
+                <div class="suggest-category-cards-wrapper">
                     <div class="suggest-category-card ">
                         <img src="./assets/elektronik-cat.svg" 
                         alt="">
@@ -366,7 +366,7 @@
                     </div>                
                 </div>
             </div>
-            <div class="new-products ">
+            <!-- <div class="new-products ">
                 <div class="">
                     <div class="new-products-info">
                         <img src="./assets/upscale-icon.svg" alt="Lihat Semua">
@@ -547,8 +547,8 @@
                         </div>
                     </div>                
                 </div>
-            </div>
-            <div class="new-products ">
+            </div> -->
+            <!-- <div class="new-products ">
                 <div class="">
                     <div class="new-products-info">
                         <span>Produk Unggulan</span>
@@ -704,7 +704,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="reason-section ">
                 <h3>Kenapa Belanja di BeliMudah?</h4>
                 <div class="reason-section-cards-wrapper ">
@@ -751,7 +751,7 @@
                 </div>
             </div>
         </div>
-    </main> -->
+    </main>
     <footer>
         <div>
             <section class="">
@@ -903,7 +903,7 @@
         const newContent = content.cloneNode(true)
         const header = document.querySelector("header")
 
-        if(window.innerWidth <= 590) {
+        if(window.innerWidth <= 695) {
             const newNav = document.createElement("nav")
             const newDiv = document.createElement("div")
             newDiv.classList.add("nav-actions-wrapper")
@@ -911,7 +911,9 @@
             newNav.classList.add("nav-container-bottom")
             newNav.appendChild(newDiv)
             header.appendChild(newNav)
-        } 
+        } else {
+            
+        }
 
     </script>
 </body>

@@ -42,12 +42,11 @@ main {
     width: 100%;
     background-color: var(--bg-color);
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+   
 }
 
 main > div {
-    width: 83%;
+    width: 100%;
 }
 
 footer {
@@ -833,7 +832,7 @@ footer > div > section:nth-child(3) {
 }
 
 
-@media (max-width: 595px) {
+@media (max-width: 695px) {
     .nav-container-bottom {
         height:fit-content;
         display: flex;

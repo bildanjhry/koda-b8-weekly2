@@ -72,11 +72,12 @@
     display: inline-block;
 }
 
+
 .suggest-category {
     height: 192px;
     margin-top: 3rem;
     justify-self: center;
-    width: 100%;
+    width: 83%;
 }
 
 .suggest-category > div > p {
@@ -231,6 +232,8 @@
 .reason-section {
     height: 243px;
     margin-top: 3rem;
+    width: 83%;
+    justify-self: center;
     background-color: white;
     margin-bottom: 2rem;
     display: flex;
@@ -248,14 +251,13 @@
 .reason-section-cards-wrapper {
     font-size: 0;
     width: 100%;
-    background-color: yellowgreen;
     height: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .reason-section-card {
-    width: 277px;
+    width: 280px;
     height: 100%;
     vertical-align: top;
     display: inline-block;
@@ -281,4 +283,95 @@
 
 .reason-section-card:not(:last-child) {
     margin-right: 14.8px;
+}
+
+@media (max-width: 800px){
+
+    .herro-slider-first {
+        width: 100%;
+        display: flex;
+        display: flex;
+        align-items: center;
+    }
+
+    .herro-slider-first-desc {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin:0;
+    }
+
+    .herro-slider-first-desc > div {
+        width: 85%;
+        top: 0;
+    }
+
+    .herro {
+        margin-top: 105px;
+    }
+    
+    .herro-slider-first-desc {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 10%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .herro-slider-second {
+        display: none;
+    }
+
+    .suggest-category {
+        width: 90%;
+        height: 21rem;
+    }
+
+    .suggest-category > div > p:first-of-type {
+        font-size: var(--default-font-size);
+    }
+
+    .suggest-category > div > a > span {
+        font-size: var(--small-font-size);
+    }
+
+    .suggest-category-cards-wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, calc(90%/3));
+        row-gap: 25px;
+        justify-content: space-between;
+    }
+
+    .suggest-category-card {
+        width: 100%;
+    }
+
+    .reason-section {
+        width: 90%;
+        justify-self: center;
+        height: fit-content;
+    }
+
+    .reason-section-cards-wrapper {
+        display: grid;
+        height: fit-content;
+        gap: 5%;
+        row-gap: 10px;
+        width: 100%;
+        padding:0 25px 2rem 25px;
+        justify-content: space-around;
+        box-sizing: border-box;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reason-section-card {
+        height: fit-content;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
 }
