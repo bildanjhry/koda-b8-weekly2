@@ -846,8 +846,16 @@ footer > div > section:nth-child(3) {
         display: none;
     }
 
+    .nav-category > a {
+        display: none;
+    }
+
     .nav-category {
         width: 90%;
+    }
+
+    .nav-category-menu {
+        width: fit-content;
     }
 
     .nav-actions-search {
