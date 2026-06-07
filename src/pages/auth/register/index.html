@@ -83,8 +83,8 @@
                     </div>
                 </header>
                 <main>
-                    <div class="form-actions  ">
-                        <form action="../../../../index.html" class="login-form">
+                    <div class="form-actions">
+                        <form action="" method="post" class="login-form">
                             <div class=" ">
                                 <label for="fullname">Nama Lengkap</label>
                                 <section>
@@ -153,7 +153,7 @@
                                     </button>
                                 </section>
                             </div>
-                            <div class="privacy-policy  ">
+                            <div class="privacy-policy">
                                 <input type="checkbox" id="privacy-policy" name="privacy-policy">
                                 <div>
                                     <label for="privacy-policy">
@@ -163,6 +163,7 @@
                                 </div>
                             </div>
                             <button 
+                            type="submit"
                             class="submit-btn">
                                 <img src="../../../../assets/login-icon.svg" alt="">
                                 <p>Masuk</p>
@@ -183,5 +184,43 @@
             </div>
         </section>
     </div>
+    <script type="text/javascript">
+        const inputForm = document.querySelector(".login-form")
+
+        function handleRegister(e) {
+            e.preventDefault()
+            
+            try{
+                const inputValue = document.querySelectorAll("input")
+                const formData = {}
+                inputValue.forEach((item) => {
+                    if(!item.value){
+                        throw new Error('Tidak Boleh Kosong')
+                    }
+                    if(inputForm[name="password"].value !== inputForm[name="password-confirm"].value) {
+                        console.error('pass doesn\'t match')
+                        throw new Error('Password tidak sama')
+                    }
+                    if (!(inputForm[name="privacy-policy"].checked)) {
+                       console.log(item.checked)
+                       throw new Error("Pastikan membaca privacy dan policy")
+                    } else {
+                        if(item.name === "privacy-policy" || item.name === "password-confirm")return
+                        else formData[item.name] = item.value
+                    }
+                })
+    
+                let accounts = [formData]
+                window.localStorage.setItem("acconts", JSON.stringify(accounts))
+                window.location.href = '../login/index.html'
+
+            }catch(err) {
+                console.error(err.message)
+            }
+
+        }
+
+        inputForm.addEventListener('submit', handleRegister)
+    </script>
 </body>
 </html>
