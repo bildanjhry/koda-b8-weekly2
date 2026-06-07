@@ -1,5 +1,9 @@
 export default function handleData() {
-    return fetch('../../products/index.json').then((res) => 
-        res.json()
-    )
+    try {
+       return fetch('../../../products/index.json').then((res) => 
+            res.json()
+        )
+    } catch(err){
+        console.log(err)
+    }
 }

@@ -419,7 +419,7 @@ select {
 
     .new-products-card {
         width: 97%;
-        height: 20rem;
+        height: fit-content;
     }
 
     .content-products-browse-more-btn {

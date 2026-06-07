@@ -20,9 +20,7 @@ function handleRatingStars(rating, ratingTotal){
 
 export default async function makeProductCard(parentEl, dataLength, pathAssets){
   try{
-    console.log(pathAssets)
       const data = await handleData()
-      const cardDesc = document.querySelectorAll(`.product-card-desc > h4`)
         data.forEach((item, index) => {
           if((index+1) <= dataLength ){
             const cardWrapper = document.createElement("a")
@@ -68,6 +66,7 @@ export default async function makeProductCard(parentEl, dataLength, pathAssets){
             div.appendChild(div2)
             div.appendChild(div3)
             cardWrapper.appendChild(div)
+            console.log(cardWrapper)
             parentEl.appendChild(cardWrapper)
           }
     })
