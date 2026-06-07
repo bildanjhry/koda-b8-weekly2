@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeliMudah</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../../../index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,48 +184,6 @@
             </div>
         </section>
     </div>
-    <script type="text/javascript">
-        const inputForm = document.querySelector(".login-form")
-
-        function handleRegister(e) {
-            e.preventDefault()
-            
-            try{
-                const inputValue = document.querySelectorAll("input")
-                const formData = {}
-                const acconts = []
-                inputValue.forEach((item) => {
-                    if(!item.value){
-                        throw new Error('Pastikan semua form terisi.')
-                    }
-                    if(inputForm[name="password"].value !== inputForm[name="password-confirm"].value) {
-                        throw new Error('Konfirmasi password tidak sama.')
-                    }
-                    if (!(inputForm[name="privacy-policy"].checked)) {
-                       throw new Error("Pastikan menceklis privacy dan policy.")
-                    } else {
-                        if(item.name === "privacy-policy" || item.name === "password-confirm") return
-                        else formData[item.name] = item.value
-                    }
-                })
-                const acc = window.localStorage.getItem("accounts")
-                if(acc){
-                    const objAcc = JSON.parse(acc)
-                    accounts = [...objAcc, formData]
-                } else {
-                    accounts = [formData]
-                }
-                alert('Berhasil Buat Akun')
-                window.localStorage.setItem("accounts", JSON.stringify(accounts))
-                window.location.href = '../login/index.html?new=true'
-
-            }catch(err) {
-                alert(err.message)
-            }
-
-        }
-
-        inputForm.addEventListener('submit', handleRegister)
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
