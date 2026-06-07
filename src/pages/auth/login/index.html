@@ -81,7 +81,9 @@
                                     <img 
                                     class="email-auth-icon"
                                     src="../../../../assets/email-auth-icon.svg" alt="Email">
-                                    <input 
+                                    
+                                    <input
+                                    class="input-email" 
                                     type="email"
                                     placeholder="email@contoh.com" 
                                     id="email" 
@@ -98,7 +100,9 @@
                                     <img 
                                     class="email-auth-icon"
                                     src="../../../../assets/pass-auth-icon.svg" alt="Password">
-                                    <input 
+                                   
+                                    <input
+                                    class="input-password" 
                                     type="password"
                                     placeholder="Masukan kata sandi" 
                                     id="password" 
@@ -140,5 +144,14 @@
             </div>
         </section>
     </div>
+    <script type="text/javascript">
+         const params = new URLSearchParams(window.location.search)
+         if(params.get('new')) {
+             const acc = JSON.parse(window.localStorage.getItem("accounts"))
+             const email = document.querySelector(".input-email")
+             const password = document.querySelector(".input-password")
+             email.value = acc[acc.length-1].email
+         }
+    </script>
 </body>
 </html>

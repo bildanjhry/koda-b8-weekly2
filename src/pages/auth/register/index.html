@@ -193,29 +193,34 @@
             try{
                 const inputValue = document.querySelectorAll("input")
                 const formData = {}
+                const acconts = []
                 inputValue.forEach((item) => {
                     if(!item.value){
-                        throw new Error('Tidak Boleh Kosong')
+                        throw new Error('Pastikan semua form terisi.')
                     }
                     if(inputForm[name="password"].value !== inputForm[name="password-confirm"].value) {
-                        console.error('pass doesn\'t match')
-                        throw new Error('Password tidak sama')
+                        throw new Error('Konfirmasi password tidak sama.')
                     }
                     if (!(inputForm[name="privacy-policy"].checked)) {
-                       console.log(item.checked)
-                       throw new Error("Pastikan membaca privacy dan policy")
+                       throw new Error("Pastikan menceklis privacy dan policy.")
                     } else {
-                        if(item.name === "privacy-policy" || item.name === "password-confirm")return
+                        if(item.name === "privacy-policy" || item.name === "password-confirm") return
                         else formData[item.name] = item.value
                     }
                 })
-    
-                let accounts = [formData]
-                window.localStorage.setItem("acconts", JSON.stringify(accounts))
-                window.location.href = '../login/index.html'
+                const acc = window.localStorage.getItem("accounts")
+                if(acc){
+                    const objAcc = JSON.parse(acc)
+                    accounts = [...objAcc, formData]
+                } else {
+                    accounts = [formData]
+                }
+                alert('Berhasil Buat Akun')
+                window.localStorage.setItem("accounts", JSON.stringify(accounts))
+                window.location.href = '../login/index.html?new=true'
 
             }catch(err) {
-                console.error(err.message)
+                alert(err.message)
             }
 
         }
