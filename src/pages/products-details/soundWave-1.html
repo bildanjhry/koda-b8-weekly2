@@ -199,22 +199,40 @@
                         <p>Kamu hemat Rp 200.000</p>
                     </div>
                     <div class=" ">
-                        <p>Warna: <span>Hitam</span></p>
+                        <p>Warna: <span class="coosen-color"></span></p>
                         <div class="color-picker">
-                            <button>Hitam</button>
+                            <div class="color-button">
+                                <input
+                                class="color-input"
+                                type="radio" value="Hitam" name="color" id="hitam">
+                                <label for="hitam">Hitam</label>
+                            </div>
+                             <div class="color-button">
+                                <input
+                                class="color-input"
+                                type="radio" value="Putih" name="color" id="putih">
+                                <label for="putih">Putih</label>
+                            </div>
+                            <div class="color-button">
+                                <input
+                                class="color-input"
+                                type="radio" value="Biru" name="color" id="biru">
+                                <label for="biru">Biru</label>
+                            </div>
+                            <!-- <button>Hitam</button>
                             <button>Putih</button>
-                            <button>Biru</button>
+                            <button>Biru</button> -->
                         </div>
                     </div>
                     <div class="quantity">
                         <p>Jumlah</p>
                         <div class=" ">
                             <div>
-                                <button>
+                                <button class="quantity-dec-btn">
                                     <img src="../../../assets/minus-icon.svg" alt="">
                                 </button>
-                                <span>1</span>
-                                <button>
+                                <span class="quantity-total">1</span>
+                                <button class="quantity-inc-btn">
                                     <img src="../../../assets/plus-icon.svg" alt="">
                                 </button>
                             </div>
@@ -226,7 +244,7 @@
                             <button>
                                 <img src="../../../assets/cart-orange-icon.svg" alt="">
                             </button>
-                            <button> Beli Sekarang </button>
+                            <button class="buy-now-btn"> Beli Sekarang </button>
                             <button>
                                 <img src="../../../assets/fav-icon.svg" alt="Favorite">
                             </button>
@@ -521,6 +539,56 @@
             </section>
         </div>
     </footer> 
-    <script src="../../../js/utils/navbar-manipulation.js"></script>
+    <script src="../../js/utils/navbar-manipulation.js"></script>
+    <script type="text/javascript">
+        const button = document.querySelector(".buy-now-btn")
+        const coosenColor = document.querySelector(".coosen-color")
+        const incBtn = document.querySelector(".quantity-inc-btn")
+        const decBtn = document.querySelector(".quantity-dec-btn")
+        const qtyTotal = document.querySelector(".quantity-total")
+        const colorInput = document.querySelectorAll(".color-input")
+       
+        if(parseInt(qtyTotal.innerText) >= 1) {
+            let res = parseInt(qtyTotal.innerText)
+            incBtn.addEventListener('click', () => {
+                res += 1
+                qtyTotal.innerText = `${res}`
+            })
+            decBtn.addEventListener('click', () => {
+                if(!(parseInt(qtyTotal.innerText) < 2)) {
+                    res -= 1
+                    qtyTotal.innerText = `${res}`
+                }
+            })
+        }
+        
+        let formProduct = {
+            name:"",
+            price:0,
+            qty:0,
+            color:"",
+        }
+
+        function handleBuyNow() {
+            if(qtyTotal.innerText && coosenColor.innerText){
+                formProduct.name = `Headphone Wireless Premium`
+                formProduct.price = 4000,
+                formProduct.qty = qtyTotal.innerText
+                formProduct.color = coosenColor.innerText
+                    window.localStorage.setItem('checkout-product', JSON.stringify(formProduct))
+              return window.location.href = '../checkout/index.html'
+            } 
+            return alert("Kosong bos")
+        }
+
+        colorInput.forEach((item) => {
+            item.addEventListener('click', () => {
+                coosenColor.innerText = `${item.value}`
+            })
+        })
+
+        button.addEventListener('click', handleBuyNow)
+
+    </script>
 </body>
 </html>
