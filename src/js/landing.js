@@ -43,7 +43,6 @@ export default async function makeProductCard(parentEl, dataLength, pathAssets){
             h3.classList.add("product-card-price")
             img.setAttribute("src", pathAssets+item.image)
             img.setAttribute("width", "100%")
-            console.log(img)
 
             h4.innerText = item.name
             span2.innerText = item.discount
@@ -66,7 +65,6 @@ export default async function makeProductCard(parentEl, dataLength, pathAssets){
             div.appendChild(div2)
             div.appendChild(div3)
             cardWrapper.appendChild(div)
-            console.log(cardWrapper)
             parentEl.appendChild(cardWrapper)
           }
     })
