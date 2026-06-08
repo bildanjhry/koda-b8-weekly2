@@ -1,4 +1,6 @@
 //import validateForm from "../../../js/utils/form-validation.js"
+const inputForm = document.querySelector(".login-form")
+const inputValue = document.querySelectorAll("input")
 
 export function handleWatchPass(element){
   const input = document.getElementById("password")
@@ -8,32 +10,25 @@ export function handleWatchPass(element){
 
 const params = new URLSearchParams(window.location.search)
   const acc = JSON.parse(window.localStorage.getItem("accounts"))
-  if(params.get('new')) {
+ 
+  if(params.get('new')) {  // check if url has parameter new
       const email = document.querySelector(".input-email")
       const password = document.querySelector(".input-password")
       email.value = acc[acc.length-1].email
   }
-  const inputForm = document.querySelector(".login-form")
-  const inputValue = document.querySelectorAll("input")
 
 function handleLogin(e){
   e.preventDefault()
-  try{
-     acc.forEach((account) => {
-      const decodePass = atob(account.password)
-      //validateForm(inputValue)
-      if(account.email == inputForm[name="email"].value &&
-        decodePass == inputForm[name="password"].value
-      ){
-        alert("Login Berhasil")
-            return window.location.href = '../../../../index.html'
-       } else {
-            throw new Error("Akun tidak ditemukan")
+    const data = new FormData(e.target)
+
+    for(const account of acc){
+      const decodePass = window.atob(account.password)
+      if(account.email == data.get("email") && decodePass == data.get("password")){
+        window.location.href = '../../../../index.html'
+        return alert("Login Berhasil")
        }
-    })
-  } catch(err) {
-     alert(err.message)
-  }
+    }
+    alert("Akun tidak ditemukan")
 }
 
 inputForm.addEventListener('submit', handleLogin)

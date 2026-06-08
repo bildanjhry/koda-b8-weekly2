@@ -13,22 +13,27 @@ function handleRegister(e) {
     	const inputValue = document.querySelectorAll("input")
       const formData = {}
       const acconts = []
-      inputValue.forEach((item) => {
-      	if(!item.value){
-        	throw new Error('Pastikan semua form terisi.')
-        }
-        if(inputForm[name="password"].value !== inputForm[name="password-confirm"].value) {
-          throw new Error('Konfirmasi password tidak sama.')
-        }
-        if (!(inputForm[name="privacy-policy"].checked)) {
-          throw new Error("Pastikan menceklis privacy dan policy.")
-        } else {
-            if(item.name === "privacy-policy" || item.name === "password-confirm") return
-              else formData[item.name] = item.value
-          }
-      })
+			const data = new FormData(e.target)
+			const formInput = Object.fromEntries(data.entries())
+
+			for(const value in formInput){
+				if(!(formInput[value])) throw new Error('Pastikan semua form terisi.')
+			}
+
+			if(data.get("password") !== data.get("password-confirm")) {
+				throw new Error('Konfirmasi password tidak sama.')
+			}
+
+			if(!(data.get("privacy-policy"))) {
+				throw new Error("Pastikan menceklis privacy dan policy.")
+			} 
+
+			formData["fullname"] = data.get("fullname")
+			formData["email"] = data.get("email")
+			formData["password"] = btoa(data.get("password")) // encode password
+
       const acc = window.localStorage.getItem("accounts")
-      formData.password = btoa(formData.password)
+
       if(acc){
           const objAcc = JSON.parse(acc)
           accounts = [...objAcc, formData]
