@@ -1,4 +1,6 @@
-function handleWatchPass(element){
+//import validateForm from "../../../js/utils/form-validation.js"
+
+export function handleWatchPass(element){
   const input = document.getElementById("password")
   if(element.type === "password") return  element.setAttribute("type", "text")
   else return element.setAttribute("type", "password")
@@ -14,11 +16,12 @@ const params = new URLSearchParams(window.location.search)
   const inputForm = document.querySelector(".login-form")
   const inputValue = document.querySelectorAll("input")
 
-function handleLogin (e){
+function handleLogin(e){
   e.preventDefault()
   try{
      acc.forEach((account) => {
       const decodePass = atob(account.password)
+      //validateForm(inputValue)
       if(account.email == inputForm[name="email"].value &&
         decodePass == inputForm[name="password"].value
       ){
