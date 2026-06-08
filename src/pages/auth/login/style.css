@@ -335,3 +335,56 @@ body{
     text-decoration: none;
     color: var(--main-color);
 }
+
+@media (max-width: 800px) {
+    .container > section:first-of-type {
+        display: none;
+    }
+
+    .container > section:last-of-type {
+        width: 100%;
+    }
+
+    .container > section:last-of-type > div {
+        width: 80%;
+    }
+
+    .button-wrapper {
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .button-wrapper > a {
+        text-decoration: none;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .login-google > p, .login-facebook > p {
+        bottom: 0;
+    }
+
+    .login-facebook, .login-google {
+        float: none;
+        display: flex;
+        height: 2.8rem;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--small-font-size);
+        width: 100%;
+    }
+        .foot-end {
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+        justify-content: space-between;
+    }
+
+    .foot-end > span {
+        width: 20%;
+    }
+}

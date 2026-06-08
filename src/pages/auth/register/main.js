@@ -1,5 +1,11 @@
 const inputForm = document.querySelector(".login-form")
 
+function handleWatchPass(element){
+  const input = document.getElementById("password")
+  if(element.type === "password") return  element.setAttribute("type", "text")
+  else return element.setAttribute("type", "password")
+}
+
 function handleRegister(e) {
     e.preventDefault()
             

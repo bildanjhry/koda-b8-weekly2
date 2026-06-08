@@ -1,3 +1,9 @@
+function handleWatchPass(element){
+  const input = document.getElementById("password")
+  if(element.type === "password") return  element.setAttribute("type", "text")
+  else return element.setAttribute("type", "password")
+}
+
 const params = new URLSearchParams(window.location.search)
   const acc = JSON.parse(window.localStorage.getItem("accounts"))
   if(params.get('new')) {
@@ -21,7 +27,6 @@ function handleLogin (e){
        } else {
             throw new Error("Akun tidak ditemukan")
        }
-        
     })
   } catch(err) {
      alert(err.message)

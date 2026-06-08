@@ -360,3 +360,65 @@ body{
     text-decoration: none;
     color: var(--main-color);
 }
+
+@media (max-width: 800px){
+    .container > section:first-of-type {
+        display: none;
+    }
+
+    .container > section:last-of-type {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+     .button-wrapper > a {
+        width: 47%;
+        text-decoration: none;
+     }
+
+    .login-facebook, .login-google {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-end {
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+        justify-content: space-between;
+    }
+
+    .foot-end > span {
+        width: 20%;
+    }
+
+    .login-facebook > p, .login-google > p {
+        font-size: var(--small-font-size);
+    }
+
+    .container > section:last-of-type > div {
+        width: 85%;
+    }
+
+    .privacy-policy {
+        display: flex;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+    .pass-watch-auth-icon {
+        right:15px;
+        left: auto;
+    }
+
+    .privacy-policy > div {
+        width: 100%;
+    }
+}  

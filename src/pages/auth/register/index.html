@@ -58,7 +58,7 @@
             </div>
         </section>
         <section>
-            <div class="  ">
+            <div class="">
                 <header class="  form-header">
                     <h1>Buat Akun Baru</h1>
                     <p>Sudah punya akun? 
@@ -125,7 +125,8 @@
                                     id="password" 
                                     name="password" 
                                     value="">
-                                    <button 
+                                    <button
+                                    onclick="handleWatchPass(this.previousElementSibling)"
                                     type="button"
                                     class="pass-watch-auth-icon">
                                         <img 
@@ -140,13 +141,15 @@
                                     class="email-auth-icon"
                                     src="../../../../assets/pass-auth-icon.svg" alt="Password">
                                     <input 
-                                    type="password-confirm"
+                                    type="password"
                                     placeholder="Ulangi Kata Sandi" 
                                     id="password-confirm" 
                                     name="password-confirm" 
                                     value="">
+
                                     <button 
                                     type="button"
+                                    onclick="handleWatchPass(this.previousElementSibling)"
                                     class="pass-watch-auth-icon">
                                         <img 
                                         src="../../../../assets/pass-watch-icon.svg" alt="See">
