@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="../../css/browse-products.css">
     <link rel="stylesheet" href="../../css/structure.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -154,7 +155,7 @@
             <h4>Semua Produk</h4>                
         </div>
         <div class="content-products">
-            <!-- <section class="content-products-filter ">
+            <section class="content-products-filter ">
                 <div class="content-products-filter-price ">
                     <h5>Harga</h5>
                     <div>
@@ -256,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <section class="content-products-browse">
                 <div class="">
                     <p>18 Produk ditemukan</p>
@@ -268,9 +269,9 @@
                     </div>
                 </div>
                 <div class="content-products-browse-prod">
-                    <div class="new-products">
-                        <div class="new-products-cards-wrapper">
-                            <a href="">
+                    <div class="products">
+                        <div class="product-cards-wrapper">
+                            <!-- <a href="">
                                 <div class="new-products-card">
                                     <span class="new-products-card-cut">
                                         <span>-16%</span>
@@ -294,8 +295,8 @@
                                         <h3 class="new-products-card-price">Rp 4.200.000<span><s>Rp 5.000.000</s></span></h3>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="">
+                            </a> -->
+                            <!-- <a href="">
                                 <div class="new-products-card">
                                     <span class="new-products-card-cut">
                                         <span>-20%</span>
@@ -569,7 +570,7 @@
                                         <h3 class="new-products-card-price">Rp 320.000<span><s>Rp 450.000</s></span></h3>
                                     </div>
                                 </div>
-                            </a>                                                        
+                            </a>                                                         -->
                         </div>
                     </div>                        
                 </div>
@@ -726,8 +727,9 @@
     </footer> 
     <script src="../../js/utils/navbar-manipulation.js"></script> 
     <script type="module">
-        import makeProductCard from "../../../js/landing.js"
-        const par = document.querySelector(".new-products-cards-wrapper")
+        import { makeProductCard } from "../../js/landing.js"
+        const par = document.querySelector(".product-cards-wrapper")
+        makeProductCard(par, 12, '../../../assets/')
     </script>
 </body>
 </html>

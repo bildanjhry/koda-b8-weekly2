@@ -18,7 +18,7 @@ function handleRatingStars(rating, ratingTotal){
     return stars
 }
 
-export default async function makeProductCard(parentEl, dataLength, pathAssets){
+export async function makeProductCard(parentEl, dataLength, pathAssets){
   try{
       const data = await handleData()
         data.forEach((item, index) => {

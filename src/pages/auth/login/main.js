@@ -1,4 +1,3 @@
-//import validateForm from "../../../js/utils/form-validation.js"
 const inputForm = document.querySelector(".login-form")
 const inputValue = document.querySelectorAll("input")
 
@@ -19,16 +18,26 @@ const params = new URLSearchParams(window.location.search)
 
 function handleLogin(e){
   e.preventDefault()
+  try{
     const data = new FormData(e.target)
-
+    const formInput = Object.fromEntries(data.entries())
+  
+    for(const value in formInput){
+      if(!(formInput[value])) throw new Error('Pastikan semua form terisi.')
+    }
+  
     for(const account of acc){
       const decodePass = window.atob(account.password)
+      console.log(account.password)
       if(account.email == data.get("email") && decodePass == data.get("password")){
         window.location.href = '../../../../index.html'
-        return alert("Login Berhasil")
-       }
-    }
-    alert("Akun tidak ditemukan")
+          return alert("Login Berhasil")
+        }
+      }
+      alert("Akun tidak ditemukan")
+  } catch(err) {
+    alert(err.message)
+  }
 }
 
-inputForm.addEventListener('submit', handleLogin)
+inputForm.addEventListener('submit', (e) => { handleLogin(e) })
