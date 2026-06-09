@@ -72,7 +72,6 @@
     flex-wrap: wrap;
     margin: 0;
     font-size: 0;
-    background-color: yellowgreen;
     width: 100%;
 }
 
@@ -187,7 +186,7 @@
     margin: 0;
 }
 
-
+/* 
 @media (max-width: 800px) {
 
     .content-products-browse-prod {
@@ -252,4 +251,4 @@
     .info-first-action {
         width: 80%;
     }
-}
+} */

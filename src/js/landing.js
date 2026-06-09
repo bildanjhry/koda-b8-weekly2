@@ -18,11 +18,20 @@ function handleRatingStars(rating, ratingTotal){
     return stars
 }
 
-export async function makeProductCard(parentEl, dataLength, pathAssets){
+export async function makeProductCard(
+  parentEl, 
+  dataLength, 
+  pathAssets
+){
   try{
       const data = await handleData()
+      const nodeLastLength = dataLength - 6
+      // if(dataLength >= data.length){
+      //   throw new Error(false)
+      // }
         data.forEach((item, index) => {
-          if((index+1) <= dataLength ){
+          if(dataLength > nodeLastLength){
+            if(index+1 <= dataLength && index+1 > nodeLastLength){
             const cardWrapper = document.createElement("a")
             const div = document.createElement("div")
             const div2 = document.createElement("div")
@@ -65,11 +74,60 @@ export async function makeProductCard(parentEl, dataLength, pathAssets){
             div.appendChild(div2)
             div.appendChild(div3)
             cardWrapper.appendChild(div)
-            parentEl.appendChild(cardWrapper)
+            parentEl.appendChild(cardWrapper)              
+            }
+          }
+          else { 
+            if((index+1) <= dataLength){
+              const cardWrapper = document.createElement("a")
+              const div = document.createElement("div")
+              const div2 = document.createElement("div")
+              const div3 = document.createElement("div")
+              const span = document.createElement("span")
+              const span2 = document.createElement("span")
+              const span3 = document.createElement("span")
+              const s = document.createElement("s")
+              const p = document.createElement("p")
+              const p2 = document.createElement("p")
+              const h4 = document.createElement("h4")
+              const h3 = document.createElement("h3")
+              const img = document.createElement("img")
+
+              div.classList.add("product-card")
+              span.classList.add("product-card-cut")
+              div3.classList.add("product-card-desc")
+              h3.classList.add("product-card-price")
+              img.setAttribute("src", pathAssets+item.image)
+              img.setAttribute("width", "100%")
+
+              h4.innerText = item.name
+              span2.innerText = item.discount
+              p2.innerText = item.brand
+              h3.innerText = moneyFormat(item.price)[0]
+
+              span.appendChild(span2)
+              div2.appendChild(img)
+              div3.appendChild(p2)
+              div3.appendChild(p)
+              div3.appendChild(h4)
+              div3.appendChild(handleRatingStars(item.rating, item.ratingTotal))
+              if(item.promoPrice){
+                  s.innerText = moneyFormat(item.promoPrice)[0]
+                  span3.appendChild(s)
+                  h3.appendChild(span3)
+              }
+              div3.appendChild(h3)
+              div.appendChild(span)
+              div.appendChild(div2)
+              div.appendChild(div3)
+              cardWrapper.appendChild(div)
+              parentEl.appendChild(cardWrapper)
+            }
           }
     })
-     
+     return data.length
   } catch(err) {
+    
     console.log(err.message)
   }
 }
