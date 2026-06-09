@@ -223,7 +223,7 @@
 .new-products-card-price > span {
     font-size: var(--small-font-size);
     position: relative;
-    left: 10px;
+    left: 5px;
 }
 
 .product-card-desc p:first-child,
