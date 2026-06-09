@@ -1,11 +1,16 @@
 .container-cart {
     height: fit-content;
-    width: var(--container-wrapper);
+    width: 83%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 11rem;
 }
 
 .container-related-prod {
-    width: var(--container-wrapper);
+    width: 83%;
+    justify-self: center;
     height: fit-content;
     margin-top: 1rem;
     margin-bottom: 7rem;
