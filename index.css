@@ -96,3 +96,56 @@
 .purple-bg-color {
     background-color: var(--purple-bg-color);
 }
+
+.button-back {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: var(--default-font-size);
+    border: none;
+    justify-content: start;
+    background-color: transparent;
+    color: var(--main-color);
+    margin-right: 15%;
+    cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.bottom-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: white;
+    position: fixed;
+    padding: 0 15px;
+    box-sizing: border-box;
+    gap: 25px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.bottom-bar-desc {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.bottom-bar-checkout-btn {
+    background-color: var(--orange-color);
+    color: var(--light-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-border-radius);
+    width: 40%;
+    border: none;
+    height: 75%;
+}
