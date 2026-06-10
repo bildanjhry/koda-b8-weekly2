@@ -18,8 +18,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-info-wrapper bg-blue">
+       <nav class="nav-container">
+            <div class="nav-info-wrapper">
                 <div class="nav-info">
                     <p class="nav-info-maps">
                         <span class="nav-info-map-icon">
@@ -45,14 +45,12 @@
                 </div>
             </div>
             <div class="nav-actions-wrapper ">
-                <div class="nav-actions ">
-                    <section class="nav-actions-info ">
-                        <a href="../../../index.html">
-                            <div class=" logo-icon">
-                                <p class="logo-icon-text">B</p>
-                            </div>
-                            <p class="logo">BeliMudah</p>
-                        </a>
+                <div class="nav-actions">
+                    <section class="nav-actions-info">
+                        <div class=" logo-icon">
+                            <p class="logo-icon-text">B</p>
+                        </div>
+                        <p class="logo">BeliMudah</p>
                     </section>
                     <section class="nav-actions-search ">
                         <form action="" class="nav-actions-search-column">
@@ -69,16 +67,16 @@
                              </button>
                         </form>
                     </section>
-                    <section class="">
+                    <section class="nav-actions-menu">
                         <div class="nav-actions-menu-notif">
                             <a href="" class="">
                                 <img width="20px" src="../../../assets/notif-icon.svg" alt="Notification">
                             </a>
                         </div>
-                        <div class="nav-actions-menu-profile">
-                            <a href="/src/pages/auth/login/index.html" class="">
+                        <div class="nav-actions-menu-profile ">
+                            <a href="/src/pages/my-profile/orders/index.html" class="">
                                 <img width="20px" src="../../../assets/person-icon.svg" alt="My Profile">
-                                <span>Budi</span>
+                                <span></span>
                             </a>
                         </div>
                         <div class="nav-actions-menu-fav ">
@@ -364,148 +362,151 @@
         </div>
     </main>
     <footer>
-        <section class="">
-            <div class="footer-nav ">
-                <div class="">
-                    <div>
-                        <img src="../../../assets/export-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Gratis Ongkir</h5>
-                        <p>Pembelian diatas Rp 100.000</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="../../../assets/safe-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Pembayaran Aman</h5>
-                        <p>SSL Terenkripsi 256-Bit</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="../../../assets/return-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Pengembailian Mudah</h5>
-                        <p>30 Hari pengebalian gratis</p>
-                    </div>
-                 </div>
-                <div class="">
-                    <div>
-                        <img src="../../../assets/chat-line-icon.svg" alt="">
-                    </div>
-                    <div>
-                        <h5>Dukungan 24/7</h5>
-                        <p>Bantuan Kapan saja</p>
-                    </div>
-                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="footer-list">
-                <div class="">
-                   <div class="footer-list-logo">
-                        <div class="footer-logo-icon">
-                            <p class="footer-logo-icon-text">B</p>
-                        </div>
-                        <p class="footer-list-logo-text white-color">BeliMudah</p>
-                    </div>
-                    <p>
-                        Platform belanja online terpercaya dengan
-                        ribuan produk pilihan. Belanja mudah,
-                        aman, dan menyenangkan.            
-                    </p>
-                    <div class="footer-social">
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="../../../assets/facebook-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="../../../assets/instagram-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="../../../assets/x-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="" 
-                        class="social-wrapper">
-                            <div>
-                                <img src="../../../assets/youtube-line-icon.svg" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="">
-                    <h5 class="layanan-title">Layanan</h5>
-                    <ul class="layanan-list">
-                        <li>Tentang Kami</li>
-                        <li>Program</li>
-                        <li>Blog</li>
-                        <li>Program Afiliasi</li>
-                        <li>Jual di BeliMudah</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h5 class="bantuan-title">Bantuan</h5>
-                    <ul class="bantuan-list">
-                        <li>Cara Belanja</li>
-                        <li>Kebijakan Pesanan</li>
-                        <li>Lacak Pesanan</li>
-                        <li>FAQ</li>
-                        <li>Hubungi Kami</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h5 class="kontak-title">Kontak</h5>
-                    <ul class="kontak-list ">
-                        <li>
-                            Jl. Sudirman No. 1, Jakarta Selatan, DKI Jakarta 12190
-                        </li>
-                        <li>0800-1234-5678 (Gratis)</li>
-                        <li>bantuan@belimudah.id</li>
-                    </ul>
-                    <div class="newsletter ">
-                        <h5>Newsletter</h5>
+        <div>
+            <section class="">
+                <div class="footer-nav ">
+                    <div class="">
                         <div>
-                            <form action="" class="newsletter-subscribe ">
-                                <input
-                                class="newsletter-input-email" 
-                                type="email" 
-                                name="email" 
-                                id="email"
-                                placeholder="Email Kamu"
-                                >
-                                <button class="newsletter-btn" type="submit">Langganan</button>
-                            </form>
+                            <img src="../../../assets/export-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Gratis Ongkir</h5>
+                            <p>Pembelian diatas Rp 100.000</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="../../../assets/safe-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Pembayaran Aman</h5>
+                            <p>SSL Terenkripsi 256-Bit</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="../../../assets/return-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Pengembailian Mudah</h5>
+                            <p>30 Hari pengebalian gratis</p>
+                        </div>
+                     </div>
+                    <div class="">
+                        <div>
+                            <img src="../../../assets/chat-line-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Dukungan 24/7</h5>
+                            <p>Bantuan Kapan saja</p>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <section>
+                <div class="footer-list">
+                    <div class="">
+                       <div class="footer-list-logo">
+                            <div class="footer-logo-icon">
+                                <p class="footer-logo-icon-text">B</p>
+                            </div>
+                            <p class="footer-list-logo-text white-color">BeliMudah</p>
+                        </div>
+                        <p>
+                            Platform belanja online terpercaya dengan
+                            ribuan produk pilihan. Belanja mudah,
+                            aman, dan menyenangkan.            
+                        </p>
+                        <div class="footer-social">
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="../../../assets/facebook-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="../../../assets/instagram-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="../../../assets/x-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="" 
+                            class="social-wrapper">
+                                <div>
+                                    <img src="../../../assets/youtube-line-icon.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5 class="layanan-title">Layanan</h5>
+                        <ul class="layanan-list">
+                            <li>Tentang Kami</li>
+                            <li>Program</li>
+                            <li>Blog</li>
+                            <li>Program Afiliasi</li>
+                            <li>Jual di BeliMudah</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h5 class="bantuan-title">Bantuan</h5>
+                        <ul class="bantuan-list">
+                            <li>Cara Belanja</li>
+                            <li>Kebijakan Pesanan</li>
+                            <li>Lacak Pesanan</li>
+                            <li>FAQ</li>
+                            <li>Hubungi Kami</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h5 class="kontak-title">Kontak</h5>
+                        <ul class="kontak-list ">
+                            <li>
+                                Jl. Sudirman No. 1, Jakarta Selatan, DKI Jakarta 12190
+                            </li>
+                            <li>0800-1234-5678 (Gratis)</li>
+                            <li>bantuan@belimudah.id</li>
+                        </ul>
+                        <div class="newsletter">
+                            <h5>Newsletter</h5>
+                            <div>
+                                <form action="" class="newsletter-subscribe ">
+                                    <input
+                                    class="newsletter-input-email" 
+                                    type="email" 
+                                    name="email" 
+                                    id="email"
+                                    placeholder="Email Kamu"
+                                    >
+                                    <button class="newsletter-btn" type="submit">Langganan</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="footer-note">
-                <p class="footer-note-copyright">
-                    <span>&#169</span>
-                    2026 BeliMudah. Seluruh hak cipta dilindungi
-                </p>
-                <ul class="">
-                    <li>Kebijakan dan Privasi</li>
-                    <li>Syarat dan Ketentuan</li>
-                    <li>Admin</li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+            </section>
+            <section>
+                <div class="footer-note">
+                    <p class="footer-note-copyright">
+                        <span>&#169</span>
+                        2026 BeliMudah. Seluruh hak cipta dilindungi
+                    </p>
+                    <ul class="">
+                        <li>Kebijakan dan Privasi</li>
+                        <li>Syarat dan Ketentuan</li>
+                        <li>Admin</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer> 
     <script type="module" src="main.js"></script>
+    <script src="../../../src/js/utils/user-env/get-user.js"></script>
 </body>
 </html>
