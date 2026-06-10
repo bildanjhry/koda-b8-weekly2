@@ -50,7 +50,7 @@ $(document).ready(function(){
 	let subtotal = 0
 	let grandTotal = 0
 	cart.forEach((item) => {
-		subtotal += item.price
+		subtotal += (item.price * item.qty)
 		createCardProducts(item.image, item.name, item.qty)
 	})
 
@@ -62,6 +62,7 @@ $(document).ready(function(){
 
 	function handleSubmit(e) {
 		e.preventDefault()
+
 		try{
 			const datas = new FormData(e.target)
 			const formatData = Object.fromEntries(datas.entries())
@@ -75,10 +76,28 @@ $(document).ready(function(){
 			if(!(datas.get("delivery-method"))){
 				throw new Error("Mohon Pilih Metode Pengiriman")
 			}
+
+			function handleDelivery(method){
+				switch(method){
+					case "jne-reguler":
+						return ["JNE Reguler", "3-5 Hari Kerja"]
+						break;
+					case "jne-express":
+						return ["JNE Express", "1-2 Hari Kerja"]
+							break;
+					case "same-day-delivery":
+						return ["Same Day Delivery ", "Hari ini (sebelum 16:00)"]
+						break;
+					default :
+						return []	 															
+				}
+			}
+
 			newData = {
 				...userData,
 				checkout: checkoutProd,
 				isCheckoutPaid: false,
+				deliveryMethod: handleDelivery(datas.get("delivery-method"))
 			}
 			window.localStorage.setItem("user",JSON.stringify(newData)) // update user's checkout datas
 			// window.localStorage.setItem("account",JSON.stringify([ // update user's checkout datas

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="../../css/structure.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../css/structure.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -162,23 +164,23 @@
                      <section>
                         <p>Nomor Pesanan</p>
                         <h4>#<span>BM28371132</span></h4>
-                     </section>
-                    <section>
+                    </section>
+                    <section class="transactions-total">
                         <p>Total Pembayaran</p>
-                        <h4>Rp<span>450.000</span></h4>
+                        <h4></h4>
                      </section>
                 </div>
                 <div class="success-card-desc">
                     <section>
                         <img src="../../../assets/export-line-icon.svg" alt="">
-                        <div>
-                            <p>JNE Reguler</p>
-                            <p>Estimasi tiba: 2-3 Juni 2026</p>
+                        <div class="delivery-method">
+                            <p></p>
+                            <p>Estimasi tiba: <span>2-3 Juni 2026</span></p>
                         </div>
                     </section>
                     <section>
                         <img src="../../../assets/location-blue-line-icon.svg" alt="">
-                        <div>
+                        <div class="address">
                             <p>Alamat Pengiriman</p>
                             <p>Jl. Kebon Jeruk No. 15, Jakarta Barat, DKI Jakarta 11530 </p>
                         </div>
@@ -405,5 +407,6 @@
             </div>
         </section>
     </footer>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
