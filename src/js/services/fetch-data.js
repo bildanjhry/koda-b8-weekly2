@@ -1,6 +1,6 @@
 export default function handleData() {
   try {
-    return fetch('../../../products/index.json').then((res) => 
+    return fetch('../../../../products/index.json').then((res) => 
       res.json()
       )
   } catch(err){
