@@ -147,10 +147,10 @@
     </header>
     <main>
         <div class="container-cart">
-            <h1>Keranjang Belanja (1 item)</h1>
+            <h1 class="cart-title">Keranjang Belanja (1 item)</h1>
             <div class="container-cart-action">
                 <div class="container-cart-action-items">
-                    <section>
+                    <!-- <section>
                         <div class="container-cart-action-items-img">
                             <img 
                             class=""
@@ -191,133 +191,7 @@
                                 <h2>Rp 450.000</h2>
                             </section>
                         </div>
-                    </section>
-                                        <section>
-                        <div class="container-cart-action-items-img">
-                            <img 
-                            class=""
-                            width="96"
-                            height="96"
-                            src="../../../assets/headphone-prod.svg" alt="">
-                        </div>
-                        <div class="container-cart-action-items-desc">
-                            <section>
-                                <h5>Headphone Wireless Premium</h5>
-                                <p>Hitam</p>
-                                <div class="container-cart-action-items-desc-qty">
-                                    <div>
-                                        <button>
-                                            <img src="../../../assets/minus-icon.svg" alt="">
-                                        </button>
-                                        <span>1</span>
-                                        <button>
-                                            <img src="../../../assets/plus-icon.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                                <a href="" class="container-cart-action-items-desc-fav">
-                                    <img 
-                                    width="12"
-                                    height="12"
-                                    src="../../../assets/fav-icon.svg" 
-                                    alt="favorite">
-                                    <span>Simpan ke wishlist</span>
-                                </a>
-                            </section>
-                            <section>
-                                <button>
-                                    <img 
-                                    src="../../../assets/delete-line-icon.svg" 
-                                    alt="">
-                                </button>
-                                <h2>Rp 450.000</h2>
-                            </section>
-                        </div>
-                    </section>
-                                        <section>
-                        <div class="container-cart-action-items-img">
-                            <img 
-                            class=""
-                            width="96"
-                            height="96"
-                            src="../../../assets/headphone-prod.svg" alt="">
-                        </div>
-                        <div class="container-cart-action-items-desc">
-                            <section>
-                                <h5>Headphone Wireless Premium</h5>
-                                <p>Hitam</p>
-                                <div class="container-cart-action-items-desc-qty">
-                                    <div>
-                                        <button>
-                                            <img src="../../../assets/minus-icon.svg" alt="">
-                                        </button>
-                                        <span>1</span>
-                                        <button>
-                                            <img src="../../../assets/plus-icon.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                                <a href="" class="container-cart-action-items-desc-fav">
-                                    <img 
-                                    width="12"
-                                    height="12"
-                                    src="../../../assets/fav-icon.svg" 
-                                    alt="favorite">
-                                    <span>Simpan ke wishlist</span>
-                                </a>
-                            </section>
-                            <section>
-                                <button>
-                                    <img 
-                                    src="../../../assets/delete-line-icon.svg" 
-                                    alt="">
-                                </button>
-                                <h2>Rp 450.000</h2>
-                            </section>
-                        </div>
-                    </section>
-                                        <section>
-                        <div class="container-cart-action-items-img">
-                            <img 
-                            class=""
-                            width="96"
-                            height="96"
-                            src="../../../assets/headphone-prod.svg" alt="">
-                        </div>
-                        <div class="container-cart-action-items-desc">
-                            <section>
-                                <h5>Headphone Wireless Premium</h5>
-                                <p>Hitam</p>
-                                <div class="container-cart-action-items-desc-qty">
-                                    <div>
-                                        <button>
-                                            <img src="../../../assets/minus-icon.svg" alt="">
-                                        </button>
-                                        <span>1</span>
-                                        <button>
-                                            <img src="../../../assets/plus-icon.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                                <a href="" class="container-cart-action-items-desc-fav">
-                                    <img 
-                                    width="12"
-                                    height="12"
-                                    src="../../../assets/fav-icon.svg" 
-                                    alt="favorite">
-                                    <span>Simpan ke wishlist</span>
-                                </a>
-                            </section>
-                            <section>
-                                <button>
-                                    <img 
-                                    src="../../../assets/delete-line-icon.svg" 
-                                    alt="">
-                                </button>
-                                <h2>Rp 450.000</h2>
-                            </section>
-                        </div>
-                    </section>
+                    </section> -->
                     <section>
                         <h4>
                             <span>
@@ -350,16 +224,15 @@
                             <li><span>Rp 450.000</span></li>
                         </ul>
                     </div>
-                    <a href="../checkout/index.html">
-                        <button class="container-cart-action-struct-btn">
+                        <button 
+                        type="button"
+                        class="container-cart-action-struct-btn">
                             <img 
                             width="16"
                             height="16"
                             src="../../../assets/safe-white-line-icon.svg" alt="">
                             <span>Checkout Aman</span>
                         </button>
-
-                    </a>
                     <p>
                         <img
                         height="12"
@@ -371,7 +244,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container-related-prod">
+        <div class="container-related-prod">
                 <div class="related-products ">
                     <div class="">
                         <div class="related-products-info">
@@ -474,7 +347,7 @@
                         </div>
                     </div>
                 </div>                
-        </div> -->
+        </div>
     </main>
     <footer>
         <div>
@@ -622,5 +495,6 @@
         </div>
     </footer>  
     <script src="../../js/utils/navbar-spec-manipulation.js"></script>  
+    <script type="module" src="main.js"></script>
 </body>
 </html>

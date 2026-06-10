@@ -27,11 +27,22 @@ function handleRegister(e) {
 			if(!(data.get("privacy-policy"))) {
 				throw new Error("Pastikan menceklis privacy dan policy.")
 			} 
+      // dummy address
+      const address = {
+        isMain:true,
+        fullAddress: "Jalan Merpati Blok A No.16, Kec. Merah Putih",
+        city:"Bogor",
+        province:"Jawa Barat",
+        postCode:"1130"
+      }
 
 			formData["fullname"] = data.get("fullname")
 			formData["email"] = data.get("email")
 			formData["password"] = btoa(data.get("password")) // encode password
       formData["cart"] = []
+      formData["address"] = [address]
+      formData["wishlist"] = []
+      formData["checkout"] = []
 
       const acc = window.localStorage.getItem("accounts")
 

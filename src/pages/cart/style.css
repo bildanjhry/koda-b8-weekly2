@@ -328,14 +328,24 @@
 
 .container-cart-action-items-desc-fav {
     text-decoration: none;
-   color: var(--gray-color);
+    color: var(--gray-color);
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    justify-content: flex-start;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 12px;
+    height: 1rem;
 }
 
 .container-cart-action-items-desc-fav > img {
-    margin-top: 10px;
     position: relative;
-    top: 2px;
+    width: 12px;
+    bottom: 1px;
 }
 
 .container-cart-action-items-desc > section:last-child > h2 {

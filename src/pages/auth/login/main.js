@@ -29,13 +29,13 @@ function handleLogin(e){
     let isFound = false
     for(const account of acc){
       const decodePass = window.atob(account.password)
+      // check if input matches one of users
       if(account.email == data.get("email") && decodePass == data.get("password")){
-          window.localStorage.setItem("user", JSON.stringify({
-            fullName: account.fullname,
-            email: account.email,
-            password: account.password,
-            cart: account.cart
-          }))
+        const newData = {}
+        for(const key in account){ // create new object of founded user's data
+          newData[key] = account[key]
+        }
+          window.localStorage.setItem("user", JSON.stringify(newData))
           alert("Login Berhasil")
           isFound = true
           window.location.href = '../../../../index.html'
