@@ -31,6 +31,7 @@ function handleRegister(e) {
 			formData["fullname"] = data.get("fullname")
 			formData["email"] = data.get("email")
 			formData["password"] = btoa(data.get("password")) // encode password
+      formData["cart"] = []
 
       const acc = window.localStorage.getItem("accounts")
 

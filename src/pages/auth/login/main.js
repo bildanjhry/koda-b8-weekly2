@@ -1,14 +1,15 @@
 const inputForm = document.querySelector(".login-form")
 const inputValue = document.querySelectorAll("input")
+const watchBtn = document.querySelector(".pass-watch-auth-icon")
+const params = new URLSearchParams(window.location.search)
+const acc = JSON.parse(window.localStorage.getItem("accounts"))
 
-export function handleWatchPass(element){
+export function handleWatchPass(e){
+  const element = watchBtn.previousElementSibling
   const input = document.getElementById("password")
   if(element.type === "password") return  element.setAttribute("type", "text")
   else return element.setAttribute("type", "password")
 }
-
-const params = new URLSearchParams(window.location.search)
-  const acc = JSON.parse(window.localStorage.getItem("accounts"))
  
   if(params.get('new')) {  // check if url has parameter new
       const email = document.querySelector(".input-email")
@@ -25,19 +26,26 @@ function handleLogin(e){
     for(const value in formInput){
       if(!(formInput[value])) throw new Error('Pastikan semua form terisi.')
     }
-  
+    let isFound = false
     for(const account of acc){
       const decodePass = window.atob(account.password)
-      console.log(account.password)
       if(account.email == data.get("email") && decodePass == data.get("password")){
-        window.location.href = '../../../../index.html'
-          return alert("Login Berhasil")
+          window.localStorage.setItem("user", JSON.stringify({
+            fullName: account.fullname,
+            email: account.email,
+            password: account.password,
+            cart: account.cart
+          }))
+          alert("Login Berhasil")
+          isFound = true
+          window.location.href = '../../../../index.html'
         }
       }
-      alert("Akun tidak ditemukan")
+      if(!isFound) throw new Error("Akun tidak ditemukan")
   } catch(err) {
     alert(err.message)
   }
 }
 
+watchBtn.addEventListener("click", (e) => { handleWatchPass(e) })
 inputForm.addEventListener('submit', (e) => { handleLogin(e) })

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/css/product-cards.css">
     <link rel="stylesheet" href="src/css/structure.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -71,10 +73,10 @@
                                 <img width="20px" src="./assets/notif-icon.svg" alt="Notification">
                             </a>
                         </div>
-                        <div class="nav-actions-menu-profile ">
+                        <div class="nav-actions-menu-profile">
                             <a href="/src/pages/my-profile/orders/index.html" class="">
                                 <img width="20px" src="./assets/person-icon.svg" alt="My Profile">
-                                <span>Budi</span>
+                                <span></span>
                             </a>
                         </div>
                         <div class="nav-actions-menu-fav ">
@@ -1150,6 +1152,7 @@
     </footer>
     <script src="./src/js/utils/navbar-manipulation.js">
     </script>
+    <script src="./src/js/utils/get-user.js"></script>
     <script type="module">
         import { makeProductCard } from "./src/js/landing.js"
         const par = document.querySelector(".last-flash > div:last-child")
