@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -147,20 +150,68 @@
                     </div>
                 </div>
                 <div class="content-dashboard">
-                    <div class="statistic">
-                        <div class="statistic-header">
+                    <div class="statistic pt-10">
+                        <div class="statistic-header mt-4">
                             <h5>Pendapatan & Pesanan (2026)</h5>
                             <button>
                                 12 Bulan Terakhir
                             </button>
                         </div>
-                        <img 
+                        <img
+                        class="mt-6" 
                         width="100%"
                         src="../../../assets/statistic-dashboard.svg" alt="">
                     </div>
                     <div class="donut">
-                        <h5>Penjualan per Kategori</h5>
+                        <h5 class="mt-4">Penjualan per Kategori</h5>
                         <img src="../../../assets/donut-dashboard.svg" alt="">
+                        <div class="flex flex-col gap-2 mt-2">
+                            <ul class="flex justify-between items-center">
+                                <li>
+                                    <div class="flex gap-2 items-center">
+                                        <span class="w-3 h-3 bg-[blue] rounded-full"></span>
+                                        <p class="text-xs">Elektronik</p>
+                                    </div>
+                                </li>
+                                <li class="text-black">45%</li>
+                            </ul>
+                            <ul class="flex justify-between items-center">
+                                <li>
+                                    <div class="flex gap-2 items-center">
+                                        <span class="w-3 h-3 bg-[orange] rounded-full"></span>
+                                        <p class="text-xs">Fashion</p>
+                                    </div>
+                                </li>
+                                <li class="text-black">28%</li>
+                            </ul>
+                            <ul class="flex justify-between items-center">
+                                <li>
+                                    <div class="flex gap-2 items-center">
+                                        <span class="w-3 h-3 bg-[green] rounded-full"></span>
+                                        <p class="text-xs">Rumah dan Dapur</p>
+                                    </div>
+                                </li>
+                                <li class="text-black">12%</li>
+                            </ul>
+                            <ul class="flex justify-between items-center">
+                                <li>
+                                    <div class="flex gap-2 items-center">
+                                        <span class="w-3 h-3 bg-[purple] rounded-full"></span>
+                                        <p class="text-xs">Kecantikan</p>
+                                    </div>
+                                </li>
+                                <li class="text-black">8%</li>
+                            </ul>
+                            <ul class="flex justify-between items-center">
+                                <li>
+                                    <div class="flex gap-2 items-center">
+                                        <span class="w-3 h-3 bg-[gray] rounded-full"></span>
+                                        <p class="text-xs">Lainnya</p>
+                                    </div>
+                                </li>
+                                <li class="text-black">4%</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="list-new">
                         <div class="list-new-header">

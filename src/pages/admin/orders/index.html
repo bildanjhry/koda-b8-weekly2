@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../index.css">
     <link rel="stylesheet" href="index.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -117,28 +118,28 @@
                     </form>
                 </div>
                 <div class="content-dashboard">
-                    <table>
+                    <table class="bg-[blue]">
                         <thead>
                             <tr>
-                                <td>No. Pesanan</td>
-                                <td>Pelanggan</td>
-                                <td>Tanggal</td>
-                                <td>Item</td>
-                                <td>Total</td>
-                                <td>Pembayaran</td>
-                                <td>Status</td>
+                                <td class="w-[12rem]">No. Pesanan</td>
+                                <td class="w-[12rem]">Pelanggan</td>
+                                <td class="w-[10rem]">Tanggal</td>
+                                <td class="w-[7rem]">Item</td>
+                                <td class="w-[10rem]">Total</td>
+                                <td class="w-[9rem]">Pembayaran</td>
+                                <td class="w-[9rem]">Status</td>
                                 <td>Aksi</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -146,20 +147,41 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex  items-center border-b  h-[4rem] gap-2">
+                                    <button class="">
+                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
+                                <td class="customer">
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
+                                    <p>budi@emali.com</p>
+                                </td>
+                                <td>28 Mei 2026</td>
+                                <td class="text-slate-900">2</td>
+                                <td class="blue-color">Rp 900.000</td>
+                                <td>Gopay</td>
+                                <td class="status">
+                                    <span class="green-bg-color">
+                                        <p class="green-color">Terkirim</p>
+                                    </span>
+                                </td>
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -167,20 +189,20 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -188,20 +210,20 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -209,20 +231,20 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -230,20 +252,20 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -251,20 +273,20 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#BM98765432</td>
+                            <tr class="h-[4rem]">
+                                <td class="text-blue-600 font-semibold">#BM98765432</td>
                                 <td class="customer">
-                                    <p>Budi Santoso</p>
+                                    <p class="text-slate-900 mb-1 text-sm">Budi Santoso</p>
                                     <p>budi@emali.com</p>
                                 </td>
                                 <td>28 Mei 2026</td>
-                                <td>2</td>
+                                <td class="text-slate-900">2</td>
                                 <td class="blue-color">Rp 900.000</td>
                                 <td>Gopay</td>
                                 <td class="status">
@@ -272,33 +294,12 @@
                                         <p class="green-color">Terkirim</p>
                                     </span>
                                 </td>
-                                <td class="action">
+                                <td class="flex w-[3rem] items-center h-[4rem] gap-2">
                                     <button>
                                         <img src="../../../../assets/pass-watch-icon.svg" alt="">
                                     </button>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>#BM98765432</td>
-                                <td class="customer">
-                                    <p>Budi Santoso</p>
-                                    <p>budi@emali.com</p>
-                                </td>
-                                <td>28 Mei 2026</td>
-                                <td>2</td>
-                                <td class="blue-color">Rp 900.000</td>
-                                <td>Gopay</td>
-                                <td class="status">
-                                    <span class="green-bg-color">
-                                        <p class="green-color">Terkirim</p>
-                                    </span>
-                                </td>
-                                <td class="action">
-                                    <button>
-                                        <img src="../../../../assets/pass-watch-icon.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>                                                                                                                                                                                                
+                            </tr>                                                                                                                                                                                              
                         </tbody>
                     </table>
                 </div>

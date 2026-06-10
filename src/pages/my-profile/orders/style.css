@@ -12,6 +12,27 @@
     height: 100%;
 }
 
+.profile-logout-btn {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0 1rem;
+    color: var(--red-color);
+    cursor: pointer;
+    height: 3rem;
+}
+
+.profile-logout-btn:hover {
+    background-color: var(--blue-bg-color);
+}
+
+.profile-logout-btn > img {
+    width: 16px;
+}
+
 .profile-card {
     display: flex;
     flex-direction: column;

@@ -292,6 +292,7 @@ main > .search-content > form {
     background-color: white;
     border-radius: var(--medium-border-radius);
     border-collapse: collapse;
+    border-bottom: 10px solid var(--gray-border-color);
 }
 
 .content-dashboard > table > thead {
@@ -317,6 +318,7 @@ main > .search-content > form {
 
 .content-dashboard > table > tbody > tr > td:not(:last-of-type) {
     border-bottom: 1px solid var(--gray-border-color);
+    width: fit-content;
 }
 
 .content-dashboard > table > tbody {
@@ -328,12 +330,12 @@ main > .search-content > form {
     align-items: center;
 }
 
-.content-dashboard > table > tbody > tr > .action > button {
+/* .content-dashboard > table > tbody > tr > .action > button {
     border: none;
     height: fit-content;
     width: fit-content;
     background-color: transparent;
-}
+} */
 
 .content-dashboard > table > tbody > tr > .status > span > p {
 
