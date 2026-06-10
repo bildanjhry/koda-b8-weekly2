@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/structure.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="../../css/product-cards.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
@@ -163,6 +165,7 @@
             <div class="prod-content">
                 <section class="prod-content-image  ">
                     <img
+                    data-value="headphone-prod.svg"
                     src="../../../assets/headphone-prod.svg" alt="">
                     <div>
                         <img 
@@ -176,7 +179,9 @@
                 <section class="prod-content-desc">
                     <div class="prod-content-desc-title">
                         <p>SoundWave <span>.</span><span>Audio</span></p>
-                        <h2>Headphone Wireless Premium</h2>
+                        <h2 
+                        class="product-name"
+                        name="product-name" value="Headphone Wireless Premium">Headphone Wireless Premium</h2>
                         <p class="rating">
                             <span class="fa fa-star m-gap checked"></span>
                             <span class="fa fa-star m-gap checked"></span>
@@ -193,13 +198,13 @@
                         </p>
                     </div>
                     <div class="prod-content-desc-price">
-                        <h1 class="">Rp 450.000 
+                        <h1 class="product-price" name="product-price" data-value="450000">Rp 450.000 
                             <span><s>Rp 650.000</s></span>
                             <span>Hemat 31%</span>
                         </h1>
                         <p>Kamu hemat Rp 200.000</p>
                     </div>
-                    <div class=" ">
+                    <div class="">
                         <p>Warna: <span class="coosen-color"></span></p>
                         <div class="color-picker">
                             <div class="color-button">
@@ -220,9 +225,6 @@
                                 type="radio" value="Biru" name="color" id="biru">
                                 <label for="biru">Biru</label>
                             </div>
-                            <!-- <button>Hitam</button>
-                            <button>Putih</button>
-                            <button>Biru</button> -->
                         </div>
                     </div>
                     <div class="quantity">
@@ -232,7 +234,7 @@
                                 <button class="quantity-dec-btn">
                                     <img src="../../../assets/minus-icon.svg" alt="">
                                 </button>
-                                <span class="quantity-total">1</span>
+                                <span class="quantity-total" name="product-qty" value="1">1</span>
                                 <button class="quantity-inc-btn">
                                     <img src="../../../assets/plus-icon.svg" alt="">
                                 </button>
@@ -240,13 +242,20 @@
                             <p>Stok: 45 pcs</p>
                         </div>
                     </div>
-                    <div class="button-actions  ">
+                    <div class="button-actions">
                         <div>
-                            <button>
+                            <button 
+                            type="button"
+                            class="add-cart-btn">
                                 <img src="../../../assets/cart-orange-icon.svg" alt="">
+                                <span>Tambah ke Keranjang</span>
                             </button>
-                            <button class="buy-now-btn"> Beli Sekarang </button>
-                            <button>
+                            <button 
+                            type="submit"
+                            class="buy-now-btn"> Beli Sekarang </button>
+                            <button
+                            type="submit"
+                            >
                                 <img src="../../../assets/fav-icon.svg" alt="Favorite">
                             </button>
                         </div>
@@ -446,60 +455,11 @@
         </div>
     </footer> 
     <script src="../../js/utils/navbar-manipulation.js"></script>
-    <script type="text/javascript">
-        const button = document.querySelector(".buy-now-btn")
-        const coosenColor = document.querySelector(".coosen-color")
-        const incBtn = document.querySelector(".quantity-inc-btn")
-        const decBtn = document.querySelector(".quantity-dec-btn")
-        const qtyTotal = document.querySelector(".quantity-total")
-        const colorInput = document.querySelectorAll(".color-input")
-       
-        if(parseInt(qtyTotal.innerText) >= 1) {
-            let res = parseInt(qtyTotal.innerText)
-            incBtn.addEventListener('click', () => {
-                res += 1
-                qtyTotal.innerText = `${res}`
-            })
-            decBtn.addEventListener('click', () => {
-                if(!(parseInt(qtyTotal.innerText) < 2)) {
-                    res -= 1
-                    qtyTotal.innerText = `${res}`
-                }
-            })
-        }
-        
-        let formProduct = {
-            name:"",
-            price:0,
-            qty:0,
-            color:"",
-        }
-
-        function handleBuyNow() {
-            if(qtyTotal.innerText && coosenColor.innerText){
-                formProduct.name = `Headphone Wireless Premium`
-                formProduct.price = 4000,
-                formProduct.qty = qtyTotal.innerText
-                formProduct.color = coosenColor.innerText
-                    window.localStorage.setItem('checkout-product', JSON.stringify(formProduct))
-              return window.location.href = '../checkout/index.html'
-            } 
-            return alert("Kosong bos")
-        }
-
-        colorInput.forEach((item) => {
-            item.addEventListener('click', () => {
-                coosenColor.innerText = `${item.value}`
-            })
-        })
-
-        button.addEventListener('click', handleBuyNow)
-
-    </script>
     <script type="module">
         import { makeProductCard } from "../../js/landing.js"
         const par = document.querySelector(".product-cards-wrapper")
         makeProductCard(par, 6, '../../../assets/')
     </script>
+    <script src="main.js"></script>
 </body>
 </html>
