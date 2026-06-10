@@ -34,7 +34,7 @@
     width: 821px;
 }
 
-.container-cart-action-items > section:first-child {
+.container-cart-action-items > section:not(:last-child) {
     height: 145px;
     width: 821px;
     background-color: white;
@@ -543,3 +543,101 @@
 .related-products-card:nth-child(6) {
     margin-right: 16px;
 }
+
+@media (max-width: 800px) {
+    .nav-actions-menu {
+        width: 65%;
+    }
+    
+    .bottom-bar-desc-total-val {
+        color: var(--default-color);
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .container-cart {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 6rem;
+    }
+    
+    .container-cart > h1 {
+        margin-bottom: 1rem;
+        font-size: 16px;
+    }
+
+    .container-cart-action {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-cart-action-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-cart-action-items > section:not(:last-child) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-cart-action-items > section:last-child {
+        display: none;
+    }
+
+    .container-cart-action-items-img {
+        padding: 0;
+        width: 20%;
+    }
+
+    .container-cart-action-items-img > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    .container-cart-action-items-desc {
+        width: 78%;
+        height: 100%;
+        margin: 0;
+        justify-content: space-between;
+        padding-right: 15px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .container-cart-action-items-desc > section:first-child {
+        margin: 0;
+        padding-top: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }   
+
+    .container-cart-action-items-desc > section:last-child {
+        padding-top: 10px;
+    }
+    
+    .container-cart-action-items-desc > section:last-child > h2 {
+        font-size: var(--default-font-size);
+
+    }    
+    
+    .container-cart-action-items-desc > section:first-child > h5 {
+        margin: 0;
+        top: 0;
+        font-size: var(--default-font-size);
+    }
+    .container-cart-action-items-desc > section:first-child > p {
+        margin-top: 5px;
+    }
+    
+    .container-cart-action-items-desc-fav {
+        display: none;
+    }
+}
+
