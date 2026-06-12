@@ -22,7 +22,7 @@ function handleLogin(e){
   try{
     const data = new FormData(e.target)
     const formInput = Object.fromEntries(data.entries())
-  
+    
     for(const value in formInput){
       if(!(formInput[value])) throw new Error('Pastikan semua form terisi.')
     }
@@ -38,7 +38,11 @@ function handleLogin(e){
           window.localStorage.setItem("user", JSON.stringify(newData))
           alert("Login Berhasil")
           isFound = true
-          window.location.href = '../../../../index.html'
+          if(data.get("email").split("@")[1]== "admin.com"){
+             window.location.href = '../../admin/index.html'
+          } else {
+            window.location.href = '../../../../index.html'
+          }
         }
       }
       if(!isFound) throw new Error("Akun tidak ditemukan")
